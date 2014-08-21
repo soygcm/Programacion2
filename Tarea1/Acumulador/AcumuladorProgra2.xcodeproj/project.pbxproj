@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0FCA5FC19A2759E0063EE9B /* Acumulador.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0FCA5FB19A2759E0063EE9B /* Acumulador.cpp */; };
-		C0FCA5FE19A2759E0063EE9B /* AcumuladorProgra2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0FCA5FD19A2759E0063EE9B /* AcumuladorProgra2.1 */; };
-		C0FCA60619A276260063EE9B /* test_Acumulador.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0FCA60519A276260063EE9B /* test_Acumulador.cpp */; };
+		C0A6572B19A588B100654F24 /* Acumulador.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A6572719A588B100654F24 /* Acumulador.cpp */; };
+		C0A6572C19A588B100654F24 /* test_Acumulador.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A6572A19A588B100654F24 /* test_Acumulador.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,20 +18,17 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				C0FCA5FE19A2759E0063EE9B /* AcumuladorProgra2.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C0FCA5F819A2759E0063EE9B /* AcumuladorProgra2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AcumuladorProgra2; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0FCA5FB19A2759E0063EE9B /* Acumulador.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Acumulador.cpp; sourceTree = "<group>"; };
-		C0FCA5FD19A2759E0063EE9B /* AcumuladorProgra2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AcumuladorProgra2.1; sourceTree = "<group>"; };
-		C0FCA60419A2761E0063EE9B /* Acumulador.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Acumulador.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
-		C0FCA60519A276260063EE9B /* test_Acumulador.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_Acumulador.cpp; sourceTree = "<group>"; };
-		C0FCA60719A276320063EE9B /* BUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BUnit.h; sourceTree = "<group>"; };
-		C0FCA60819A27B2A0063EE9B /* Acumulador.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Acumulador.txt; sourceTree = "<group>"; };
+		C0A6572719A588B100654F24 /* Acumulador.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Acumulador.cpp; sourceTree = "<group>"; };
+		C0A6572819A588B100654F24 /* Acumulador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acumulador.h; sourceTree = "<group>"; };
+		C0A6572919A588B100654F24 /* BUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUnit.h; sourceTree = "<group>"; };
+		C0A6572A19A588B100654F24 /* test_Acumulador.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_Acumulador.cpp; sourceTree = "<group>"; };
+		C0A6572D19A588F700654F24 /* AcumuladorProgra2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AcumuladorProgra2; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,30 +45,12 @@
 		C0FCA5EF19A2759D0063EE9B = {
 			isa = PBXGroup;
 			children = (
-				C0FCA5FA19A2759E0063EE9B /* AcumuladorProgra2 */,
-				C0FCA5F919A2759E0063EE9B /* Products */,
+				C0A6572719A588B100654F24 /* Acumulador.cpp */,
+				C0A6572819A588B100654F24 /* Acumulador.h */,
+				C0A6572919A588B100654F24 /* BUnit.h */,
+				C0A6572A19A588B100654F24 /* test_Acumulador.cpp */,
+				C0A6572D19A588F700654F24 /* AcumuladorProgra2 */,
 			);
-			sourceTree = "<group>";
-		};
-		C0FCA5F919A2759E0063EE9B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C0FCA5F819A2759E0063EE9B /* AcumuladorProgra2 */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C0FCA5FA19A2759E0063EE9B /* AcumuladorProgra2 */ = {
-			isa = PBXGroup;
-			children = (
-				C0FCA5FB19A2759E0063EE9B /* Acumulador.cpp */,
-				C0FCA5FD19A2759E0063EE9B /* AcumuladorProgra2.1 */,
-				C0FCA60419A2761E0063EE9B /* Acumulador.h */,
-				C0FCA60519A276260063EE9B /* test_Acumulador.cpp */,
-				C0FCA60819A27B2A0063EE9B /* Acumulador.txt */,
-				C0FCA60719A276320063EE9B /* BUnit.h */,
-			);
-			path = AcumuladorProgra2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +70,7 @@
 			);
 			name = AcumuladorProgra2;
 			productName = AcumuladorProgra2;
-			productReference = C0FCA5F819A2759E0063EE9B /* AcumuladorProgra2 */;
+			productReference = C0A6572D19A588F700654F24 /* AcumuladorProgra2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +90,7 @@
 				en,
 			);
 			mainGroup = C0FCA5EF19A2759D0063EE9B;
-			productRefGroup = C0FCA5F919A2759E0063EE9B /* Products */;
+			productRefGroup = C0FCA5EF19A2759D0063EE9B;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -126,8 +104,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0FCA60619A276260063EE9B /* test_Acumulador.cpp in Sources */,
-				C0FCA5FC19A2759E0063EE9B /* Acumulador.cpp in Sources */,
+				C0A6572C19A588B100654F24 /* test_Acumulador.cpp in Sources */,
+				C0A6572B19A588B100654F24 /* Acumulador.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +215,7 @@
 				C0FCA60319A2759E0063EE9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

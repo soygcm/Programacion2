@@ -268,6 +268,9 @@ void test_Acumulador::test_Verifica_Suma() {
    - Por último graba en \c cout los resultados usando \c Report().
 */
 int main() {
+    
+    std::cout << "Acumulador Test: \n";
+    
     test_Acumulador tester;       // crea la prueba
     tester.run();                 // la ejecuta
     std::cout << tester.report(); // graba en "cout" los resultados
