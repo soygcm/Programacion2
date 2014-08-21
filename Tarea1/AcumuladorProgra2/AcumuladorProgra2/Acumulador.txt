@@ -1,0 +1,193 @@
+Procedimiento para hacer la Tpg1:
+================================
+
+- http://www.di-mare.com/adolfo/cursos/2009-1/p2-ta-1.htm
+
+Jalar el archivo de la Tpg1:
+- http://www.di-mare.com/pub/Pg2/Acumulador.zip
+- hago una carpeta "Acumulador"
+- Adentro copio lo que está en Acumulador.zip
+
+- Edito el archivo Acumulador.h
+  - Uso el editor de Code::Blocks
+     - Marco el contenido completo de Acumulador.h
+	 - Uso AStyle para darle formato
+	   ==> Plugins ==> Source code Formater (AStyle)
+  - Uso Notepad++
+  - Le corrijo el espaciado y la indentación
+    - Modo de Búsqueda
+  	- [x] Extendido (\n, \r, \t, ...)
+  	  - Buscar [;] Remplazar con [;\n]
+  	  - Buscar [{] Remplazar con [{\n]
+  	  - Buscar [}] Remplazar con [}\n]
+  - TestFX ==> TestFX Edit ==> Reindent C++ code
+
+- Para compilar el programa uso el proyecto .cbp
+  - [[ También puedo compilar usando el proyecto .dev ]]
+- Compilador de C++ ==> GNU C++  (NO VS ni Cywin)
+
+- Jalo el archivo
+  - http://www.di-mare.com/adolfo/p/BUnit/BUnit.h
+- Lo arreglo en la carpeta
+
+- Se compila con Build
+- Se ejecuta con F7
+
+TestCase [15test_Acumulador] (OK: 109) (FAIL: 1)
+=\_error: Verifica_Suma( 13, DIM(vec), vec )
+=/ (259) test_Acumulador.cpp
+
+/* 259 */ assertTrue( Verifica_Suma( 13, DIM(vec), vec ) );
+
+
+Convenciones de programacion
+http://www.di-mare.com/pub/Pg2/Indentacion.htm
+
+Indento todo el programa
+
+Agrego /** \file  Acumulador.h ...
+( Lo saco de test_Acumulador.cpp )
+
+Agrego // EOF: Acumulador.h
+
+Busco en Google site:di-mare.com acumulador
+
+Busco en Google site:di-mare.com chirrisquitica
+
+00029     /** Constructor de vector.
+00030         \dontinclude test_Acumulador.cpp
+00031         \skipline    test::constructor()
+00032         \until       }}
+00033         \see         test_Acumulador::test_constructor()
+00034     */
+00035     Acumulador() {  borre(); }
+
+00049     /** Inicializa en cero el acumulador.
+00050         \dontinclude test_Acumulador.cpp
+00051         \skipline    test::borre()
+00052         \until       }}
+00053         \see         test_Acumulador::test_borre()
+00054     */
+00055     void borre()
+00056     { m_total = m_cantidad = m_menor = m_mayor = 0; }
+
+
+Renombre la carpeta "html" para que se llame "html-Adolfo"
+
+------- Forwarded message follows -------
+
+Aquí hay mensajes sobre el mismo tema:
+- http://groups.yahoo.com/group/ci1201/message/625
+- http://groups.yahoo.com/group/ci1201/message/629
+- http://groups.yahoo.com/group/ci1201/message/630
+- http://groups.yahoo.com/group/ci1201/message/1129
+
+------- Forwarded message follows -------
+
+To:        Programación II <ci1201@yahoogroups.com>
+From:      Adolfo Di Mare <adolfo@di-mare.com>
+Date:      Sun, 19 Aug 2012 08:27:00 -0600
+Subject:   [CI-1201] Enlace a la documentación Doxygen
+
+> Buenas profe. Viera que no me queda para nada claro exactamente qué es eso
+> de que existe el enlace desde la documentación a las páginas Doxygen. En la
+> página de la tarea programada dice que se debe enviar en el .zip solamente
+> el .dxg.
+
+Al subir a la red su página de documentación también deben incluir una carpeta en la que instalen todas la documentación. Yo siempre le pongo a esa carpeta el nombre del programa. Para la "Matriz Chirrisquitica" puse la documentación Doxygen en una carpeta llamada "Matrix" y para el módulo "BUnit" usé la carpeta "BUnit" para copiar ahí toda la carpeta "html" que Doxygen me generó:
+
+- http://www.di-mare.com/adolfo/p/Matrix/ ==> Carpeta Doxygen
+- http://www.di-mare.com/adolfo/p/Matrix.htm ==> Artículo/Documentación
+- http://www.di-mare.com/adolfo/p/Matrix/Matrix.zip ==> Código fuente
+
+- http://www.di-mare.com/adolfo/p/BUnit/ ==> Carpeta Doxygen
+- http://www.di-mare.com/adolfo/p/BUnit.htm ==> Artículo/Documentación
+- http://www.di-mare.com/adolfo/p/BUnit/BUnit.zip ==> Código fuente
+
+En el caso de tuyo, si tu carnet es B00747, podés subir estas carpetas:
+
+- http://www.orgfree.com/B00747/Pg2-Tpg1/ ==> Carpeta Doxygen
+- http://www.orgfree.com/B00747/Pg2-Tpg1.htm ==> Documentación Tpg1
+- http://www.orgfree.com/B00747/fuentes/B00747-Pg2-Tpg1.zip ==> Código fuente
+
+En el documento "Pg2-Tpg1.htm Pg2-Tpg1.htm " en que está toda la descripción de tu solución, vas a necesitar incluir un enlace HTML hacia el directorio "Pg2-Tpg1" que contiene la documentación Doxygen. Por ejemplo, en le caso de la "Matriz Chirrisquitica", los enlaces están en esta sección del documento:
+
+- http://www.di-mare.com/adolfo/p/Matrix.htm#fuentes
+
+        Adolfo
+               ///
+
+------- Forwarded message follows -------
+
+To:        Programación II <ci1201@yahoogroups.com>
+From:      Adolfo Di Mare <adolfo@di-mare.com>
+Date:      Mon, 11 Aug 2008 07:16:31 -0600
+Subject:   [CI-1201] Doxygen no genera bien la documentación
+
+>>> Pipino: tu tarea está incompleta. Doxygen ni siquiera genera
+>>> página alguna cuando lo ejecuto con tu archivo de configuración.
+
+> profesor considero necesario que sepa que el semestre pasado en el curso de
+> Programación I nunca se nos dijo como hacer la documentación externa; en
+> cuanto a la documentación interna lo único que se nos dijo fue "pongan una
+> breve descripción de lo que hace el método..." (palabara de mi profesor). No
+> trato de excusarme a mi mismo diciendo esto, lo que busco es si me podría
+> ayudar talvez dándome una guía o un link para ver como se hace la
+> documentación externa.
+
+Si quieren leer alguito sobre documentación interna o externa pueden hacerlo aquí:
+Documentación externa:
+- http://www.di-mare.com/adolfo/p/convpas.htm#sec04
+Documentación interna:
+- http://www.di-mare.com/adolfo/p/convpas.htm#sec05
+
+Además, pueden buscar en la red:
+- http://www.google.com/search?num=100&as_q=c%2B%2B+ how+to+document
+- http://search.yahoo.com/search?n=100&p=c%2B%2B+documenta cion+interna
+
+>>> Te adjunto el .zip que me entregaste.
+>>> - Te falta ponerle la documentación a cada uno de los
+>>>  identificadores de Acumulador.h
+>>> - No basta con indentar correctamente el archivo.
+
+> Gracias por la información profesor. La verdad es que no entiendo muy bien
+> cómo hago para generar el archivo de Doxygen. Sí se que tengo que ponerle la
+> descripción de cada método pero no hallé donde ponerla. Si talvez me pudiera
+> dar una breve explicación de cómo usar el Doxygen para documentar un
+> archivo.
+
+Les recuerdo que los pasos que yo seguí en clase al resolver la tarea están aquí:
+- http://www.di-mare.com/pub/Pg2/Acumulador.txt
+
+Ahí adentro está un ejemplo de cómo hacerlo:
+
+00029    /** Inicializa en cero el acumulador.
+00030       \dontinclude test_Acumulador.cpp
+00031       \skipline    test::borre()
+00032       \until       }}
+00033       \see        test_Acumulador::test_borre()
+00034    */
+00035    Acumulador() {  borre(); }
+
+Los comentarios Doxygen están dentro de /** */ o comienzan con ///
+
+Si les da calambre la palabro "Doxygen", pueden encontrar todo lo que buscan en la red:
+- http://search.yahoo.com/search?n=100&p=Doxygen
+
+La forma en que yo genero el archivo Doxygen es usando el siguiente comando desde la pantalla negra:
+
+C:\DIR\SubDir> doxygen Acumulador.dxg
+
+[[[ Por supuesto, esto funciona si los fuentes C++ y el archivo ]]]
+[[[ Acumulador.dxg están en la carpeta "C:\DIR\SubDir"         ]]]
+
+El archivo "Acumulador.dxg" es el que les di en clase, el que también está en el enunciado de la Tpg1.
+
+Ustedes pueden usar el DoxyWizard si así lo desean.
+
+Recuerden: Basta que modifiquen Acumulador.h incluyéndole la documentación Doxygen para que terminen la Tpg1. La especificación de cada método está en la carpeta html-Adolfo del .zip que les entregué en clase.
+
+      Adolfo
+             ///
+
+------- End of forwarded message -------

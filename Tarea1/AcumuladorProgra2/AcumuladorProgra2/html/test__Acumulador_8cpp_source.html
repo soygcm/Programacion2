@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>952809 Tarea Programada #1: Fichero Fuente test_Acumulador.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">952809 Tarea Programada #1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">test_Acumulador.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="test__Acumulador_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// test_Acumulador.cpp (C) 2006 adolfo@di-mare.com</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/** \file  test_Acumulador.cpp</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    \brief Datos de prueba para la clase \c Acumulador.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    \author Adolfo Di Mare &lt;adolfo@di-mare.com&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    \date   2006.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Acumulador_8h.html">Acumulador.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;BUnit.h&quot;</span> <span class="comment">// Módulo para prueba unitaria de programas</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// Datos de prueba para la clase \c Acumulador.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html">   14</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="classtest__Acumulador.html">test_Acumulador</a> : <span class="keyword">public</span> TestCase {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html#ad5b2507c9cc24816187474ed29d04468">   16</a></span>&#160;    <a class="code" href="classtest__Acumulador.html#ad5b2507c9cc24816187474ed29d04468">test_Acumulador</a>() { setUp(); } <span class="comment">///&lt; Constructor que invoca \c setUp()</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classtest__Acumulador.html#a127930e8b7662372d0b453a6ef6576cd">run</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#a185bfe4151671d2889d8c65d54401540">test_constructor</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#a05efa1c0e0bf98481f88b6e13e80d06a">test_copie_igual</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#a2c92916af5666426c002384128664b50">test_copie</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#ad6065ce01c7dc520535bd81fb82ccb2f">test_acumule</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#a19d1552dd7c6cb192a116538ed3f6df4">test_total_cantidad</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#af248d85b35b35e988fa57cc480a93ce7">test_borre</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#aa72a7bfc44d977f6687c8a7176ebb79c">test_Verifica_Suma</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">Verifica_Suma</a>(<span class="keywordtype">long</span> total, <span class="keywordtype">unsigned</span> dim, <span class="keywordtype">long</span> vec[]);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/// Ejecuta las pruebas.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html#a127930e8b7662372d0b453a6ef6576cd">   30</a></span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> <a class="code" href="classtest__Acumulador.html#a127930e8b7662372d0b453a6ef6576cd">test_Acumulador::run</a>() {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classtest__Acumulador.html#a185bfe4151671d2889d8c65d54401540">test_constructor</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classtest__Acumulador.html#a05efa1c0e0bf98481f88b6e13e80d06a">test_copie_igual</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classtest__Acumulador.html#a2c92916af5666426c002384128664b50">test_copie</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classtest__Acumulador.html#ad6065ce01c7dc520535bd81fb82ccb2f">test_acumule</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classtest__Acumulador.html#a19d1552dd7c6cb192a116538ed3f6df4">test_total_cantidad</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classtest__Acumulador.html#af248d85b35b35e988fa57cc480a93ce7">test_borre</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classtest__Acumulador.html#aa72a7bfc44d977f6687c8a7176ebb79c">test_Verifica_Suma</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> wasSuccessful();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/// Cantidad de valores del vector \c V[].</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/// - Esta una macro que no se puede implementar con plantillas.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">   43</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define DIM(V) (sizeof(V) / sizeof(*V)) // *V == *(V+0) == V[0]</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/// Retorna \c true cuando la suma total de un acumulador es igual a \c total.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/// - En caso contrario, simplementer retorna \c false.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">   47</a></span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> <a class="code" href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">test_Acumulador::Verifica_Suma</a>(<span class="keywordtype">long</span> total, <span class="keywordtype">unsigned</span> dim, <span class="keywordtype">long</span> vec[]) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classAcumulador.html">Acumulador</a> A;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    assertTrue( <a class="code" href="Acumulador_8cpp.html#a1358a964d2ca280d53ea0fb98891187d">check_ok</a>( A ) );</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;dim; ++i) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( vec[i] );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        assertTrue( <a class="code" href="Acumulador_8cpp.html#a1358a964d2ca280d53ea0fb98891187d">check_ok</a>( A ) );</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> ( A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() == total );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/// Datos de prueba para el constructor y destructor de la clase.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html#a185bfe4151671d2889d8c65d54401540">   58</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#a185bfe4151671d2889d8c65d54401540">test_Acumulador::test_constructor</a>() {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {{  <span class="comment">// test::constructor()</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classAcumulador.html">Acumulador</a> A;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        assertTrue( 0 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        assertTrue( 0 == A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">long</span> vec[] = { 1, 2, 3, 4,  5 };</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec) , vec );</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        assertTrue( 2+3+4 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        assertTrue( 0 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {   <a class="code" href="classAcumulador.html">Acumulador</a> A;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {   <span class="comment">// acumulador vacío</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            assertTrue( 0 == A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> );</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            assertTrue( A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> == A.<a class="code" href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">m_mayor</a> );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            assertTrue( A.<a class="code" href="classAcumulador.html#aeed76f5aa290bd5916264d4b43a103fd">m_cantidad</a> == 0 );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/// Datos de prueba para las operaciones de copia.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html#a2c92916af5666426c002384128664b50">   80</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#a2c92916af5666426c002384128664b50">test_Acumulador::test_copie</a>() {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {{  <span class="comment">// test::copie()</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="classAcumulador.html">Acumulador</a> A;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">long</span> vec[] = { 1, 2, 3, 4,  5 };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec) , vec );</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classAcumulador.html">Acumulador</a> B; B = A;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        assertTrue( A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>()    == B.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        assertTrue( A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() == B.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        assertTrue( A == B );</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        assertTrue( A != B );</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        assertTrue( A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>()    != B.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        assertTrue( A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() != B.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        B.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        assertTrue( A == B );</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">/// Datos de prueba para las operaciones de copia y de comparación.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html#a05efa1c0e0bf98481f88b6e13e80d06a">   99</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#a05efa1c0e0bf98481f88b6e13e80d06a">test_Acumulador::test_copie_igual</a>() {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {{  <span class="comment">// test::copie_igual()</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="classAcumulador.html">Acumulador</a> A;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">long</span> vec[] = { 1, 2, 3, 4,  5 };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec) , vec );</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classAcumulador.html">Acumulador</a> B = A;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        assertTrue( A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>()    == B.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        assertTrue( A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() == B.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        assertTrue( A == B );</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        assertTrue( A != B );</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        assertTrue( A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>()    != B.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        assertTrue( A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() != B.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        B.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        assertTrue( A == B );</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">/// Datos de prueba para \c Acumulador::borre().</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html#af248d85b35b35e988fa57cc480a93ce7">  118</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#af248d85b35b35e988fa57cc480a93ce7">test_Acumulador::test_borre</a>() {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {{  <span class="comment">// test::borre()</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="classAcumulador.html">Acumulador</a> A;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">long</span> vec[] = { 1, 2, 3, 4,  5 };</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec) , vec );</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        assertTrue( 2+3+4 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        assertTrue( 5 == A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        assertTrue( 0 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        assertTrue( 0 == A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">/// Datos de prueba para \c Acumulador::acumule().</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html#ad6065ce01c7dc520535bd81fb82ccb2f">  132</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#ad6065ce01c7dc520535bd81fb82ccb2f">test_Acumulador::test_acumule</a>() {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {{  <span class="comment">// test::acumule()</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="classAcumulador.html">Acumulador</a> A;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">for</span> ( <span class="keywordtype">long</span> i=5; i&gt;=0; --i ) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( i );</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        assertTrue( 4+3+2+1 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        assertTrue( A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() == 6 );</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        assertTrue( 0 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        assertTrue( 0 == A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }}</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {   <a class="code" href="classAcumulador.html">Acumulador</a> A;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {   <span class="comment">// acumulación de puros ceros</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            assertTrue( 0 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">for</span> ( <span class="keywordtype">long</span> i=5; i&gt;=0; --i ) {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 0 );</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            assertTrue( 0+0+0+0 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            assertTrue( A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() == 6 );</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        {   <span class="comment">// acumulación de solo un número</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 12 );</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            assertTrue( 12 == A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> );</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            assertTrue( A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> == A.<a class="code" href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">m_mayor</a> );</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            assertTrue( 0 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        {   <span class="comment">// acumulación ascendente de 2 números</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 7 ); A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 11 );</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            assertTrue(  7 == A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> );</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            assertTrue( 11 == A.<a class="code" href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">m_mayor</a> );</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            assertTrue(  2 == A.<a class="code" href="classAcumulador.html#aeed76f5aa290bd5916264d4b43a103fd">m_cantidad</a> );</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            assertTrue(  0 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {   <span class="comment">// acumulación descendente de 2 números</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 11 ); A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 7 );</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            assertTrue(  7 == A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> );</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            assertTrue( 11 == A.<a class="code" href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">m_mayor</a> );</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            assertTrue(  2 == A.<a class="code" href="classAcumulador.html#aeed76f5aa290bd5916264d4b43a103fd">m_cantidad</a> );</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            assertTrue(  0 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        {   <span class="comment">// acumulación ascendente de 3 números</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 7 ); A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 9 ); A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 11 );</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            assertTrue(  7 == A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> );</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            assertTrue( 11 == A.<a class="code" href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">m_mayor</a> );</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            assertTrue(  3 == A.<a class="code" href="classAcumulador.html#aeed76f5aa290bd5916264d4b43a103fd">m_cantidad</a> );</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            assertTrue(  9 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        {   <span class="comment">// acumulación descendente de 3 números</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 11 ); A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 9 ); A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( 7 );</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            assertTrue(  7 == A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> );</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            assertTrue( 11 == A.<a class="code" href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">m_mayor</a> );</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            assertTrue(  3 == A.<a class="code" href="classAcumulador.html#aeed76f5aa290bd5916264d4b43a103fd">m_cantidad</a> );</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            assertTrue(  9 == A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() );</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {   <span class="comment">// vec[] en orden ascendente</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordtype">long</span> vec[] = { -2, -1, -0, +0 , +1, +2, +3, +4  };</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec) , vec );</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            assertTrue( A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() == (-1) + (-0) + (+0) + (+1) + (+2) + (+3) );</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            assertTrue( 8 == A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        {   <span class="comment">// vec[] en orden decendente</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordtype">long</span> vec[] = { +4, +3, +2, +1, +0, -0, -1, -2 };</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec) , vec );</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            assertTrue( A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() == (-1) + (-0) + (+0) + (+1) + (+2) + (+3) );</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            assertTrue( 8 == A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        {   <span class="comment">// vec[] en orden alocado</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="keywordtype">long</span> vec[] = { -1, -2, +1, +0, -0, +4, +3, +2 };</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            A.<a class="code" href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">borre</a>();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec) , vec );</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            assertTrue( A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() == (-1) + (-0) + (+0) + (+1) + (+2) + (+3) );</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            assertTrue( 8 == A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() );</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">/// Método base que ejecuta todas las pruebas de la clase.</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html#a19d1552dd7c6cb192a116538ed3f6df4">  218</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#a19d1552dd7c6cb192a116538ed3f6df4">test_Acumulador::test_total_cantidad</a>() {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    {{  <span class="comment">// test::total_cantidad()</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <a class="code" href="classAcumulador.html">Acumulador</a> A;  <span class="comment">//   2   3   4    5   6   7   8</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordtype">long</span> vec[] = { -2, -1, -0, +0 , +1, +2, +3, +4  };</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        A.<a class="code" href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">acumule</a>( <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec) , vec );</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        assertTrue( A.<a class="code" href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">total</a>() == (-1) + (-0) + (+0) + (+1) + (+2) + (+3) );</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        assertTrue( 8 == A.<a class="code" href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">cantidad</a>() &amp;&amp; 8 == <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec) );</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }}</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">/// Corre varias pruebas específicas.</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classtest__Acumulador.html#aa72a7bfc44d977f6687c8a7176ebb79c">  229</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classtest__Acumulador.html#aa72a7bfc44d977f6687c8a7176ebb79c">test_Acumulador::test_Verifica_Suma</a>() {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    {   assertTrue( 35 ==  2  + 3 + 4 + 5 + 6 + 7 + 8 );</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordtype">long</span> vec[] = { 1 , 2 ,  3 , 4 , 5 , 6 , 7 , 8 , 9 };</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        assertTrue( <a class="code" href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">Verifica_Suma</a>( 35, <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec), vec ) );</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    {   <span class="keywordtype">long</span> vec[] = { 1 };</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        assertTrue( <a class="code" href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">Verifica_Suma</a>( 0, <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec), vec ) );</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    {   <span class="keywordtype">long</span> vec[] = { 1, 2 };</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        assertTrue( <a class="code" href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">Verifica_Suma</a>( 0, <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec), vec ) );</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    {   <span class="keywordtype">long</span> vec[] = { 1, 2, 1 };</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        assertTrue( <a class="code" href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">Verifica_Suma</a>( 1, <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec), vec ) );</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    {   <span class="keywordtype">long</span> vec[] = { 2, 2, 1 };</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        assertTrue( <a class="code" href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">Verifica_Suma</a>( 2, <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec), vec ) );</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    {   assertTrue( 12 ==  2 + 2 + 2 + 2 + 2 + 2  );</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordtype">long</span> vec[] = { 1 , 2 , 2 , 2 , 2 , 2 , 2 , 2 };</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        assertTrue( <a class="code" href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">Verifica_Suma</a>( 12, <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec), vec ) );</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    {   <span class="comment">// Esta es la que genera 1 error</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        assertFalse(13 ==  2 + 2 + 2 + 2 + 2 + 2  );</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordtype">long</span> vec[] = { 1 , 2 , 2 , 2 , 2 , 2 , 2 , 2 };</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        assertTrue( <a class="code" href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">Verifica_Suma</a>( 13, <a class="code" href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a>(vec), vec ) );</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span> <span class="comment">// cout</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">/** Este es el programa principal.</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">   - Primero crea la prueba \c Test de tipo \c test_Acumulador.</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">   - Luego hace la prueba, invocando \c test_Acumulador::run().</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">   - Por último graba en \c cout los resultados usando \c Report().</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="test__Acumulador_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">  270</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="test__Acumulador_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="code" href="classtest__Acumulador.html">test_Acumulador</a> tester;       <span class="comment">// crea la prueba</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    tester.<a class="code" href="classtest__Acumulador.html#a127930e8b7662372d0b453a6ef6576cd">run</a>();                 <span class="comment">// la ejecuta</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    std::cout &lt;&lt; tester.report(); <span class="comment">// graba en &quot;cout&quot; los resultados</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;}</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">// EOF: test_Acumulador.cpp</span></div>
+<div class="ttc" id="Acumulador_8h_html"><div class="ttname"><a href="Acumulador_8h.html">Acumulador.h</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html_a05efa1c0e0bf98481f88b6e13e80d06a"><div class="ttname"><a href="classtest__Acumulador.html#a05efa1c0e0bf98481f88b6e13e80d06a">test_Acumulador::test_copie_igual</a></div><div class="ttdeci">void test_copie_igual()</div><div class="ttdoc">Datos de prueba para las operaciones de copia y de comparación. </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00099">test_Acumulador.cpp:99</a></div></div>
+<div class="ttc" id="test__Acumulador_8cpp_html_a8389c2f7e9d414767b32aae76b45a53d"><div class="ttname"><a href="test__Acumulador_8cpp.html#a8389c2f7e9d414767b32aae76b45a53d">DIM</a></div><div class="ttdeci">#define DIM(V)</div><div class="ttdoc">Cantidad de valores del vector V[]. </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00043">test_Acumulador.cpp:43</a></div></div>
+<div class="ttc" id="classAcumulador_html_a7d9a0494ca5ec0adcf29cc8892e2231e"><div class="ttname"><a href="classAcumulador.html#a7d9a0494ca5ec0adcf29cc8892e2231e">Acumulador::acumule</a></div><div class="ttdeci">void acumule(long val)</div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00050">Acumulador.h:50</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html_aa72a7bfc44d977f6687c8a7176ebb79c"><div class="ttname"><a href="classtest__Acumulador.html#aa72a7bfc44d977f6687c8a7176ebb79c">test_Acumulador::test_Verifica_Suma</a></div><div class="ttdeci">void test_Verifica_Suma()</div><div class="ttdoc">Corre varias pruebas específicas. </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00229">test_Acumulador.cpp:229</a></div></div>
+<div class="ttc" id="Acumulador_8cpp_html_a1358a964d2ca280d53ea0fb98891187d"><div class="ttname"><a href="Acumulador_8cpp.html#a1358a964d2ca280d53ea0fb98891187d">check_ok</a></div><div class="ttdeci">bool check_ok(const Acumulador &amp;A)</div><div class="ttdoc">Verifica la invariante de la clase Acumulador. </div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8cpp_source.html#l00028">Acumulador.cpp:28</a></div></div>
+<div class="ttc" id="classAcumulador_html"><div class="ttname"><a href="classAcumulador.html">Acumulador</a></div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00004">Acumulador.h:4</a></div></div>
+<div class="ttc" id="classAcumulador_html_aeed76f5aa290bd5916264d4b43a103fd"><div class="ttname"><a href="classAcumulador.html#aeed76f5aa290bd5916264d4b43a103fd">Acumulador::m_cantidad</a></div><div class="ttdeci">long m_cantidad</div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00007">Acumulador.h:7</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html_a185bfe4151671d2889d8c65d54401540"><div class="ttname"><a href="classtest__Acumulador.html#a185bfe4151671d2889d8c65d54401540">test_Acumulador::test_constructor</a></div><div class="ttdeci">void test_constructor()</div><div class="ttdoc">Datos de prueba para el constructor y destructor de la clase. </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00058">test_Acumulador.cpp:58</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html_af248d85b35b35e988fa57cc480a93ce7"><div class="ttname"><a href="classtest__Acumulador.html#af248d85b35b35e988fa57cc480a93ce7">test_Acumulador::test_borre</a></div><div class="ttdeci">void test_borre()</div><div class="ttdoc">Datos de prueba para Acumulador::borre(). </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00118">test_Acumulador.cpp:118</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html"><div class="ttname"><a href="classtest__Acumulador.html">test_Acumulador</a></div><div class="ttdoc">Datos de prueba para la clase Acumulador. </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00014">test_Acumulador.cpp:14</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html_a19d1552dd7c6cb192a116538ed3f6df4"><div class="ttname"><a href="classtest__Acumulador.html#a19d1552dd7c6cb192a116538ed3f6df4">test_Acumulador::test_total_cantidad</a></div><div class="ttdeci">void test_total_cantidad()</div><div class="ttdoc">Método base que ejecuta todas las pruebas de la clase. </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00218">test_Acumulador.cpp:218</a></div></div>
+<div class="ttc" id="test__Acumulador_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="test__Acumulador_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Este es el programa principal. </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00270">test_Acumulador.cpp:270</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html_a49a869fd069063d4de666d6988539540"><div class="ttname"><a href="classtest__Acumulador.html#a49a869fd069063d4de666d6988539540">test_Acumulador::Verifica_Suma</a></div><div class="ttdeci">bool Verifica_Suma(long total, unsigned dim, long vec[])</div><div class="ttdoc">Retorna true cuando la suma total de un acumulador es igual a total. </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00047">test_Acumulador.cpp:47</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html_ad6065ce01c7dc520535bd81fb82ccb2f"><div class="ttname"><a href="classtest__Acumulador.html#ad6065ce01c7dc520535bd81fb82ccb2f">test_Acumulador::test_acumule</a></div><div class="ttdeci">void test_acumule()</div><div class="ttdoc">Datos de prueba para Acumulador::acumule(). </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00132">test_Acumulador.cpp:132</a></div></div>
+<div class="ttc" id="classAcumulador_html_a6cd980c040f653f270c33ceb303f2f0f"><div class="ttname"><a href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">Acumulador::m_menor</a></div><div class="ttdeci">long m_menor</div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00008">Acumulador.h:8</a></div></div>
+<div class="ttc" id="classAcumulador_html_a45cd43f9b98a496848826039681751d0"><div class="ttname"><a href="classAcumulador.html#a45cd43f9b98a496848826039681751d0">Acumulador::cantidad</a></div><div class="ttdeci">long cantidad() const </div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00046">Acumulador.h:46</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html_ad5b2507c9cc24816187474ed29d04468"><div class="ttname"><a href="classtest__Acumulador.html#ad5b2507c9cc24816187474ed29d04468">test_Acumulador::test_Acumulador</a></div><div class="ttdeci">test_Acumulador()</div><div class="ttdoc">Constructor que invoca setUp() </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00016">test_Acumulador.cpp:16</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html_a127930e8b7662372d0b453a6ef6576cd"><div class="ttname"><a href="classtest__Acumulador.html#a127930e8b7662372d0b453a6ef6576cd">test_Acumulador::run</a></div><div class="ttdeci">bool run()</div><div class="ttdoc">Ejecuta las pruebas. </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00030">test_Acumulador.cpp:30</a></div></div>
+<div class="ttc" id="classAcumulador_html_ac01b16217a5c626632682241c09c432f"><div class="ttname"><a href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">Acumulador::m_mayor</a></div><div class="ttdeci">long m_mayor</div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00009">Acumulador.h:9</a></div></div>
+<div class="ttc" id="classtest__Acumulador_html_a2c92916af5666426c002384128664b50"><div class="ttname"><a href="classtest__Acumulador.html#a2c92916af5666426c002384128664b50">test_Acumulador::test_copie</a></div><div class="ttdeci">void test_copie()</div><div class="ttdoc">Datos de prueba para las operaciones de copia. </div><div class="ttdef"><b>Definition:</b> <a href="test__Acumulador_8cpp_source.html#l00080">test_Acumulador.cpp:80</a></div></div>
+<div class="ttc" id="classAcumulador_html_aa422a466927518de881cc65271ac3b4c"><div class="ttname"><a href="classAcumulador.html#aa422a466927518de881cc65271ac3b4c">Acumulador::total</a></div><div class="ttdeci">long total() const </div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00042">Acumulador.h:42</a></div></div>
+<div class="ttc" id="classAcumulador_html_a7fa26758acca37cc92f8aad5be240edf"><div class="ttname"><a href="classAcumulador.html#a7fa26758acca37cc92f8aad5be240edf">Acumulador::borre</a></div><div class="ttdeci">void borre()</div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00038">Acumulador.h:38</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 18 de Agosto de 2014 12:29:35 para 952809 Tarea Programada #1 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>952809 Tarea Programada #1: Fichero Fuente Acumulador.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">952809 Tarea Programada #1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Acumulador.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Acumulador_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Acumulador.cpp (c) 2005 adolfo@di-mare.com</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/** \file  Acumulador.cpp</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    \brief Implementaciones para la clase \c &quot;Acumulador&quot;.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    \author Adolfo Di Mare &lt;adolfo@di-mare.com&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    \date   2008</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Acumulador_8h.html">Acumulador.h</a>&quot;</span> <span class="comment">// Jala las declaraciones del archivo de encabezado</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/** Verifica la invariante de la clase \c Acumulador.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    - &lt;code&gt;(m_cantidad &gt;= 0 ) &amp;&amp; (m_menor &lt;= m_mayor)&lt;/code&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    \par &lt;em&gt;Rep&lt;/em&gt; Modelo de la clase</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    \code</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    +------------+</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    | m_total    | &lt;== Total acumulado hasta el momento.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    +------------+</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    | m_cantidad | &lt;== Número de valores agregados al acumulador.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    +------------+</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    | m_menor    | &lt;== Valor menor agregado hasta el momento.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    +------------+</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    | m_mayor    | &lt;== Valor mayor agregado hasta el momento.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    +------------+</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    \endcode</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="Acumulador_8cpp.html#a1358a964d2ca280d53ea0fb98891187d">   28</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="Acumulador_8cpp.html#a1358a964d2ca280d53ea0fb98891187d">check_ok</a>( <span class="keyword">const</span> <a class="code" href="classAcumulador.html">Acumulador</a>&amp; A ) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> ( ! (&amp;A != 0) ) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">/// - Invariante: El objeto no puede estar almacenado en una posición nula.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span>    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> ( ! (A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> &lt;= A.<a class="code" href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">m_mayor</a>) ) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">/// - Invariante: El valor menor debe ser inferior al valor mayor.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span>    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> ( ! (A.<a class="code" href="classAcumulador.html#aeed76f5aa290bd5916264d4b43a103fd">m_cantidad</a> &gt;= 0) ) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">/// - Invariante: La cantidad de valores acumulados debe ser \c 0 o mayor.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span>    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> ( (A.<a class="code" href="classAcumulador.html#aeed76f5aa290bd5916264d4b43a103fd">m_cantidad</a> == 0) &amp;&amp; ( (A.<a class="code" href="classAcumulador.html#a2f350f6df5dbbb0065d71935e748be43">m_total</a> !=0) || (A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> != 0) || (A.<a class="code" href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">m_mayor</a> != 0) ) ) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">/// - Invariante: Cantidad nula de valores acumulados con otros campos no nulos.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span>    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> ( (A.<a class="code" href="classAcumulador.html#aeed76f5aa290bd5916264d4b43a103fd">m_cantidad</a> == 1) &amp;&amp; ( (A.<a class="code" href="classAcumulador.html#a2f350f6df5dbbb0065d71935e748be43">m_total</a> != A.<a class="code" href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">m_mayor</a>) || (A.<a class="code" href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">m_menor</a> != A.<a class="code" href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">m_mayor</a>) ) ) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">/// - Invariante: Con un solo valor en el acumlador todos los campos deben tener el mismo valor.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span>    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// check_ok()</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// EOF: Acumulador.cpp</span></div>
+<div class="ttc" id="Acumulador_8h_html"><div class="ttname"><a href="Acumulador_8h.html">Acumulador.h</a></div></div>
+<div class="ttc" id="Acumulador_8cpp_html_a1358a964d2ca280d53ea0fb98891187d"><div class="ttname"><a href="Acumulador_8cpp.html#a1358a964d2ca280d53ea0fb98891187d">check_ok</a></div><div class="ttdeci">bool check_ok(const Acumulador &amp;A)</div><div class="ttdoc">Verifica la invariante de la clase Acumulador. </div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8cpp_source.html#l00028">Acumulador.cpp:28</a></div></div>
+<div class="ttc" id="classAcumulador_html"><div class="ttname"><a href="classAcumulador.html">Acumulador</a></div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00004">Acumulador.h:4</a></div></div>
+<div class="ttc" id="classAcumulador_html_aeed76f5aa290bd5916264d4b43a103fd"><div class="ttname"><a href="classAcumulador.html#aeed76f5aa290bd5916264d4b43a103fd">Acumulador::m_cantidad</a></div><div class="ttdeci">long m_cantidad</div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00007">Acumulador.h:7</a></div></div>
+<div class="ttc" id="classAcumulador_html_a2f350f6df5dbbb0065d71935e748be43"><div class="ttname"><a href="classAcumulador.html#a2f350f6df5dbbb0065d71935e748be43">Acumulador::m_total</a></div><div class="ttdeci">long m_total</div><div class="ttdoc">Total acumulado hasta el momento. </div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00006">Acumulador.h:6</a></div></div>
+<div class="ttc" id="classAcumulador_html_a6cd980c040f653f270c33ceb303f2f0f"><div class="ttname"><a href="classAcumulador.html#a6cd980c040f653f270c33ceb303f2f0f">Acumulador::m_menor</a></div><div class="ttdeci">long m_menor</div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00008">Acumulador.h:8</a></div></div>
+<div class="ttc" id="classAcumulador_html_ac01b16217a5c626632682241c09c432f"><div class="ttname"><a href="classAcumulador.html#ac01b16217a5c626632682241c09c432f">Acumulador::m_mayor</a></div><div class="ttdeci">long m_mayor</div><div class="ttdef"><b>Definition:</b> <a href="Acumulador_8h_source.html#l00009">Acumulador.h:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 18 de Agosto de 2014 12:29:35 para 952809 Tarea Programada #1 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>
