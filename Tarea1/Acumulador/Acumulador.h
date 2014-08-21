@@ -1,5 +1,5 @@
 #ifndef Acumulador_h
-#define Acumulador_h ///< Evita la inclusi—n multiple
+#define Acumulador_h ///< Evita la inclusión multiple
 
 /** Contiene la suma de números quitando al más grande y al más pequeño.
  
@@ -27,20 +27,20 @@ class Acumulador{
     ~Acumulador() {}
     
     /** Constructor de copia.
-     \dontinclude test_Acumulador.cpp
-     \skipline    test::copie_igual()
-     \until       }}
-     \see         test_Acumulador::test_copie_igual()
+        \dontinclude test_Acumulador.cpp
+        \skipline    test::copie_igual()
+        \until       }}
+        \see         test_Acumulador::test_copie_igual()
      */
     Acumulador(const Acumulador&o) {
         *this=o;
     }
     
     /** Copiador.
-     \dontinclude test_Acumulador.cpp
-     \skipline    test::copie()
-     \until       }}
-     \see         test_Acumulador::test_copie()
+        \dontinclude test_Acumulador.cpp
+        \skipline    test::copie()
+        \until       }}
+        \see         test_Acumulador::test_copie()
      */
     const Acumulador& operator=(const Acumulador&o) {
         m_total     = o.m_total;
@@ -51,10 +51,10 @@ class Acumulador{
     }
     
     /** Inicializa en cero el acumulador.
-     \dontinclude test_Acumulador.cpp
-     \skipline    test::borre()
-     \until       }}
-     \see         test_Acumulador::test_borre()
+        \dontinclude test_Acumulador.cpp
+        \skipline    test::borre()
+        \until       }}
+        \see         test_Acumulador::test_borre()
      */
     void borre(){
         m_total = m_cantidad = m_menor = m_mayor = 0;
