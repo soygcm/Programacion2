@@ -28,7 +28,7 @@
 		C0A6572819A588B100654F24 /* Acumulador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acumulador.h; sourceTree = "<group>"; };
 		C0A6572919A588B100654F24 /* BUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUnit.h; sourceTree = "<group>"; };
 		C0A6572A19A588B100654F24 /* test_Acumulador.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_Acumulador.cpp; sourceTree = "<group>"; };
-		C0A6572D19A588F700654F24 /* AcumuladorProgra2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AcumuladorProgra2; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A6572D19A588F700654F24 /* AcumuladorProgra2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = AcumuladorProgra2; path = "/Users/gabriel/Proyectos/UCR/IV Semestre/Progra2/Programacion2/Tarea1/B31520/build/Debug/AcumuladorProgra2"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,6 @@
 				C0A6572819A588B100654F24 /* Acumulador.h */,
 				C0A6572919A588B100654F24 /* BUnit.h */,
 				C0A6572A19A588B100654F24 /* test_Acumulador.cpp */,
-				C0A6572D19A588F700654F24 /* AcumuladorProgra2 */,
 			);
 			sourceTree = "<group>";
 		};
