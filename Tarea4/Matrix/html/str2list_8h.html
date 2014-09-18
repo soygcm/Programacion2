@@ -1,0 +1,1074 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Uso de Mx::Matrix:: Referencia del Archivo str2list.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Uso de Mx::Matrix:
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">'defines'</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo str2list.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Funciones para crear listas y matrices a partir de hileras.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;list&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+</div>
+<p><a href="str2list_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstr2list__int__wrap.html">str2list_int_wrap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empaque <code><a class="el" href="structstr2list__int__wrap.html#a3281e0c095137d688448ae34d82f97c3" title="Retorna atoi(str). ">ATON()</a></code> alrededor de la función <code>atoi()</code>.  <a href="structstr2list__int__wrap.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstr2list__long__wrap.html">str2list_long_wrap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empaque <code><a class="el" href="structstr2list__long__wrap.html#a1e6c6e64c1336f0a84f76b6df6828482" title="Retorna atol(str). ">ATON()</a></code> alrededor de la función <code>atol()</code>.  <a href="structstr2list__long__wrap.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstr2list__double__wrap.html">str2list_double_wrap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empaque <code><a class="el" href="structstr2list__double__wrap.html#a6ff3d0541d9fda7114d33fa84947d5ac" title="Retorna atof(str). ">ATON()</a></code> alrededor de la función <code>atof()</code>.  <a href="structstr2list__double__wrap.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr class="memitem:a1a7d624525ddeb11b79ac6d6eca0d832"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a1a7d624525ddeb11b79ac6d6eca0d832">str2list_h</a></td></tr>
+<tr class="memdesc:a1a7d624525ddeb11b79ac6d6eca0d832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evita la inclusión múltiple.  <a href="#a1a7d624525ddeb11b79ac6d6eca0d832">Más...</a><br /></td></tr>
+<tr class="separator:a1a7d624525ddeb11b79ac6d6eca0d832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a3f7415563d6a569c65b5559ab9f03fd2"><td class="memTemplParams" colspan="2">template&lt;class CHAR &gt; </td></tr>
+<tr class="memitem:a3f7415563d6a569c65b5559ab9f03fd2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a> (CHAR ch)</td></tr>
+<tr class="memdesc:a3f7415563d6a569c65b5559ab9f03fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna <code>true</code> para todos los caracters considerados como espacios en blanco por <code><a class="el" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41" title="Almacena en &quot;L<>&quot; la lista de hileras construida en base a &quot;str&quot;. ">str2list()</a></code>.  <a href="#a3f7415563d6a569c65b5559ab9f03fd2">Más...</a><br /></td></tr>
+<tr class="separator:a3f7415563d6a569c65b5559ab9f03fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07609c59f022b25494af9d81c0604a41"><td class="memTemplParams" colspan="2">template&lt;class STRING &gt; </td></tr>
+<tr class="memitem:a07609c59f022b25494af9d81c0604a41"><td class="memTemplItemLeft" align="right" valign="top">const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a> (std::list&lt; STRING &gt; &amp;L, const char *str)</td></tr>
+<tr class="memdesc:a07609c59f022b25494af9d81c0604a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena en <code>"L&lt;&gt;"</code> la lista de hileras construida en base a <code>"str"</code>.  <a href="#a07609c59f022b25494af9d81c0604a41">Más...</a><br /></td></tr>
+<tr class="separator:a07609c59f022b25494af9d81c0604a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae48bde7da4703d8af2ebe55ad0ebbfc2"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str2list_8h.html#ae48bde7da4703d8af2ebe55ad0ebbfc2">str2list</a> (const char *str)</td></tr>
+<tr class="memdesc:ae48bde7da4703d8af2ebe55ad0ebbfc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usa <code>str2list(L,str)</code> para retornar la lista de valores de <code>"str"</code>.  <a href="#ae48bde7da4703d8af2ebe55ad0ebbfc2">Más...</a><br /></td></tr>
+<tr class="separator:ae48bde7da4703d8af2ebe55ad0ebbfc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ff09e0fc562e2ab03b72258a216796"><td class="memTemplParams" colspan="2">template&lt;class N , class ATON_wrap &gt; </td></tr>
+<tr class="memitem:ad8ff09e0fc562e2ab03b72258a216796"><td class="memTemplItemLeft" align="right" valign="top">std::list&lt; N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="str2list_8h.html#ad8ff09e0fc562e2ab03b72258a216796">str2list_wrap</a> (const char *str)</td></tr>
+<tr class="memdesc:ad8ff09e0fc562e2ab03b72258a216796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la lista de valores construida en base a <code>"str"</code>.  <a href="#ad8ff09e0fc562e2ab03b72258a216796">Más...</a><br /></td></tr>
+<tr class="separator:ad8ff09e0fc562e2ab03b72258a216796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148687bf365cef4ae958b0a9437c52da"><td class="memItemLeft" align="right" valign="top">std::list&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a> (const char *str)</td></tr>
+<tr class="memdesc:a148687bf365cef4ae958b0a9437c52da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sinónimo de <code><a class="el" href="str2list_8h.html#ab0e3f502b625fa8ff7307bb0caf8f5b1" title="Retorna la lista de enteros (int) construida en base a &quot;str&quot;. ">makeList_int()</a></code>.  <a href="#a148687bf365cef4ae958b0a9437c52da">Más...</a><br /></td></tr>
+<tr class="separator:a148687bf365cef4ae958b0a9437c52da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e3f502b625fa8ff7307bb0caf8f5b1"><td class="memItemLeft" align="right" valign="top">std::list&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str2list_8h.html#ab0e3f502b625fa8ff7307bb0caf8f5b1">makeList_int</a> (const char *str)</td></tr>
+<tr class="memdesc:ab0e3f502b625fa8ff7307bb0caf8f5b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la lista de enteros <code></code>(int) construida en base a <code>"str"</code>.  <a href="#ab0e3f502b625fa8ff7307bb0caf8f5b1">Más...</a><br /></td></tr>
+<tr class="separator:ab0e3f502b625fa8ff7307bb0caf8f5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c17a7ff2f6b3589b2980234a51150a1"><td class="memItemLeft" align="right" valign="top">std::list&lt; long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a8c17a7ff2f6b3589b2980234a51150a1">longlist</a> (const char *str)</td></tr>
+<tr class="memdesc:a8c17a7ff2f6b3589b2980234a51150a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sinónimo de <code><a class="el" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c" title="Retorna la lista de enteros (long) construida en base a &quot;str&quot;. ">makeList_long()</a></code>.  <a href="#a8c17a7ff2f6b3589b2980234a51150a1">Más...</a><br /></td></tr>
+<tr class="separator:a8c17a7ff2f6b3589b2980234a51150a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70bf91fefd2cd0f48bd1cb5ff5095c8c"><td class="memItemLeft" align="right" valign="top">std::list&lt; long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a> (const char *str)</td></tr>
+<tr class="memdesc:a70bf91fefd2cd0f48bd1cb5ff5095c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la lista de enteros <code></code>(long) construida en base a <code>"str"</code>.  <a href="#a70bf91fefd2cd0f48bd1cb5ff5095c8c">Más...</a><br /></td></tr>
+<tr class="separator:a70bf91fefd2cd0f48bd1cb5ff5095c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff44fdebf9cad34f61637ede19e6878"><td class="memItemLeft" align="right" valign="top">std::list&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a> (const char *str)</td></tr>
+<tr class="memdesc:aaff44fdebf9cad34f61637ede19e6878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la lista de flotantes construida en base a <code>"str"</code>.  <a href="#aaff44fdebf9cad34f61637ede19e6878">Más...</a><br /></td></tr>
+<tr class="separator:aaff44fdebf9cad34f61637ede19e6878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb76a0b707ac4fe94d48dd25e97195f"><td class="memItemLeft" align="right" valign="top">std::list&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a7bb76a0b707ac4fe94d48dd25e97195f">charlist</a> (const char *str)</td></tr>
+<tr class="memdesc:a7bb76a0b707ac4fe94d48dd25e97195f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sinónimo de <code><a class="el" href="str2list_8h.html#a2cdec5d1c7de2c69841fd3511fa01d8d" title="Retorna la lista de caracteres (char) construida en base a &quot;str&quot;. ">makeList_char()</a></code>.  <a href="#a7bb76a0b707ac4fe94d48dd25e97195f">Más...</a><br /></td></tr>
+<tr class="separator:a7bb76a0b707ac4fe94d48dd25e97195f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cdec5d1c7de2c69841fd3511fa01d8d"><td class="memItemLeft" align="right" valign="top">std::list&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a2cdec5d1c7de2c69841fd3511fa01d8d">makeList_char</a> (const char *str)</td></tr>
+<tr class="memdesc:a2cdec5d1c7de2c69841fd3511fa01d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la lista de caracteres <code></code>(char) construida en base a <code>"str"</code>.  <a href="#a2cdec5d1c7de2c69841fd3511fa01d8d">Más...</a><br /></td></tr>
+<tr class="separator:a2cdec5d1c7de2c69841fd3511fa01d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17affa87a54d226b882244c111a9e0b"><td class="memTemplParams" colspan="2">template&lt;class STRING &gt; </td></tr>
+<tr class="memitem:ad17affa87a54d226b882244c111a9e0b"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b">str2matrix</a> (std::list&lt; std::list&lt; STRING &gt; &gt; &amp;M, const char *str)</td></tr>
+<tr class="memdesc:ad17affa87a54d226b882244c111a9e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena en <code>"M&lt;&lt;&gt;&gt;"</code> la matriz de hileras construida en base a <code>"str"</code>.  <a href="#ad17affa87a54d226b882244c111a9e0b">Más...</a><br /></td></tr>
+<tr class="separator:ad17affa87a54d226b882244c111a9e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdae1537745ef1f930007376847c4b8e"><td class="memTemplParams" colspan="2">template&lt;class N , class ATON_wrap , unsigned Nrows, unsigned Ncols&gt; </td></tr>
+<tr class="memitem:afdae1537745ef1f930007376847c4b8e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="str2list_8h.html#afdae1537745ef1f930007376847c4b8e">matrix2list_wrap</a> (N MATRIX[Nrows][Ncols], const char *str)</td></tr>
+<tr class="memdesc:afdae1537745ef1f930007376847c4b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena en <code>MATRIX</code>[][] la matriz construida en base a <code>"str"</code>.  <a href="#afdae1537745ef1f930007376847c4b8e">Más...</a><br /></td></tr>
+<tr class="separator:afdae1537745ef1f930007376847c4b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21836cdf8d716c20992596581b8ce19e"><td class="memTemplParams" colspan="2">template&lt;unsigned Nrows, unsigned Ncols&gt; </td></tr>
+<tr class="memitem:a21836cdf8d716c20992596581b8ce19e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a21836cdf8d716c20992596581b8ce19e">intmatrix</a> (int M[Nrows][Ncols], const char *str)</td></tr>
+<tr class="memdesc:a21836cdf8d716c20992596581b8ce19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena en <code>M</code>[][] la matriz de enteros <code></code>(int) construida en base a <code>"str"</code>.  <a href="#a21836cdf8d716c20992596581b8ce19e">Más...</a><br /></td></tr>
+<tr class="separator:a21836cdf8d716c20992596581b8ce19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a562166144c912da4f175f974e71392"><td class="memTemplParams" colspan="2">template&lt;unsigned Nrows, unsigned Ncols&gt; </td></tr>
+<tr class="memitem:a4a562166144c912da4f175f974e71392"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a4a562166144c912da4f175f974e71392">longmatrix</a> (long M[Nrows][Ncols], const char *str)</td></tr>
+<tr class="memdesc:a4a562166144c912da4f175f974e71392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena en <code>M</code>[][] la matriz de enteros <code></code>(long) construida en base a <code>"str"</code>.  <a href="#a4a562166144c912da4f175f974e71392">Más...</a><br /></td></tr>
+<tr class="separator:a4a562166144c912da4f175f974e71392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54335be15f9441936e23247770786be2"><td class="memTemplParams" colspan="2">template&lt;unsigned Nrows, unsigned Ncols&gt; </td></tr>
+<tr class="memitem:a54335be15f9441936e23247770786be2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a54335be15f9441936e23247770786be2">doublematrix</a> (double M[Nrows][Ncols], const char *str)</td></tr>
+<tr class="memdesc:a54335be15f9441936e23247770786be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena en <code>M</code>[][] la matriz de flotantes construida en base a <code>"str"</code>.  <a href="#a54335be15f9441936e23247770786be2">Más...</a><br /></td></tr>
+<tr class="separator:a54335be15f9441936e23247770786be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb3d586fc0367efcce7e1afcc4bf261"><td class="memTemplParams" colspan="2">template&lt;unsigned Nrows, unsigned Ncols&gt; </td></tr>
+<tr class="memitem:a4eb3d586fc0367efcce7e1afcc4bf261"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="str2list_8h.html#a4eb3d586fc0367efcce7e1afcc4bf261">charmatrix</a> (char M[Nrows][Ncols], const char *str)</td></tr>
+<tr class="memdesc:a4eb3d586fc0367efcce7e1afcc4bf261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena en <code>M</code>[][] la matriz de caracteres construida en base a <code>"str"</code>.  <a href="#a4eb3d586fc0367efcce7e1afcc4bf261">Más...</a><br /></td></tr>
+<tr class="separator:a4eb3d586fc0367efcce7e1afcc4bf261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Funciones para crear listas y matrices a partir de hileras. </p>
+<dl class="section author"><dt>Autor</dt><dd>Adolfo Di Mare <a href="#" onclick="location.href='mai'+'lto:'+'ado'+'lf'+'o@d'+'i-'+'mar'+'e.'+'com'; return false;">adolf<span style="display: none;">.nosp@m.</span>o@di<span style="display: none;">.nosp@m.</span>-mare<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2011 </dd></dl>
+
+<p>Definición en el archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a class="anchor" id="a1a7d624525ddeb11b79ac6d6eca0d832"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define str2list_h</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evita la inclusión múltiple. </p>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00011">11</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="a3f7415563d6a569c65b5559ab9f03fd2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CHAR &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool iswhitespace_str2list </td>
+          <td>(</td>
+          <td class="paramtype">CHAR&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna <code>true</code> para todos los caracters considerados como espacios en blanco por <code><a class="el" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41" title="Almacena en &quot;L<>&quot; la lista de hileras construida en base a &quot;str&quot;. ">str2list()</a></code>. </p>
+<ul>
+<li>{ <code> , () &lt;&gt; {} [] </code> } &amp;&amp; <code>isspace()</code>.</li>
+<li>El punto <code>char</code>('.') no es considerado espacio en blanco ( pues forma parte de un número flotante: <code>1.0e22</code> ).</li>
+<li><code> false == iswhitespace_str2list( '.' ) </code>.</li>
+</ul>
+ <div class="fragment"><div class="line">{{  <span class="comment">// test::iswhitespace()</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span> blank = <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(blank) );  <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;,&#39;</span>) );</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;.&#39;</span>) );  <a class="code" href="uUnit_8h.html#a483acfe652c95c01b1bfc273596adb4a">assertFalse</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;.&#39;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;\0&#39;</span>) ); <a class="code" href="uUnit_8h.html#a483acfe652c95c01b1bfc273596adb4a">assertFalse</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;\0&#39;</span>) );</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;(&#39;</span>) );    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;)&#39;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;[&#39;</span>) );    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;]&#39;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;{&#39;</span>) );    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;}&#39;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;&lt;&#39;</span>) );    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;&gt;&#39;</span>) );</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;\r&#39;</span>) );   <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;\n&#39;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;\f&#39;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;\t&#39;</span>) );   <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(<span class="charliteral">&#39;\v&#39;</span>) );</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::test_iswhitespace() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00030">30</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a07609c59f022b25494af9d81c0604a41"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class STRING &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* str2list </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; STRING &gt; &amp;&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Almacena en <code>"L&lt;&gt;"</code> la lista de hileras construida en base a <code>"str"</code>. </p>
+<ul>
+<li>En <code>"str"</code> están los valores que serán almacenados en <code>"L&lt;&gt;"</code> separados por varios delimitadores.</li>
+<li>Como delimitadores se usan los caracteres blancos y la coma.</li>
+<li>Como delimitadores se usan los caracteres <code>ispace()</code> y <code>'</code>,'.</li>
+<li>El punto <code>'</code>.' no se interpreta como delimitador.</li>
+<li>Los caracteres { <code> , () &lt;&gt; {} [] </code> } son interpretados como blancos y no verifica que estén balanceados o en parejas.</li>
+<li>Ignora el paréntesis del principio y del final de <code>"str"</code>.</li>
+<li>Si al principio encuentra el caracter <code>'</code>|' procesa la hilera hasta que encuentra el siguiente caracter <code>'</code>|'.</li>
+<li>No examina lo que está después de la barrita final <code>'</code>|'.</li>
+<li>Siempre modifica el valor de <code>"L&lt;&gt;"</code>.</li>
+<li>Retorna la última posición de <code>"str"</code> que fue examinada.</li>
+</ul>
+ <div class="fragment"><div class="line">{{  <span class="comment">// test::str2list::list()</span></div>
+<div class="line">    std::list&lt;std::string&gt; Li,Lj,Lk,Ll;</div>
+<div class="line">    <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( Li , <span class="stringliteral">&quot;( 1 22 333 4444 5555 )&quot;</span> );</div>
+<div class="line">    <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( Lj , <span class="stringliteral">&quot;&lt; 1,22,333,4444,5555 &gt; | del &quot;</span> );</div>
+<div class="line">    <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( Lk , <span class="stringliteral">&quot;{ 1 22 333 4444 5555 } | del &quot;</span> );</div>
+<div class="line">    <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( Ll , <span class="stringliteral">&quot;[ 1.22.333.4444.5555 ] | del &quot;</span> );    <span class="comment">// &#39;.&#39; NO &#39;.&#39;</span></div>
+<div class="line">    std::list&lt;std::string&gt; :: const_iterator itI,itJ,itK,itL;</div>
+<div class="line">    itI = Li.begin(); itJ = Lj.begin(); itK = Lk.begin(); itL = Ll.begin();</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itI == <span class="stringliteral">&quot;1&quot;</span>    ); <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itI++ == *itJ++ );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itI == <span class="stringliteral">&quot;22&quot;</span>   ); <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itI++ == *itJ++ );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itI == <span class="stringliteral">&quot;333&quot;</span>  ); <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itI++ == *itJ++ );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itI == <span class="stringliteral">&quot;4444&quot;</span> ); <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itI++ == *itJ++ );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itI == <span class="stringliteral">&quot;5555&quot;</span> ); <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itI++ == *itJ++ );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( 5 == Li.size() ); <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>(  5 == Lj.size()  );</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>(  Li == Lj &amp;&amp; Lj == Lk &amp;&amp; ((Lk != Ll)) ); <span class="comment">// &#39;.&#39; NO &#39;.&#39;</span></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *itL == <span class="stringliteral">&quot;1.22.333.4444.5555&quot;</span> );          <span class="comment">// &#39;.&#39; NO &#39;.&#39;</span></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( 1 == Ll.size() &amp;&amp; Ll.size() &lt; 2 );</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::str2list_list() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00062">62</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae48bde7da4703d8af2ebe55ad0ebbfc2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;std::string&gt; str2list </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Usa <code>str2list(L,str)</code> para retornar la lista de valores de <code>"str"</code>. </p>
+ <div class="fragment"><div class="line">{{  <span class="comment">// test::str2list::example()</span></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;&quot;</span>).empty() &amp;&amp; <span class="stringliteral">&quot;list&lt;&gt;.empty() !!!&quot;</span> );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;&quot;</span>)    == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;()&quot;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;()&quot;</span>)  == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;  |   | del &quot;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;{}&quot;</span>).size() == 0 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;[0]&quot;</span>) == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;| 0 |&quot;</span>) );</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;(0,1,,  ,,2)&quot;</span>)  == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;( 0 1 2 )&quot;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;( 1 2 3 4 5 )&quot;</span>) == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;| 1 2 3 4 5 |&quot;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;(,&#39;c&#39;,,&#39;j&#39;,)&quot;</span> ) == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( <span class="stringliteral">&quot;&lt; &#39;c&#39; &#39;j&#39; &gt;&quot;</span>) );</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot; |a| etc... &quot;</span>)  == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;( a )&quot;</span>) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot; |a| etc... &quot;</span>).size() == 1 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot; |a| etc... &quot;</span>)  == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(<span class="stringliteral">&quot;| a | #1&quot;</span>) );</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::str2list_example() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00104">104</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8ff09e0fc562e2ab03b72258a216796"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class N , class ATON_wrap &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;N&gt; str2list_wrap </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna la lista de valores construida en base a <code>"str"</code>. </p>
+<p>Usa <code><a class="el" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41" title="Almacena en &quot;L<>&quot; la lista de hileras construida en base a &quot;str&quot;. ">str2list()</a></code> junto con <code>ATON_wrap::ATON()</code>. </p><dl class="tparams"><dt>Parámetros del template</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>tipo de dato: { <code> int long double </code> } </td></tr>
+    <tr><td class="paramname">ATON_wrap</td><td>Empaque <code>ATON()</code> alrededor del convertidor: { <code> atoi() atol() atof() </code> }. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00117">117</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a148687bf365cef4ae958b0a9437c52da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;int&gt; intlist </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sinónimo de <code><a class="el" href="str2list_8h.html#ab0e3f502b625fa8ff7307bb0caf8f5b1" title="Retorna la lista de enteros (int) construida en base a &quot;str&quot;. ">makeList_int()</a></code>. </p>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00147">147</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0e3f502b625fa8ff7307bb0caf8f5b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;int&gt; makeList_int </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna la lista de enteros <code></code>(int) construida en base a <code>"str"</code>. </p>
+<p>Usa <code><a class="el" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41" title="Almacena en &quot;L<>&quot; la lista de hileras construida en base a &quot;str&quot;. ">str2list()</a></code> junto con <code>atoi()</code>.</p>
+ <div class="fragment"><div class="line">{{  <span class="comment">// test::intlist()</span></div>
+<div class="line">        std::list&lt;int&gt; Li, Lj;</div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;()&quot;</span> );      <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li.empty() );</div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot; (  ) &quot;</span> );  <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li.empty() );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;(1 2 3 4 5)&quot;</span> );</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> j=1; j&lt;=5; ++j ) {</div>
+<div class="line">            Lj.push_back( j );</div>
+<div class="line">        }</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;( ... )&quot;</span> ) == <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;( 0 )&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;( ... )&quot;</span> ).size() == 1 );</div>
+<div class="line"></div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;(0)&quot;</span> ) == <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;( - )&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;(0)&quot;</span> ) == <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;( + )&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;()&quot;</span> )  == <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;(  )&quot;</span> ) );</div>
+<div class="line"></div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;( 1 2 3 4 5 )&quot;</span> ) == <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;(1,2,3,4,5)&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;{ 1,2,3,4,5 }&quot;</span> ) == <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;[1 2 3 4 5]&quot;</span> ) );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;( 1,22,333,4444,5555 )&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>(  <span class="stringliteral">&quot;(1,22,333,4444,5555)&quot;</span> );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;(1 , - + 22,  -333, - 4444, --5555)&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;(1,  0,0,22,  -333, 0,4444,      0)&quot;</span> );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;(  1,  22,  333,  4444,  5555 )&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;| [1] [22] [333] [4444] [5555] |... ignore&quot;</span>);</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;(  1,  22,  333,  4444,  5555, 0,   0 )&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="stringliteral">&quot;( [1] [22] [333] [4444] [5555] )etc ...&quot;</span>);</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::test_intlist() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00159">159</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c17a7ff2f6b3589b2980234a51150a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;long&gt; longlist </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sinónimo de <code><a class="el" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c" title="Retorna la lista de enteros (long) construida en base a &quot;str&quot;. ">makeList_long()</a></code>. </p>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00164">164</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a70bf91fefd2cd0f48bd1cb5ff5095c8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;long&gt; makeList_long </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna la lista de enteros <code></code>(long) construida en base a <code>"str"</code>. </p>
+<p>Usa <code><a class="el" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41" title="Almacena en &quot;L<>&quot; la lista de hileras construida en base a &quot;str&quot;. ">str2list()</a></code> junto con <code>atol()</code>.</p>
+ <div class="fragment"><div class="line">    {{  <span class="comment">// test::makeList_long()</span></div>
+<div class="line">        std::list&lt;long&gt; Li, Lj;</div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;()&quot;</span> );      <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li.empty() );</div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot; (  ) &quot;</span> );  <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li.empty() );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;(1 2 3 4 5)&quot;</span> );</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> j=1; j&lt;=5; ++j ) {</div>
+<div class="line">            Lj.push_back( j );</div>
+<div class="line">        }</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;( ... )&quot;</span> ) == <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;( 0 )&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;( ... )&quot;</span> ).size() == 1 );</div>
+<div class="line"></div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;(0)&quot;</span> ) == <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;( - )&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;(0)&quot;</span> ) == <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;( + )&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;()&quot;</span> )  == <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;(  )&quot;</span> ) );</div>
+<div class="line"></div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;( 1 2 3 4 5 )&quot;</span> ) == <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;(1,2,3,4,5)&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;{ 1,2,3,4,5 }&quot;</span> ) == <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;[1 2 3 4 5]&quot;</span> ) );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;( 1,22,333,4444,5555 )&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>(  <span class="stringliteral">&quot;(1,22,333,4444,5555)&quot;</span> );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;(1 , - + 22,  -333, - 4444, --5555)&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;(1,  0,0,22,  -333, 0,4444,      0)&quot;</span> );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;(  1,  22,  333,  4444,  5555 )&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;| [1] [22] [333] [4444] [5555] |... ignore&quot;</span>);</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;(  1,  22,  333,  4444,  5555, 0,   0 )&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="stringliteral">&quot;( [1] [22] [333] [4444] [5555] )etc ...&quot;</span>);</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line">    }}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::test_makeList_long() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00176">176</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaff44fdebf9cad34f61637ede19e6878"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;double&gt; doublelist </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna la lista de flotantes construida en base a <code>"str"</code>. </p>
+<p>Usa <code><a class="el" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41" title="Almacena en &quot;L<>&quot; la lista de hileras construida en base a &quot;str&quot;. ">str2list()</a></code> junto con <code>atof()</code>.</p>
+ <div class="fragment"><div class="line">{{  <span class="comment">// test::doublelist()</span></div>
+<div class="line">        std::list&lt;double&gt; Li, Lj;</div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;()&quot;</span> );      <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li.empty() );</div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot; (  ) &quot;</span> );  <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li.empty() );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;(1. 2. 3. 4. 5.)&quot;</span> );</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">double</span> j=1; j&lt;=5; ++j ) {</div>
+<div class="line">            Lj.push_back( j );</div>
+<div class="line">        }</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;( ... )&quot;</span> ) == <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;( 0 )&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;( ... )&quot;</span> ).size() == 1 );</div>
+<div class="line"></div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;(0)&quot;</span> ) == <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;( - )&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;(0)&quot;</span> ) == <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;( + )&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;()&quot;</span> )  == <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;(  )&quot;</span> ) );</div>
+<div class="line"></div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;( 1. 2. 3. 4. 5. )&quot;</span> ) == <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;(1,2,3,4,5)&quot;</span> ) );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;{ 1.,2.,3.,4.,5. }&quot;</span> ) == <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;[1 2 3 4 5]&quot;</span> ) );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;( 1,22,333,4444,5555 )&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>(  <span class="stringliteral">&quot;(1,22,333,4444,5555)&quot;</span> );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;(1 , - + 22,  -333, - 4444, --5555)&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;(1,  0,0,22,  -333, 0,4444,      0)&quot;</span> );</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;(  1,  22,  333,  4444,  5555 )&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;| [1] [22] [333] [4444] [5555] |... ignore&quot;</span>);</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line"></div>
+<div class="line">        Li = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;(  1,  22,  333,  4444,  5555, 0,   0 )&quot;</span> );</div>
+<div class="line">        Lj = <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="stringliteral">&quot;( [1] [22] [333] [4444] [5555] )etc ...&quot;</span>);</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Li == Lj );</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::test_doublelist() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00189">189</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bb76a0b707ac4fe94d48dd25e97195f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;char&gt; charlist </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sinónimo de <code><a class="el" href="str2list_8h.html#a2cdec5d1c7de2c69841fd3511fa01d8d" title="Retorna la lista de caracteres (char) construida en base a &quot;str&quot;. ">makeList_char()</a></code>. </p>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00193">193</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2cdec5d1c7de2c69841fd3511fa01d8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;char&gt; makeList_char </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna la lista de caracteres <code></code>(char) construida en base a <code>"str"</code>. </p>
+<p>Usa <code><a class="el" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41" title="Almacena en &quot;L<>&quot; la lista de hileras construida en base a &quot;str&quot;. ">str2list()</a></code> pero se brinca las comillas simples <code></code>(').</p><ul>
+<li>No necesita que cada letra venga entre comillas simples.</li>
+<li>Si alguno de los valores tiene más de un caracter, usa el primero e ignora los demás.</li>
+</ul>
+ <div class="fragment"><div class="line">{{ <span class="comment">// test::charlist()</span></div>
+<div class="line">    std::list&lt;char&gt; Lcon,Lsin;</div>
+<div class="line">    Lcon = <a class="code" href="str2list_8h.html#a7bb76a0b707ac4fe94d48dd25e97195f">charlist</a>( <span class="stringliteral">&quot; { &#39;a&#39; &#39; &#39; &#39;c&#39; &#39;4&#39; &#39;\&#39;&#39; &#39;.&#39; } &quot;</span> );</div>
+<div class="line">    Lsin = <a class="code" href="str2list_8h.html#a7bb76a0b707ac4fe94d48dd25e97195f">charlist</a>( <span class="stringliteral">&quot; (  a  &#39; &#39;  c   4  &#39;&#39;&#39;   .  ) &quot;</span> );</div>
+<div class="line">    <span class="comment">//                    1   2   3   4   5    6</span></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Lcon == Lsin );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Lcon.size() == 6 );</div>
+<div class="line"></div>
+<div class="line">    std::list&lt;char&gt;::const_iterator it;</div>
+<div class="line">    it = Lcon.begin();</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i=0; i&lt;Lcon.size()-1; ++i ) { ++it; }</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *it == <span class="charliteral">&#39;.&#39;</span> );</div>
+<div class="line">    --it;</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( *it == <span class="charliteral">&#39;\&#39;&#39;</span> );</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::test_makeList_char() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00227">227</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad17affa87a54d226b882244c111a9e0b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class STRING &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t str2matrix </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; std::list&lt; STRING &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Almacena en <code>"M&lt;&lt;&gt;&gt;"</code> la matriz de hileras construida en base a <code>"str"</code>. </p>
+<ul>
+<li>Cada renglón de la matriz debe estar entre caracteres <code>'</code>|'.</li>
+<li>Para obtener cada renglón se usa <code><a class="el" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41" title="Almacena en &quot;L<>&quot; la lista de hileras construida en base a &quot;str&quot;. ">str2list()</a></code>.</li>
+<li>La matriz se retorna como una lista de listas de hileras.</li>
+<li>Ignora sublistas nulas pues <code>"M&lt;&lt;&gt;&gt;"</code> nunca contiene sublistas nulas.</li>
+<li>Siempre modifica el valor de <code>"M&lt;&lt;&gt;&gt;"</code>.</li>
+<li>Retorna la longitud de la sublista más grande de <code>"M&lt;&lt;&gt;&gt;"</code> (para calcular cuántas columnas tiene la matriz).</li>
+</ul>
+ <div class="fragment"><div class="line">{{  <span class="comment">// test::str2matrix()</span></div>
+<div class="line">    std::list&lt; std::list&lt;std::string&gt; &gt; M;</div>
+<div class="line">    <span class="keywordtype">size_t</span> sz = <a class="code" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b">str2matrix</a>( M , <span class="stringliteral">&quot;  | 99             |  &quot;</span>    <span class="comment">// L0</span></div>
+<div class="line">                                <span class="stringliteral">&quot;  |  .  2  ,  ,  : |  &quot;</span>    <span class="comment">// L1</span></div>
+<div class="line">                                <span class="stringliteral">&quot;  |  .  .  3  ,  . |  &quot;</span>    <span class="comment">// L2</span></div>
+<div class="line">                                <span class="stringliteral">&quot;  |  a  b  c  4  . |  &quot;</span> ); <span class="comment">// L3</span></div>
+<div class="line">    std::list&lt; std::list&lt;std::string&gt; &gt; :: const_iterator itL = M.begin();</div>
+<div class="line">    <span class="keyword">const</span> std::list&lt;std::string&gt; &amp; L0 = *itL; itL++;</div>
+<div class="line">    <span class="keyword">const</span> std::list&lt;std::string&gt; &amp; L1 = *itL; itL++;</div>
+<div class="line">    <span class="keyword">const</span> std::list&lt;std::string&gt; &amp; L2 = *itL; itL++;</div>
+<div class="line">    <span class="keyword">const</span> std::list&lt;std::string&gt; &amp; L3 = *itL; itL++;</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( itL==M.end() &amp;&amp; M.size() == 4 &amp;&amp; sz == L3.size() );</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L0 == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( <span class="stringliteral">&quot;  ( 99             )  &quot;</span> ) ); <span class="comment">// L0</span></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L1 == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( <span class="stringliteral">&quot;  [  .  2  ,  ,  : ]  &quot;</span> ) ); <span class="comment">// L1</span></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L2 == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( <span class="stringliteral">&quot;  &lt;  .  .  3  ,  . &gt;  &quot;</span> ) ); <span class="comment">// L2</span></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L3 == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( <span class="stringliteral">&quot;  {  a  b  c  4  . }  &quot;</span> ) ); <span class="comment">// L3</span></div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L0.size() == 1 &amp;&amp; L0.back() == <span class="stringliteral">&quot;99&quot;</span> );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L1.size() == 3 &amp;&amp; L1.back() ==  <span class="stringliteral">&quot;:&quot;</span> );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L2.size() == 4 &amp;&amp; L2.front() == <span class="stringliteral">&quot;.&quot;</span> );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L3.size() == 5 &amp;&amp; L3.front() == <span class="stringliteral">&quot;a&quot;</span> );</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L0 == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( <span class="stringliteral">&quot;(99)&quot;</span>         ) ); <span class="comment">// L0</span></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L1 == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( <span class="stringliteral">&quot;(. 2 :)&quot;</span>      ) ); <span class="comment">// L1</span></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L2 == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( <span class="stringliteral">&quot;(. . 3 .)&quot;</span>    ) ); <span class="comment">// L2</span></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( L3 == <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( <span class="stringliteral">&quot;( a b c 4 .)&quot;</span> ) ); <span class="comment">// L3</span></div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::test_str2matrix() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00246">246</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afdae1537745ef1f930007376847c4b8e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class N , class ATON_wrap , unsigned Nrows, unsigned Ncols&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void matrix2list_wrap </td>
+          <td>(</td>
+          <td class="paramtype">N&#160;</td>
+          <td class="paramname"><em>MATRIX</em>[Nrows][Ncols], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Almacena en <code>MATRIX</code>[][] la matriz construida en base a <code>"str"</code>. </p>
+<p>Usa <code><a class="el" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b" title="Almacena en &quot;M<<>>&quot; la matriz de hileras construida en base a &quot;str&quot;. ">str2matrix()</a></code> junto con <code>ATON_wrap::ATON()</code>. </p><dl class="tparams"><dt>Parámetros del template</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>tipo de dato: { <code> int long double </code> } </td></tr>
+    <tr><td class="paramname">ATON_wrap</td><td>Empaque <code>ATON()</code> alrededor del convertidor: { <code> atoi() atol() atof() </code> } </td></tr>
+    <tr><td class="paramname">Nrows</td><td>Cantidad de filas de <code>MATRIX</code>[][]. </td></tr>
+    <tr><td class="paramname">Ncols</td><td>Cantidad de columnas de <code>MATRIX</code>[][]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00276">276</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21836cdf8d716c20992596581b8ce19e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned Nrows, unsigned Ncols&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void intmatrix </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>M</em>[Nrows][Ncols], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena en <code>M</code>[][] la matriz de enteros <code></code>(int) construida en base a <code>"str"</code>. </p>
+<p>Usa <code><a class="el" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b" title="Almacena en &quot;M<<>>&quot; la matriz de hileras construida en base a &quot;str&quot;. ">str2matrix()</a></code> junto con <code>atoi()</code>.</p>
+ <div class="fragment"><div class="line">{{  <span class="comment">// test::intmatrix()</span></div>
+<div class="line">    <span class="keywordtype">int</span> M[4][5];       <span class="comment">//   [0][1][2][3][4]</span></div>
+<div class="line">    intmatrix&lt;4,5&gt;( M , <span class="stringliteral">&quot; |  1 //  3  4  5 | &quot;</span>   <span class="comment">// [0]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | ::  7  8  9 10 | &quot;</span>   <span class="comment">// [1]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 11 12 13 .. 15 | &quot;</span>   <span class="comment">// [2]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 16 17 // 19 20 | &quot;</span> );<span class="comment">// [3]</span></div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[0][0] == 1 );  <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[2][1] == 12 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[2][3] == 0 );  <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[1][0] ==  0 );</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordtype">int</span> k=1;</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">            <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[i][j]==k++ || M[i][j]==0 );</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::test_intmatrix() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00309">309</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a562166144c912da4f175f974e71392"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned Nrows, unsigned Ncols&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void longmatrix </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>M</em>[Nrows][Ncols], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena en <code>M</code>[][] la matriz de enteros <code></code>(long) construida en base a <code>"str"</code>. </p>
+<p>Usa <code><a class="el" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b" title="Almacena en &quot;M<<>>&quot; la matriz de hileras construida en base a &quot;str&quot;. ">str2matrix()</a></code> junto con <code>atol()</code>.  <div class="fragment"><div class="line">{{  <span class="comment">// test::longmatrix()</span></div>
+<div class="line">    <span class="keywordtype">long</span> M[4][5];       <span class="comment">//   [0][1][2][3][4]</span></div>
+<div class="line">    longmatrix&lt;4,5&gt;( M , <span class="stringliteral">&quot; |  1 //  3  4  5 | &quot;</span>   <span class="comment">// [0]</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | ::  7  8  9 10 | &quot;</span>   <span class="comment">// [1]</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | 11 12 13 .. 15 | &quot;</span>   <span class="comment">// [2]</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | 16 17 // 19 20 | &quot;</span> );<span class="comment">// [3]</span></div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[0][0] == 1 );  <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[2][1] == 12 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[0][1] == 0 );  <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[3][2] ==  0 );</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordtype">long</span> k=1;</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">            <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[i][j]==k++ || M[i][j]==0 );</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::test_longmatrix() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00321">321</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a54335be15f9441936e23247770786be2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned Nrows, unsigned Ncols&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doublematrix </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>M</em>[Nrows][Ncols], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena en <code>M</code>[][] la matriz de flotantes construida en base a <code>"str"</code>. </p>
+<p>Usa <code><a class="el" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b" title="Almacena en &quot;M<<>>&quot; la matriz de hileras construida en base a &quot;str&quot;. ">str2matrix()</a></code> junto con <code>atof()</code>.  <div class="fragment"><div class="line">{{  <span class="comment">// test::doublematrix()</span></div>
+<div class="line">    <span class="keywordtype">double</span> M[4][5];       <span class="comment">//   [0] [1] [2] [3] [4]</span></div>
+<div class="line">    doublematrix&lt;4,5&gt;( M , <span class="stringliteral">&quot; | 10. ///  30 40. 5.e1  | &quot;</span>   <span class="comment">// [0]</span></div>
+<div class="line">                           <span class="stringliteral">&quot; |   . 70.  80 90. 100.  | &quot;</span>   <span class="comment">// [1]</span></div>
+<div class="line">                           <span class="stringliteral">&quot; | 110 120 130 ..  150.  | &quot;</span>   <span class="comment">// [2]</span></div>
+<div class="line">                           <span class="stringliteral">&quot; | 160 170 /// 190 2.e2  | &quot;</span> );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[2][1] == 120.0 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[1][0] == 0.0 &amp;&amp; M[2][3] == 0.0 );</div>
+<div class="line">    <span class="keywordtype">double</span> k=10.0;</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">            <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( M[i][j]==k || M[i][j]==0 );</div>
+<div class="line">            k += 10.0;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::test_doublematrix() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00333">333</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4eb3d586fc0367efcce7e1afcc4bf261"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned Nrows, unsigned Ncols&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void charmatrix </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>M</em>[Nrows][Ncols], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena en <code>M</code>[][] la matriz de caracteres construida en base a <code>"str"</code>. </p>
+<p>Usa <code><a class="el" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b" title="Almacena en &quot;M<<>>&quot; la matriz de hileras construida en base a &quot;str&quot;. ">str2matrix()</a></code> pero se brinca las comillas simples <code></code>(').</p><ul>
+<li>No necesita que cada letra venga entre comillas simples.</li>
+<li>Si alguno de los valores tiene más de un caracter, usa el primero e ignora los demás.</li>
+</ul>
+ <div class="fragment"><div class="line">{{ <span class="comment">// test::charmatrix()</span></div>
+<div class="line">    <span class="keywordtype">char</span> A[5][3];</div>
+<div class="line">    charmatrix&lt;5,3&gt;( A , <span class="stringliteral">&quot; | 1 a V | &quot;</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | 2 b W | &quot;</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | 3 c X | &quot;</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | 4 d Y | &quot;</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | 5 e Z | &quot;</span> );</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordtype">char</span> D[5][3];</div>
+<div class="line">    charmatrix&lt;5,3&gt;( D , <span class="stringliteral">&quot; | 2 c Y | &quot;</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | 3 d Z | &quot;</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | 4 e V | &quot;</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | 5 a W | &quot;</span></div>
+<div class="line">                         <span class="stringliteral">&quot; | 1 b X | &quot;</span> );</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( A[j][0] == (j)+<span class="charliteral">&#39;1&#39;</span> );</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( A[j][1] == (j)+<span class="charliteral">&#39;a&#39;</span> );</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( A[j][2] == (j)+<span class="charliteral">&#39;V&#39;</span> );</div>
+<div class="line">    }</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>test_str2list::test_charmatrix() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="str2list_8h_source.html#l00350">350</a> del archivo <a class="el" href="str2list_8h_source.html">str2list.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Jueves, 18 de Septiembre de 2014 14:21:20 para Uso de Mx::Matrix: por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

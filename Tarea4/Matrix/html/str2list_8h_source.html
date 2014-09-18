@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Uso de Mx::Matrix:: Fichero Fuente str2list.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Uso de Mx::Matrix:
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">str2list.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="str2list_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// str2list.h (C) 2011 adolfo@di-mare.com</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/** \file  str2list.h</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    \brief Funciones para crear listas y matrices a partir de hileras.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    \author Adolfo Di Mare &lt;adolfo@di-mare.com&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    \date   2011</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef   str2list_h</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="str2list_8h.html#a1a7d624525ddeb11b79ac6d6eca0d832">   11</a></span>&#160;<span class="preprocessor">#define   str2list_h   </span><span class="comment">///&lt; Evita la inclusión múltiple</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span>    <span class="comment">// std::list&lt;&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span>  <span class="comment">// std::string</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span> <span class="comment">// atoi() atol() atof()</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/** Retorna \c true para todos los caracters considerados como</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    espacios en blanco por \c str2list().</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    - { &lt;code&gt; , () &lt;&gt; {} [] &lt;/code&gt; } &amp;&amp; \c isspace().</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    - El punto \c char(&#39;.&#39;) no es considerado espacio en blanco</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">      ( pues forma parte de un número flotante: \c 1.0e22 ).</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    - &lt;code&gt; false == iswhitespace_str2list( &#39;.&#39; ) &lt;/code&gt;.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    \skipline    test::iswhitespace()</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    \see         test_str2list::test_iswhitespace()</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> CHAR&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">   30</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>( CHAR ch ) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> ( ch==<span class="charliteral">&#39;,&#39;</span> || isspace(ch) ) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> ( ch==<span class="charliteral">&#39;(&#39;</span> || ch==<span class="charliteral">&#39;)&#39;</span> ) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> ( ch==<span class="charliteral">&#39;&lt;&#39;</span> || ch==<span class="charliteral">&#39;&gt;&#39;</span> ) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> ( ch==<span class="charliteral">&#39;{&#39;</span> || ch==<span class="charliteral">&#39;}&#39;</span> ) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> ( ch==<span class="charliteral">&#39;[&#39;</span> || ch==<span class="charliteral">&#39;]&#39;</span> ) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//  NOTA: implementado con plantillas para evitar usar el archivo str2list.cpp</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/** Almacena en \c &quot;L&lt;&gt;&quot; la lista de hileras construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">    - En \c &quot;str&quot; están los valores que serán almacenados en \c &quot;L&lt;&gt;&quot; separados</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">      por varios delimitadores.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    - Como delimitadores se usan los caracteres blancos y la coma.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    - Como delimitadores se usan los caracteres \c ispace() y \c &#39;,&#39;.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    - El punto \c &#39;.&#39; no se interpreta como delimitador.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">    - Los caracteres { &lt;code&gt; , () &lt;&gt; {} [] &lt;/code&gt; } son interpretados como</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">      blancos y no verifica que estén balanceados o en parejas.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    - Ignora el paréntesis del principio y del final de \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">    - Si al principio encuentra el caracter \c &#39;|&#39; procesa la hilera hasta que</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">      encuentra el siguiente caracter \c &#39;|&#39;.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">    - No examina lo que está después de la barrita final \c &#39;|&#39;.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">    - Siempre modifica el valor de \c &quot;L&lt;&gt;&quot;.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">    - Retorna la última posición de \c &quot;str&quot; que fue examinada.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">    \skipline    test::str2list::list()</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">    \see         test_str2list::str2list_list()</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> STRING&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">   62</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( std::list&lt;STRING&gt;&amp; L , <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    L.clear();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> ( str == 0) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (*str == 0) { <span class="keywordflow">return</span> str; }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">while</span> ( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(*str) ) { ++str; } <span class="comment">// skip leading blanks</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (*str==<span class="charliteral">&#39;|&#39;</span>) { ++str; } <span class="comment">// skip first &#39;|&#39;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::string val; <span class="comment">// next value to store into L</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> IN_WHITESPACE = <span class="keyword">false</span>; <span class="keyword">const</span> <span class="keywordtype">bool</span> IN_STRING = !IN_WHITESPACE;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> state = IN_WHITESPACE;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">while</span> ( (*str != 0) &amp;&amp; (*str != <span class="charliteral">&#39;|&#39;</span>) ) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> ( state == IN_WHITESPACE ) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">if</span> ( ! <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(*str) ) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                state = IN_STRING;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                val = *str;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">else</span> { <span class="comment">// assert( state == IN_STRING );</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a>(*str) ) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                L.push_back( val );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                val.clear();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                state = IN_WHITESPACE;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                val += *str;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        ++str;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> ( !val.empty() ) { L.push_back(val); }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">//  NOTA: implementado con plantillas para evitar usar el archivo str2list.cpp</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">/** Usa \c str2list(L,str) para retornar la lista de valores de \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">    \skipline    test::str2list::example()</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">    \see         test_str2list::str2list_example()</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="str2list_8h.html#ae48bde7da4703d8af2ebe55ad0ebbfc2">  104</a></span>&#160;<span class="keyword">inline</span> std::list&lt;std::string&gt; <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::list&lt;std::string&gt; L;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(L,str);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> L;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">/** Retorna la lista de valores construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">    Usa \c str2list() junto con \c ATON_wrap::ATON().</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">    \tparam N tipo de dato: { &lt;code&gt; int long double &lt;/code&gt; }</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">    \tparam ATON_wrap Empaque \c ATON() alrededor del convertidor:</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">                 { &lt;code&gt; atoi() atol() atof() &lt;/code&gt; }.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> N, <span class="keyword">class</span> ATON_wrap&gt;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="str2list_8h.html#ad8ff09e0fc562e2ab03b72258a216796">  117</a></span>&#160;std::list&lt;N&gt; <a class="code" href="str2list_8h.html#ad8ff09e0fc562e2ab03b72258a216796">str2list_wrap</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    std::list&lt;std::string&gt; L;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::list&lt;N&gt; RES;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(L,str);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::list&lt; std::string &gt;::const_iterator it;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">for</span> ( it= L.begin(); it!=L.end(); ++it ) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        RES.push_back( ATON_wrap::ATON(it-&gt;c_str()) );</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> RES;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">/// Empaque \c ATON() alrededor de la función \c atoi().</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="structstr2list__int__wrap.html">  130</a></span>&#160;<span class="comment"></span><span class="keyword">struct </span><a class="code" href="structstr2list__int__wrap.html">str2list_int_wrap</a> {<span class="comment"></span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">    /// Retorna \c atoi(str).</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="structstr2list__int__wrap.html#a3281e0c095137d688448ae34d82f97c3">  132</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="structstr2list__int__wrap.html#a3281e0c095137d688448ae34d82f97c3">ATON</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> * str ) { <span class="keywordflow">return</span> atoi(str); }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">/// Empaque \c ATON() alrededor de la función \c atol().</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="structstr2list__long__wrap.html">  136</a></span>&#160;<span class="comment"></span><span class="keyword">struct </span><a class="code" href="structstr2list__long__wrap.html">str2list_long_wrap</a> {<span class="comment"></span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">    /// Retorna \c atol(str).</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="structstr2list__long__wrap.html#a1e6c6e64c1336f0a84f76b6df6828482">  138</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <span class="keywordtype">long</span> <a class="code" href="structstr2list__long__wrap.html#a1e6c6e64c1336f0a84f76b6df6828482">ATON</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> * str ) { <span class="keywordflow">return</span> atol(str); }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">/// Empaque \c ATON() alrededor de la función \c atof().</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="structstr2list__double__wrap.html">  142</a></span>&#160;<span class="comment"></span><span class="keyword">struct </span><a class="code" href="structstr2list__double__wrap.html">str2list_double_wrap</a> {<span class="comment"></span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">    /// Retorna \c atof(str).</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="structstr2list__double__wrap.html#a6ff3d0541d9fda7114d33fa84947d5ac">  144</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="structstr2list__double__wrap.html#a6ff3d0541d9fda7114d33fa84947d5ac">ATON</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> * str ) { <span class="keywordflow">return</span> atof(str); }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;};</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">  147</a></span>&#160;<span class="keyword">inline</span> std::list&lt;int&gt; <a class="code" href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">return</span> str2list_wrap&lt;int, str2list_int_wrap&gt;( str );</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;} <span class="comment">///&lt; Sinónimo de \c makeList_int().</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"></span><span class="comment"></span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">/** Retorna la lista de enteros \c (int) construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">    Usa \c str2list() junto con \c atoi().</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">    \skipline    test::intlist()</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">    \see         test_str2list::test_intlist()</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="str2list_8h.html#ab0e3f502b625fa8ff7307bb0caf8f5b1">  159</a></span>&#160;<span class="keyword">inline</span> std::list&lt;int&gt; <a class="code" href="str2list_8h.html#ab0e3f502b625fa8ff7307bb0caf8f5b1">makeList_int</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">return</span> str2list_wrap&lt;int, str2list_int_wrap&gt;( str );</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="str2list_8h.html#a8c17a7ff2f6b3589b2980234a51150a1">  164</a></span>&#160;<span class="keyword">inline</span> std::list&lt;long&gt; <a class="code" href="str2list_8h.html#a8c17a7ff2f6b3589b2980234a51150a1">longlist</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> str2list_wrap&lt;long, str2list_long_wrap&gt;( str );</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;} <span class="comment">///&lt; Sinónimo de \c makeList_long().</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"></span><span class="comment"></span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">/** Retorna la lista de enteros \c (long) construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">    Usa \c str2list() junto con \c atol().</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">    \skipline    test::makeList_long()</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">    \see         test_str2list::test_makeList_long()</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">  176</a></span>&#160;<span class="keyword">inline</span> std::list&lt;long&gt; <a class="code" href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">return</span> str2list_wrap&lt;long, str2list_long_wrap&gt;( str );</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">/** Retorna la lista de flotantes construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">    Usa \c str2list() junto con \c atof().</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">    \skipline    test::doublelist()</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">    \see         test_str2list::test_doublelist()</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">  189</a></span>&#160;<span class="keyword">inline</span> std::list&lt;double&gt; <a class="code" href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">return</span> str2list_wrap&lt;double, str2list_double_wrap&gt;( str );</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="str2list_8h.html#a7bb76a0b707ac4fe94d48dd25e97195f">  193</a></span>&#160;std::list&lt;char&gt; <a class="code" href="str2list_8h.html#a7bb76a0b707ac4fe94d48dd25e97195f">charlist</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    std::list&lt;std::string&gt; Lstr;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    std::list&lt;char&gt; Lchar;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>(Lstr,str);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    std::list&lt; std::string &gt;::const_iterator it;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">for</span> ( it= Lstr.begin(); it!=Lstr.end(); ++it ) {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">if</span>  ( (*it)[0] == <span class="charliteral">&#39;\&#39;&#39;</span> ) {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">if</span> ( it-&gt;size() == 1 ) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                Lchar.push_back( <span class="charliteral">&#39; &#39;</span> ); <span class="comment">// blank</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                ++it;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                Lchar.push_back( (*it)[1] );</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            Lchar.push_back( (*it)[0] );</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">return</span> Lchar;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;} <span class="comment">///&lt; Sinónimo de \c makeList_char().</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"></span><span class="comment"></span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">/** Retorna la lista de caracteres \c (char) construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">    Usa \c str2list() pero se brinca las comillas simples \c (&#39;).</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">    - No necesita que cada letra venga entre comillas simples.</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">    - Si alguno de los valores tiene más de un caracter, usa el primero e ignora los demás.</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">    \skipline    test::charlist()</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">    \see         test_str2list::test_makeList_char()</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="str2list_8h.html#a2cdec5d1c7de2c69841fd3511fa01d8d">  227</a></span>&#160;<span class="keyword">inline</span> std::list&lt;char&gt; <a class="code" href="str2list_8h.html#a2cdec5d1c7de2c69841fd3511fa01d8d">makeList_char</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="str2list_8h.html#a7bb76a0b707ac4fe94d48dd25e97195f">charlist</a>( str );</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">/** Almacena en \c &quot;M&lt;&lt;&gt;&gt;&quot; la matriz de hileras construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">    - Cada renglón de la matriz debe estar entre caracteres \c &#39;|&#39;.</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">    - Para obtener cada renglón se usa \c str2list().</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">    - La matriz se retorna como una lista de listas de hileras.</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">    - Ignora sublistas nulas pues \c &quot;M&lt;&lt;&gt;&gt;&quot; nunca contiene sublistas nulas.</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">    - Siempre modifica el valor de \c &quot;M&lt;&lt;&gt;&gt;&quot;.</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">    - Retorna la longitud de la sublista más grande de \c &quot;M&lt;&lt;&gt;&gt;&quot; (para</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">      calcular cuántas columnas tiene la matriz).</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">    \skipline    test::str2matrix()</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">    \see         test_str2list::test_str2matrix()</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> STRING&gt;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b">  246</a></span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b">str2matrix</a>( std::list&lt; std::list&lt;STRING&gt; &gt;&amp; M , <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    M.clear();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">if</span> ( str == 0) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">if</span> (*str == 0) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">size_t</span> mx = 0; <span class="comment">// max sublist length</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    M.push_back( std::list&lt;STRING&gt;() );</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">while</span> ( *str != 0 ) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keyword">typename</span> std::list&lt;STRING&gt; &amp; L = M.back(); <span class="comment">// L: last list in M&lt;&lt;&gt;&gt;</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        str = <a class="code" href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a>( L , str );</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">if</span> ( *str!=0 ) { str++; }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        mx = ( L.size()&lt;mx ? mx : L.size() ); <span class="comment">// keep max</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">if</span> ( ! M.back().empty() ) {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            M.push_back( std::list&lt;STRING&gt;() );</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">if</span> ( M.back().empty() ) { M.pop_back(); }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">return</span> mx;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment">//  NOTA: implementado con plantillas para evitar usar el archivo str2list.cpp</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">/** Almacena en \c MATRIX[][] la matriz construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">    Usa \c str2matrix() junto con \c ATON_wrap::ATON().</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">    \tparam N tipo de dato: { &lt;code&gt; int long double &lt;/code&gt; }</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">    \tparam ATON_wrap Empaque \c ATON() alrededor del convertidor:</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">                 { &lt;code&gt; atoi() atol() atof() &lt;/code&gt; }</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">    \tparam Nrows  Cantidad de filas de \c MATRIX[][].</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">    \tparam Ncols  Cantidad de columnas de \c MATRIX[][].</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> N, <span class="keyword">class</span> ATON_wrap, <span class="keywordtype">unsigned</span> Nrows, <span class="keywordtype">unsigned</span> Ncols&gt;</div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="str2list_8h.html#afdae1537745ef1f930007376847c4b8e">  276</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="str2list_8h.html#afdae1537745ef1f930007376847c4b8e">matrix2list_wrap</a>( N MATRIX[Nrows][Ncols] , <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    std::list&lt; std::list&lt;std::string&gt; &gt; Mlist;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordtype">size_t</span> NCOLS = <a class="code" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b">str2matrix</a>( Mlist , str ); <span class="comment">// Mlist &lt;== str</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">size_t</span> NROWS = Mlist.size();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    NROWS = ( NROWS&lt;Nrows ? NROWS : Nrows ); <span class="comment">// take min(NROWS,Nrows)</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    NCOLS = ( NCOLS&lt;Ncols ? NCOLS : Ncols ); <span class="comment">// take min(NCOLS,Ncols)</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keyword">typename</span> std::list&lt; std::list&lt;std::string&gt; &gt; :: const_iterator it;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keyword">typename</span>            std::list&lt;std::string&gt;   :: const_iterator jt;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    it = Mlist.begin();</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;NROWS; ++i,++it ) {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        jt = it-&gt;begin();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;NCOLS; ++j ) {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">if</span> ( jt==it-&gt;end() ) { MATRIX[i][j] = 0; }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                MATRIX[i][j] = ATON_wrap::ATON( jt-&gt;c_str() );</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                jt++;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">/** Almacena en \c M[][] la matriz de enteros \c (int) construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">    Usa \c str2matrix() junto con \c atoi().</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">    \skipline    test::intmatrix()</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">    \see         test_str2list::test_intmatrix()</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> Nrows, <span class="keywordtype">unsigned</span> Ncols&gt;</div>
+<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="str2list_8h.html#a21836cdf8d716c20992596581b8ce19e">  309</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="str2list_8h.html#a21836cdf8d716c20992596581b8ce19e">intmatrix</a>( <span class="keywordtype">int</span> M[Nrows][Ncols] , <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">return</span> matrix2list_wrap&lt;int, str2list_int_wrap, Nrows, Ncols&gt;( M , str );</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;}</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">/** Almacena en \c M[][] la matriz de enteros \c (long) construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">    Usa \c str2matrix() junto con \c atol().</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">    \skipline    test::longmatrix()</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">    \see         test_str2list::test_longmatrix()</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> Nrows, <span class="keywordtype">unsigned</span> Ncols&gt;</div>
+<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="str2list_8h.html#a4a562166144c912da4f175f974e71392">  321</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="str2list_8h.html#a4a562166144c912da4f175f974e71392">longmatrix</a>( <span class="keywordtype">long</span> M[Nrows][Ncols] , <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">return</span> matrix2list_wrap&lt;long, str2list_long_wrap, Nrows, Ncols&gt;( M , str );</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;}</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">/** Almacena en \c M[][] la matriz de flotantes construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment">    Usa \c str2matrix() junto con \c atof().</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">    \skipline    test::doublematrix()</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">    \see         test_str2list::test_doublematrix()</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> Nrows, <span class="keywordtype">unsigned</span> Ncols&gt;</div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="str2list_8h.html#a54335be15f9441936e23247770786be2">  333</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="str2list_8h.html#a54335be15f9441936e23247770786be2">doublematrix</a>( <span class="keywordtype">double</span> M[Nrows][Ncols] , <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">return</span> matrix2list_wrap&lt;double,str2list_double_wrap,Nrows,Ncols&gt;( M,str );</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span> <span class="comment">// memset()</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">/** Almacena en \c M[][] la matriz de caracteres construida en base a \c &quot;str&quot;.</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment">    Usa \c str2matrix() pero se brinca las comillas simples \c (&#39;).</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">    - No necesita que cada letra venga entre comillas simples.</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment">    - Si alguno de los valores tiene más de un caracter, usa el primero e ignora los demás.</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment">    \dontinclude test_str2list.cpp</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">    \skipline    test::charmatrix()</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">    \until       }}</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">    \see         test_str2list::test_charmatrix()</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> Nrows, <span class="keywordtype">unsigned</span> Ncols&gt;</div>
+<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="str2list_8h.html#a4eb3d586fc0367efcce7e1afcc4bf261">  350</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="str2list_8h.html#a4eb3d586fc0367efcce7e1afcc4bf261">charmatrix</a>( <span class="keywordtype">char</span> M[Nrows][Ncols] , <span class="keyword">const</span> <span class="keywordtype">char</span>* str ) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    std::list&lt; std::list&lt;std::string&gt; &gt; Mstr;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b">str2matrix</a>(  Mstr, str );</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    memset( M, <span class="charliteral">&#39; &#39;</span>, <span class="keyword">sizeof</span>(M) ); <span class="comment">// llena la matriz de blancos</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">unsigned</span> i,j; <span class="comment">// paralelos (i&lt;-&gt;it) &amp;&amp; (j&lt;-&gt;jt)</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    std::list&lt; std::list&lt;std::string&gt; &gt;::const_iterator it;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    std::list&lt;std::string&gt;::const_iterator jt;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">for</span> ( i=0,it=Mstr.begin(); (i&lt;Nrows &amp;&amp; it!=Mstr.end()); ++i,++it ) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keyword">const</span> std::list&lt;std::string&gt;&amp; Mrenglon = (*it);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">for</span> ( j=0,jt=Mrenglon.begin(); (j&lt;Ncols &amp;&amp; jt!=Mrenglon.end()); ++j,++jt ) {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            <span class="keywordflow">if</span>  ( (*jt)[0] == <span class="charliteral">&#39;\&#39;&#39;</span> ) {</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                <span class="keywordflow">if</span> ( jt-&gt;size() == 1 ) {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                    M[i][j] = <span class="charliteral">&#39; &#39;</span>; <span class="comment">// blank</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                    ++jt;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                    M[i][j] = (*jt)[1];</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            }</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                M[i][j] = (*jt)[0];</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;}</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#endif // str2list_h</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">// EOF: str2list.h</span></div>
+<div class="ttc" id="str2list_8h_html_a21836cdf8d716c20992596581b8ce19e"><div class="ttname"><a href="str2list_8h.html#a21836cdf8d716c20992596581b8ce19e">intmatrix</a></div><div class="ttdeci">void intmatrix(int M[Nrows][Ncols], const char *str)</div><div class="ttdoc">Almacena en M[][] la matriz de enteros (int) construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00309">str2list.h:309</a></div></div>
+<div class="ttc" id="str2list_8h_html_ad17affa87a54d226b882244c111a9e0b"><div class="ttname"><a href="str2list_8h.html#ad17affa87a54d226b882244c111a9e0b">str2matrix</a></div><div class="ttdeci">size_t str2matrix(std::list&lt; std::list&lt; STRING &gt; &gt; &amp;M, const char *str)</div><div class="ttdoc">Almacena en "M<<>>" la matriz de hileras construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00246">str2list.h:246</a></div></div>
+<div class="ttc" id="str2list_8h_html_a54335be15f9441936e23247770786be2"><div class="ttname"><a href="str2list_8h.html#a54335be15f9441936e23247770786be2">doublematrix</a></div><div class="ttdeci">void doublematrix(double M[Nrows][Ncols], const char *str)</div><div class="ttdoc">Almacena en M[][] la matriz de flotantes construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00333">str2list.h:333</a></div></div>
+<div class="ttc" id="structstr2list__double__wrap_html"><div class="ttname"><a href="structstr2list__double__wrap.html">str2list_double_wrap</a></div><div class="ttdoc">Empaque ATON() alrededor de la función atof(). </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00142">str2list.h:142</a></div></div>
+<div class="ttc" id="structstr2list__int__wrap_html_a3281e0c095137d688448ae34d82f97c3"><div class="ttname"><a href="structstr2list__int__wrap.html#a3281e0c095137d688448ae34d82f97c3">str2list_int_wrap::ATON</a></div><div class="ttdeci">static int ATON(const char *str)</div><div class="ttdoc">Retorna atoi(str). </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00132">str2list.h:132</a></div></div>
+<div class="ttc" id="str2list_8h_html_ab0e3f502b625fa8ff7307bb0caf8f5b1"><div class="ttname"><a href="str2list_8h.html#ab0e3f502b625fa8ff7307bb0caf8f5b1">makeList_int</a></div><div class="ttdeci">std::list&lt; int &gt; makeList_int(const char *str)</div><div class="ttdoc">Retorna la lista de enteros (int) construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00159">str2list.h:159</a></div></div>
+<div class="ttc" id="str2list_8h_html_a07609c59f022b25494af9d81c0604a41"><div class="ttname"><a href="str2list_8h.html#a07609c59f022b25494af9d81c0604a41">str2list</a></div><div class="ttdeci">const char * str2list(std::list&lt; STRING &gt; &amp;L, const char *str)</div><div class="ttdoc">Almacena en "L<>" la lista de hileras construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00062">str2list.h:62</a></div></div>
+<div class="ttc" id="str2list_8h_html_afdae1537745ef1f930007376847c4b8e"><div class="ttname"><a href="str2list_8h.html#afdae1537745ef1f930007376847c4b8e">matrix2list_wrap</a></div><div class="ttdeci">void matrix2list_wrap(N MATRIX[Nrows][Ncols], const char *str)</div><div class="ttdoc">Almacena en MATRIX[][] la matriz construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00276">str2list.h:276</a></div></div>
+<div class="ttc" id="str2list_8h_html_a7bb76a0b707ac4fe94d48dd25e97195f"><div class="ttname"><a href="str2list_8h.html#a7bb76a0b707ac4fe94d48dd25e97195f">charlist</a></div><div class="ttdeci">std::list&lt; char &gt; charlist(const char *str)</div><div class="ttdoc">Sinónimo de makeList_char(). </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00193">str2list.h:193</a></div></div>
+<div class="ttc" id="str2list_8h_html_a70bf91fefd2cd0f48bd1cb5ff5095c8c"><div class="ttname"><a href="str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c">makeList_long</a></div><div class="ttdeci">std::list&lt; long &gt; makeList_long(const char *str)</div><div class="ttdoc">Retorna la lista de enteros (long) construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00176">str2list.h:176</a></div></div>
+<div class="ttc" id="structstr2list__long__wrap_html"><div class="ttname"><a href="structstr2list__long__wrap.html">str2list_long_wrap</a></div><div class="ttdoc">Empaque ATON() alrededor de la función atol(). </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00136">str2list.h:136</a></div></div>
+<div class="ttc" id="structstr2list__long__wrap_html_a1e6c6e64c1336f0a84f76b6df6828482"><div class="ttname"><a href="structstr2list__long__wrap.html#a1e6c6e64c1336f0a84f76b6df6828482">str2list_long_wrap::ATON</a></div><div class="ttdeci">static long ATON(const char *str)</div><div class="ttdoc">Retorna atol(str). </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00138">str2list.h:138</a></div></div>
+<div class="ttc" id="structstr2list__double__wrap_html_a6ff3d0541d9fda7114d33fa84947d5ac"><div class="ttname"><a href="structstr2list__double__wrap.html#a6ff3d0541d9fda7114d33fa84947d5ac">str2list_double_wrap::ATON</a></div><div class="ttdeci">static double ATON(const char *str)</div><div class="ttdoc">Retorna atof(str). </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00144">str2list.h:144</a></div></div>
+<div class="ttc" id="str2list_8h_html_a3f7415563d6a569c65b5559ab9f03fd2"><div class="ttname"><a href="str2list_8h.html#a3f7415563d6a569c65b5559ab9f03fd2">iswhitespace_str2list</a></div><div class="ttdeci">bool iswhitespace_str2list(CHAR ch)</div><div class="ttdoc">Retorna true para todos los caracters considerados como espacios en blanco por str2list(). </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00030">str2list.h:30</a></div></div>
+<div class="ttc" id="str2list_8h_html_a148687bf365cef4ae958b0a9437c52da"><div class="ttname"><a href="str2list_8h.html#a148687bf365cef4ae958b0a9437c52da">intlist</a></div><div class="ttdeci">std::list&lt; int &gt; intlist(const char *str)</div><div class="ttdoc">Sinónimo de makeList_int(). </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00147">str2list.h:147</a></div></div>
+<div class="ttc" id="str2list_8h_html_aaff44fdebf9cad34f61637ede19e6878"><div class="ttname"><a href="str2list_8h.html#aaff44fdebf9cad34f61637ede19e6878">doublelist</a></div><div class="ttdeci">std::list&lt; double &gt; doublelist(const char *str)</div><div class="ttdoc">Retorna la lista de flotantes construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00189">str2list.h:189</a></div></div>
+<div class="ttc" id="str2list_8h_html_a8c17a7ff2f6b3589b2980234a51150a1"><div class="ttname"><a href="str2list_8h.html#a8c17a7ff2f6b3589b2980234a51150a1">longlist</a></div><div class="ttdeci">std::list&lt; long &gt; longlist(const char *str)</div><div class="ttdoc">Sinónimo de makeList_long(). </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00164">str2list.h:164</a></div></div>
+<div class="ttc" id="str2list_8h_html_a4a562166144c912da4f175f974e71392"><div class="ttname"><a href="str2list_8h.html#a4a562166144c912da4f175f974e71392">longmatrix</a></div><div class="ttdeci">void longmatrix(long M[Nrows][Ncols], const char *str)</div><div class="ttdoc">Almacena en M[][] la matriz de enteros (long) construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00321">str2list.h:321</a></div></div>
+<div class="ttc" id="str2list_8h_html_ad8ff09e0fc562e2ab03b72258a216796"><div class="ttname"><a href="str2list_8h.html#ad8ff09e0fc562e2ab03b72258a216796">str2list_wrap</a></div><div class="ttdeci">std::list&lt; N &gt; str2list_wrap(const char *str)</div><div class="ttdoc">Retorna la lista de valores construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00117">str2list.h:117</a></div></div>
+<div class="ttc" id="str2list_8h_html_a2cdec5d1c7de2c69841fd3511fa01d8d"><div class="ttname"><a href="str2list_8h.html#a2cdec5d1c7de2c69841fd3511fa01d8d">makeList_char</a></div><div class="ttdeci">std::list&lt; char &gt; makeList_char(const char *str)</div><div class="ttdoc">Retorna la lista de caracteres (char) construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00227">str2list.h:227</a></div></div>
+<div class="ttc" id="structstr2list__int__wrap_html"><div class="ttname"><a href="structstr2list__int__wrap.html">str2list_int_wrap</a></div><div class="ttdoc">Empaque ATON() alrededor de la función atoi(). </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00130">str2list.h:130</a></div></div>
+<div class="ttc" id="str2list_8h_html_a4eb3d586fc0367efcce7e1afcc4bf261"><div class="ttname"><a href="str2list_8h.html#a4eb3d586fc0367efcce7e1afcc4bf261">charmatrix</a></div><div class="ttdeci">void charmatrix(char M[Nrows][Ncols], const char *str)</div><div class="ttdoc">Almacena en M[][] la matriz de caracteres construida en base a "str". </div><div class="ttdef"><b>Definition:</b> <a href="str2list_8h_source.html#l00350">str2list.h:350</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Jueves, 18 de Septiembre de 2014 14:21:20 para Uso de Mx::Matrix: por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>
