@@ -21,8 +21,8 @@
 
 /* *** ESCOJA AQUI CUAL IMPLEMENTACION DE LA MATRIZ QUIERE USAR *** */
 
-// #define USE_Matrix        ///< Use la implmentación \c Matrix.h
-   #define USE_Sparse_Matrix ///< Use la implmentación \c Sparse_Matrix.h
+   #define USE_Matrix        ///< Use la implmentación \c Matrix.h
+// #define USE_Sparse_Matrix ///< Use la implmentación \c Sparse_Matrix.h
 // #define USE_Matrix_List   ///< Use la implmentación \c Matrix_List.h
 // #define USE_Matrix_Map    ///< Use la implmentación \c Matrix_Map.h
 
@@ -103,7 +103,6 @@ int main() {
                         " | 0  0  0 10 | " );// [3]
 
     Matrix<int> Mchirri(4,4); // la chirrisquitica
-    int k=1;
     for ( size_t i=0; i<4; ++i ) {
         for ( size_t j=0; j<4; ++j ) {
             Mchirri(i,j) = M[i][j];
@@ -121,7 +120,7 @@ int main() {
                         " | 7  8  9 10 | " );// [3]
 
     Matrix<int> Mchirri(4,4); // la chirrisquitica
-    int k=1;
+
     for ( size_t i=0; i<4; ++i ) {
         for ( size_t j=0; j<4; ++j ) {
             Mchirri(i,j) = M[i][j];
@@ -132,6 +131,116 @@ int main() {
     assertTrue( !isLowerTriangular(Mchirri) );
 }}
 
+{{ // test::size()
+    int M[4][5];       //   [0][1][2][3][4]
+    intmatrix<4,5>( M , " |  1  2  3  4  5 | "   // [0]
+                        " |  6  7  8  9 10 | "   // [1]
+                        " | 11 12 13 14 15 | "   // [2]
+                        " | 16 17 18 19 20 | " );// [3]
+
+    Matrix<int> Mchirri(4,5); // la chirrisquitica
+    for ( size_t i=0; i<4; ++i ) {
+        for ( size_t j=0; j<5; ++j ) {
+            Mchirri(i,j) = M[i][j];
+        }
+    }
+
+    assertTrue( Mchirri.size() == 20 );
+    assertTrue( Mchirri.count() == 20 );
+    assertTrue( Mchirri.capacity() == 20 );
+}}
+{{ // test::copy()
+    int M[4][5];       //   [0][1][2][3][4]
+    intmatrix<4,5>( M , " |  1  2  3  4  5 | "   // [0]
+                        " |  6  7  8  9 10 | "   // [1]
+                        " | 11 12 13 14 15 | "   // [2]
+                        " | 16 17 18 19 20 | " );// [3]
+
+    Matrix<int> Mchirri(4,5); // la chirrisquitica
+    for ( size_t i=0; i<4; ++i ) {
+        for ( size_t j=0; j<5; ++j ) {
+            Mchirri(i,j) = M[i][j];
+        }
+    }
+
+    int N[4][5];       //   [0][1][2][3][4]
+    intmatrix<4,5>( N , " | 13  2  3  4  5 | "   // [0]
+                        " |  6  7  8  9 10 | "   // [1]
+                        " | 11 12 13 14 15 | "   // [2]
+                        " | 16 17 18 19 25 | " );// [3]
+
+    Matrix<int> Nchirri(4,5); // la chirrisquitica
+    for ( size_t i=0; i<4; ++i ) {
+        for ( size_t j=0; j<5; ++j ) {
+            Nchirri(i,j) = N[i][j];
+        }
+    }
+
+    Matrix<int> Achi(4,4);
+    for ( size_t i=0; i<4; ++i ) {
+        for ( size_t j=0; j<4; ++j ) {
+            Achi(i,j) = i*j;
+        }
+    }
+
+    Matrix<int> Bchi;
+
+    assertTrue( Nchirri(0,0) == 13 );
+    Bchi.copy(Nchirri);
+    Nchirri = Mchirri;
+    assertTrue( Nchirri(0,0) == 1 );
+    assertTrue( Nchirri.size() == 20 );
+    Nchirri = Achi;
+    assertTrue( Nchirri.size() == 16 );
+    assertTrue( Nchirri(3,2) == 6 );
+    assertTrue( Bchi.size() == 20 );
+}}
+{{ //test::swap_move()
+    int N[4][5];       //   [0][1][2][3][4]
+    intmatrix<4,5>( N , " | 13  2  3  4  5 | "   // [0]
+                        " |  6  7  8  9 10 | "   // [1]
+                        " | 11 12 13 14 15 | "   // [2]
+                        " | 16 17 18 19 25 | " );// [3]
+
+    Matrix<int> Nchirri(4,5); // la chirrisquitica
+    for ( size_t i=0; i<4; ++i ) {
+        for ( size_t j=0; j<5; ++j ) {
+            Nchirri(i,j) = N[i][j];
+        }
+    }
+
+    Matrix<int> Achi(4,4);
+    for ( size_t i=0; i<4; ++i ) {
+        for ( size_t j=0; j<4; ++j ) {
+            Achi(i,j) = i*j;
+        }
+    }
+
+    Matrix<int> Bchi;
+
+    assertTrue( Nchirri(0,0) == 13 );
+    Bchi.move(Nchirri);
+    assertTrue( Bchi(0,0) == 13 );
+    assertTrue( Bchi.size() == 20 );
+    assertTrue( Nchirri.size() == 0 );
+    assertTrue( Achi.size() == 16 );
+    Bchi.swap(Achi);
+    assertTrue( Achi.size() == 20 );
+    assertTrue( Bchi.size() == 16 );
+}}
+
+{{     //test::operator==
+    Matrix<int> E(4,5);
+    Matrix<int> F(4,5);
+    assertTrue(E==F);
+}}
+
+{{    //test::operator!=
+    Matrix<int> G(4,5);
+    Matrix<int> H(4,5);
+    assertTrue(G!=H);
+
+}}
     std::cout << "==============\n";
 
     const unsigned M = 5;
@@ -169,18 +278,23 @@ int main() {
     B = V;
     assertTrue( B == V );
     print("B", B);
-
+    Matrix_unsigned C = V;
+{{    //test::operator+
     Matrix_unsigned C = V;
     C = C + C;
     print("C", C);
+}}
 
+{{    //test::operator-
     C = A - A;
     print("C", C);
     assertTrue( isNull( C ) && ! isScalar( C ) );
     assertTrue( ! isLowerTriangular( C ) && ! isUpperTriangular( C ) );
     assertTrue( ! isSquare( C ) &&  ! isUnit( C ) );
     assertTrue( ! isSymmetric( C ) );
+}}
 
+{{    //test::operator*
     print("A", A);
 //  B.transpose();
     print("B", B);
@@ -199,6 +313,57 @@ int main() {
     assertTrue( ! isLowerTriangular( C ) && ! isUpperTriangular( C ) );
     assertTrue( ! isUnit( C ) && ! isScalar( C ) );
     assertTrue( ! isSymmetric( C ) );
+}}
+
+{{ //test::operator()
+    cout<<"A (0,2)"<<A(0,2)<<endl;
+    Matrix<unsigned> D = A+A;
+    assertTrue( ! isNull( D ) && !isSquare( D ) );
+    assertTrue( ! isLowerTriangular( D ) && ! isUpperTriangular( D ) );
+    assertTrue( ! isUnit( D ) && ! isScalar( D ) );
+    assertTrue( ! isSymmetric( D ) );
+    cout<<"D(0,2)"<<D(0,2)<<endl;
+    D(0,2)=23;
+    cout<<"D(0,2)=23 =>"<<D(0,2)<<endl;
+    cout<<endl;
+}}
+
+{{     //test::at(m,n)
+    assertTrue(A.at(3,2)==A(3,2));
+
+}}
+
+{{     //test::resize()
+    cout<<"Matriz A (7x8)";
+    print("A",A);
+
+
+    A.reSize(2,3);
+
+    assertTrue( ! isNull( A ) && !isSquare( A ) );
+    assertTrue( ! isLowerTriangular( A ) && ! isUpperTriangular( A ) );
+    assertTrue( ! isSymmetric( A ) );
+    cout<<"Matriz A (2x3)";
+    print("A",A);
+}}
+
+{{     //test::reShape()
+    A.reShape(2,3);
+    if (2*3==A.rows()*A.cols())
+        assertTrue(2*3==A.rows()*A.cols());
+    else
+        assertTrue(!2*3==A.rows()*A.cols());
+    print("A",A);
+}}
+
+{{     //test::transpose()
+
+    assertTrue( A.cols() == 3 );
+    A.transpose();
+    assertTrue( A.cols() == 2 );
+
+}}
+
 
     return 0;
 }

@@ -1,0 +1,2 @@
+git checkout local-branch-i-want-to-revert
+git reset --hard origin/branch-i-want-to-copy

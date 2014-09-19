@@ -223,7 +223,7 @@ Amigas</h2></td></tr>
 <tr class="memdesc:a21764e6b37829f56f2041265b40fbf31"><td class="mdescLeft">&#160;</td><td class="mdescRight">¿¿¿ (p != q) ???  <a href="#a21764e6b37829f56f2041265b40fbf31">Más...</a><br /></td></tr>
 <tr class="separator:a21764e6b37829f56f2041265b40fbf31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39aa78d53e7eb3bcee932266836895e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMx_1_1Matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMx_1_1Matrix.html#a39aa78d53e7eb3bcee932266836895e9">operator+</a> (const <a class="el" href="classMx_1_1Matrix.html">Matrix</a> &amp;A, const <a class="el" href="classMx_1_1Matrix.html">Matrix</a> &amp;B)</td></tr>
-<tr class="memdesc:a39aa78d53e7eb3bcee932266836895e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna <code>A+B</code>.  <a href="#a39aa78d53e7eb3bcee932266836895e9">Más...</a><br /></td></tr>
+<tr class="memdesc:a39aa78d53e7eb3bcee932266836895e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna A.add(B)  <a href="#a39aa78d53e7eb3bcee932266836895e9">Más...</a><br /></td></tr>
 <tr class="separator:a39aa78d53e7eb3bcee932266836895e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5665c385ae2843aa1b0434c1e03233a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMx_1_1Matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMx_1_1Matrix.html#a5665c385ae2843aa1b0434c1e03233a7">operator-</a> (const <a class="el" href="classMx_1_1Matrix.html">Matrix</a> &amp;A, const <a class="el" href="classMx_1_1Matrix.html">Matrix</a> &amp;B)</td></tr>
 <tr class="memdesc:a5665c385ae2843aa1b0434c1e03233a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna <code>A-B</code>.  <a href="#a5665c385ae2843aa1b0434c1e03233a7">Más...</a><br /></td></tr>
@@ -390,7 +390,7 @@ template&lt;class E &gt; </div>
 <div class="line">}}</div>
 </div><!-- fragment --> </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00219">219</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00226">226</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -412,7 +412,7 @@ template&lt;class E &gt; </div>
 
 <p>Constructor de copia. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00238">238</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00245">245</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +475,7 @@ template&lt;class E &gt; </div>
 
 <p>Destructor. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00262">262</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00269">269</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -582,8 +582,27 @@ template&lt;class E&gt; </div>
 </div><div class="memdoc">
 
 <p>Cantidad de valores almacenados en la matriz. </p>
+ <div class="fragment"><div class="line">{{ <span class="comment">// test::size()</span></div>
+<div class="line">    <span class="keywordtype">int</span> M[4][5];       <span class="comment">//   [0][1][2][3][4]</span></div>
+<div class="line">    intmatrix&lt;4,5&gt;( M , <span class="stringliteral">&quot; |  1  2  3  4  5 | &quot;</span>   <span class="comment">// [0]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; |  6  7  8  9 10 | &quot;</span>   <span class="comment">// [1]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 11 12 13 14 15 | &quot;</span>   <span class="comment">// [2]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 16 17 18 19 20 | &quot;</span> );<span class="comment">// [3]</span></div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Mchirri(4,5); <span class="comment">// la chirrisquitica</span></div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">            Mchirri(i,j) = M[i][j];</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Mchirri.size() == 20 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Mchirri.count() == 20 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Mchirri.capacity() == 20 );</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00082">82</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00089">89</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -612,7 +631,7 @@ template&lt;class E&gt; </div>
 
 <p>Cantidad de valores almacenados en la matriz. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00083">83</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00090">90</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -641,7 +660,7 @@ template&lt;class E&gt; </div>
 
 <p>Cantidad máxima posible de valores diferentes que pueden ser almacenados en la matriz. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00085">85</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00092">92</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -671,7 +690,7 @@ template&lt;class E&gt; </div>
 
 <p>Sinónimo de <code>this-&gt;copy(o)</code> </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00087">87</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00094">94</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -701,10 +720,57 @@ template&lt;class E &gt; </div>
 <li>Después de esta operación siempre ocurre que <code> *this == o </code></li>
 </ul>
 <dl class="section user"><dt>Complejidad:</dt><dd>O( <code> <a class="el" href="classMx_1_1Matrix.html#a5de8cee1bb3eb25f536141ad54c6aab7" title="Cantidad de filas de la matriz. ">rows()</a> * <a class="el" href="classMx_1_1Matrix.html#aa66bd95f45a8d21cc83f1603c3467af8" title="Cantidad de columnas de la Matriz. ">cols()</a> </code> )</dd></dl>
+ <div class="fragment"><div class="line">{{ <span class="comment">// test::copy()</span></div>
+<div class="line">    <span class="keywordtype">int</span> M[4][5];       <span class="comment">//   [0][1][2][3][4]</span></div>
+<div class="line">    intmatrix&lt;4,5&gt;( M , <span class="stringliteral">&quot; |  1  2  3  4  5 | &quot;</span>   <span class="comment">// [0]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; |  6  7  8  9 10 | &quot;</span>   <span class="comment">// [1]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 11 12 13 14 15 | &quot;</span>   <span class="comment">// [2]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 16 17 18 19 20 | &quot;</span> );<span class="comment">// [3]</span></div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Mchirri(4,5); <span class="comment">// la chirrisquitica</span></div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">            Mchirri(i,j) = M[i][j];</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordtype">int</span> N[4][5];       <span class="comment">//   [0][1][2][3][4]</span></div>
+<div class="line">    intmatrix&lt;4,5&gt;( N , <span class="stringliteral">&quot; | 13  2  3  4  5 | &quot;</span>   <span class="comment">// [0]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; |  6  7  8  9 10 | &quot;</span>   <span class="comment">// [1]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 11 12 13 14 15 | &quot;</span>   <span class="comment">// [2]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 16 17 18 19 25 | &quot;</span> );<span class="comment">// [3]</span></div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Nchirri(4,5); <span class="comment">// la chirrisquitica</span></div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">            Nchirri(i,j) = N[i][j];</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Achi(4,4);</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;4; ++j ) {</div>
+<div class="line">            Achi(i,j) = i*j;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Bchi;</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Nchirri(0,0) == 13 );</div>
+<div class="line">    Bchi.copy(Nchirri);</div>
+<div class="line">    Nchirri = Mchirri;</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Nchirri(0,0) == 1 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Nchirri.size() == 20 );</div>
+<div class="line">    Nchirri = Achi;</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Nchirri.size() == 16 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Nchirri(3,2) == 6 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Bchi.size() == 20 );</div>
+<div class="line">}}</div>
+</div><!-- fragment --></p>
 <dl class="section return"><dt>Devuelve</dt><dd>*this</dd></dl>
 <dl class="section see"><dt>Ver también</dt><dd><a href="http://www.di-mare.com/adolfo/binder/c04.htm#sc05">http://www.di-mare.com/adolfo/binder/c04.htm#sc05</a> </dd></dl>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00305">305</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00323">323</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -732,12 +798,46 @@ template&lt;class E &gt; </div>
 <li>Si <code>"*this"</code> es <code>"o"</code> entonces su valor no cambia</li>
 <li><p class="startli">En general, después de esta operación casi nunca ocurre que <code> (*this == o) </code></p>
 <dl class="section user"><dt>Complejidad:</dt><dd>O( <code> <a class="el" href="classMx_1_1Matrix.html#a5de8cee1bb3eb25f536141ad54c6aab7" title="Cantidad de filas de la matriz. ">rows()</a> * <a class="el" href="classMx_1_1Matrix.html#aa66bd95f45a8d21cc83f1603c3467af8" title="Cantidad de columnas de la Matriz. ">cols()</a> </code> )</dd></dl>
+ <div class="fragment"><div class="line">{{ <span class="comment">//test::swap_move()</span></div>
+<div class="line">    <span class="keywordtype">int</span> N[4][5];       <span class="comment">//   [0][1][2][3][4]</span></div>
+<div class="line">    intmatrix&lt;4,5&gt;( N , <span class="stringliteral">&quot; | 13  2  3  4  5 | &quot;</span>   <span class="comment">// [0]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; |  6  7  8  9 10 | &quot;</span>   <span class="comment">// [1]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 11 12 13 14 15 | &quot;</span>   <span class="comment">// [2]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 16 17 18 19 25 | &quot;</span> );<span class="comment">// [3]</span></div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Nchirri(4,5); <span class="comment">// la chirrisquitica</span></div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">            Nchirri(i,j) = N[i][j];</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Achi(4,4);</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;4; ++j ) {</div>
+<div class="line">            Achi(i,j) = i*j;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Bchi;</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Nchirri(0,0) == 13 );</div>
+<div class="line">    Bchi.move(Nchirri);</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Bchi(0,0) == 13 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Bchi.size() == 20 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Nchirri.size() == 0 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Achi.size() == 16 );</div>
+<div class="line">    Bchi.swap(Achi);</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Achi.size() == 20 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Bchi.size() == 16 );</div>
+<div class="line">}}</div>
+</div><!-- fragment --></p>
 <dl class="section return"><dt>Devuelve</dt><dd><code>*this</code> </dd></dl>
 <dl class="section see"><dt>Ver también</dt><dd><a href="http://www.di-mare.com/adolfo/binder/c04.htm#sc07">http://www.di-mare.com/adolfo/binder/c04.htm#sc07</a> </dd></dl>
 </li>
 </ul>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00354">354</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00376">376</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -770,12 +870,46 @@ template&lt;class E &gt; </div>
 <li>Debido a que algunos métodos retornan copias del valor de <code>"*this"</code> en lugar de una referencia, como ocurre con <code>Matrix::Child()</code>, a veces <code><a class="el" href="classMx_1_1Matrix.html#a86912243cea4722f646c4243f408329c" title="Intercambia los valores de &quot;*this&quot; y &quot;o&quot;. ">swap()</a></code> no tiene el resultado esperado por el programador.</li>
 <li><p class="startli">Por ejemplo, si se invoca <code> T.Child(i). swap( T.Child(j) ) </code> el resultado no es intercambiar los hijos, sino más bien intercambiar los valores de los sub-árboles temporales <code>T.Child(i)</code> y <code>T.Child(j)</code>. La forma correcta de intercambiar hijos es usar <code>Graft()</code>.</p>
 <dl class="section user"><dt>Complejidad:</dt><dd>O( <code>1</code> )</dd></dl>
-<dl class="section return"><dt>Devuelve</dt><dd>*this</dd></dl>
-<dl class="section see"><dt>Ver también</dt><dd><a href="http://www.di-mare.com/adolfo/binder/c04.htm#sc08">http://www.di-mare.com/adolfo/binder/c04.htm#sc08</a> </dd></dl>
+ <div class="fragment"><div class="line">{{ <span class="comment">//test::swap_move()</span></div>
+<div class="line">    <span class="keywordtype">int</span> N[4][5];       <span class="comment">//   [0][1][2][3][4]</span></div>
+<div class="line">    intmatrix&lt;4,5&gt;( N , <span class="stringliteral">&quot; | 13  2  3  4  5 | &quot;</span>   <span class="comment">// [0]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; |  6  7  8  9 10 | &quot;</span>   <span class="comment">// [1]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 11 12 13 14 15 | &quot;</span>   <span class="comment">// [2]</span></div>
+<div class="line">                        <span class="stringliteral">&quot; | 16 17 18 19 25 | &quot;</span> );<span class="comment">// [3]</span></div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Nchirri(4,5); <span class="comment">// la chirrisquitica</span></div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;5; ++j ) {</div>
+<div class="line">            Nchirri(i,j) = N[i][j];</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Achi(4,4);</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i=0; i&lt;4; ++i ) {</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j=0; j&lt;4; ++j ) {</div>
+<div class="line">            Achi(i,j) = i*j;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    Matrix&lt;int&gt; Bchi;</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Nchirri(0,0) == 13 );</div>
+<div class="line">    Bchi.move(Nchirri);</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Bchi(0,0) == 13 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Bchi.size() == 20 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Nchirri.size() == 0 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Achi.size() == 16 );</div>
+<div class="line">    Bchi.swap(Achi);</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Achi.size() == 20 );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( Bchi.size() == 16 );</div>
+<div class="line">}}</div>
+</div><!-- fragment --></p>
 </li>
 </ul>
+<dl class="section return"><dt>Devuelve</dt><dd>*this</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a href="http://www.di-mare.com/adolfo/binder/c04.htm#sc08">http://www.di-mare.com/adolfo/binder/c04.htm#sc08</a> </dd></dl>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00393">393</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00419">419</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -796,8 +930,15 @@ template&lt;class E &gt; </div>
 </div><div class="memdoc">
 
 <p>¿¿¿ (*this==o) ??? </p>
+ <div class="fragment"><div class="line">{{     <span class="comment">//test::operator==</span></div>
+</div><!-- fragment --></p>
+<p><div class="fragment"><div class="line">    Matrix&lt;int&gt; E(4,5);</div>
+<div class="line">    Matrix&lt;int&gt; F(4,5);</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>(E==F);</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00269">269</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00283">283</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +968,7 @@ template&lt;class E&gt; </div>
 
 <p>Retorna <code>true</code> si <code>"o"</code> comparte sus valores con <code>"*this"</code>. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00098">98</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00105">105</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -864,11 +1005,17 @@ template&lt;class E &gt; </div>
 <dl class="section user"><dt>Complejidad:</dt><dd>O( <code> <a class="el" href="classMx_1_1Matrix.html#a5de8cee1bb3eb25f536141ad54c6aab7" title="Cantidad de filas de la matriz. ">rows()</a> * <a class="el" href="classMx_1_1Matrix.html#aa66bd95f45a8d21cc83f1603c3467af8" title="Cantidad de columnas de la Matriz. ">cols()</a> </code> )</dd></dl>
 <dl class="section remark"><dt>Comentarios</dt><dd><ul>
 <li>Esta es la implementación de Matrix&lt;E&gt; operator+( Matrix&lt;E&gt;&amp;, Matrix&lt;E&gt; )</li>
-<li>El compilador tiene problemas en compilar un función amiga (<em>"friend"</em>) definida con plantillas si esa función amiga no está definida (implementada) dentro de la declaración de la clase. Para solventar esta deficiencia existe este método que realiza el trabajo, aunque es poco cómodo de usar. </li>
+<li>El compilador tiene problemas en compilar un función amiga (<em>"friend"</em>) definida con plantillas si esa función amiga no está definida (implementada) dentro de la declaración de la clase. Para solventar esta deficiencia existe este método que realiza el trabajo, aunque es poco cómodo de usar.</li>
 </ul>
 </dd></dl>
+ <div class="fragment"><div class="line">{{    <span class="comment">//test::operator+</span></div>
+<div class="line">    Matrix_unsigned C = V;</div>
+<div class="line">    C = C + C;</div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;C&quot;</span>, C);</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00513">513</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00561">561</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -905,11 +1052,20 @@ template&lt;class E &gt; </div>
 <dl class="section user"><dt>Complejidad:</dt><dd>O( <code> <a class="el" href="classMx_1_1Matrix.html#a5de8cee1bb3eb25f536141ad54c6aab7" title="Cantidad de filas de la matriz. ">rows()</a> * <a class="el" href="classMx_1_1Matrix.html#aa66bd95f45a8d21cc83f1603c3467af8" title="Cantidad de columnas de la Matriz. ">cols()</a> </code> )</dd></dl>
 <dl class="section remark"><dt>Comentarios</dt><dd><ul>
 <li>Esta es la implementación de Matrix&lt;E&gt; operator-( Matrix&lt;E&gt;&amp;, Matrix&lt;E&gt; )</li>
-<li>El compilador tiene problemas en compilar un función amiga (<em>"friend"</em>) definida con plantillas si esa función amiga no está definida (implementada) dentro de la declaración de la clase. Para solventar esta deficiencia existe este método que realiza el trabajo, aunque es poco cómodo de usar. </li>
+<li>El compilador tiene problemas en compilar un función amiga (<em>"friend"</em>) definida con plantillas si esa función amiga no está definida (implementada) dentro de la declaración de la clase. Para solventar esta deficiencia existe este método que realiza el trabajo, aunque es poco cómodo de usar.</li>
 </ul>
 </dd></dl>
+ <div class="fragment"><div class="line">{{    <span class="comment">//test::operator-</span></div>
+<div class="line">    C = A - A;</div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;C&quot;</span>, C);</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( <a class="code" href="namespaceMx.html#a899cf22606d33ecb38d4de45ac8f9e18">isNull</a>( C ) &amp;&amp; ! <a class="code" href="namespaceMx.html#a1260a07fd913f6310f99c6f4e14d697f">isScalar</a>( C ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a680a3dd440946e6d816f73bf9c4971e2">isLowerTriangular</a>( C ) &amp;&amp; ! <a class="code" href="namespaceMx.html#ae614db086333b36140cad240819e04db">isUpperTriangular</a>( C ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a46b546f21ac4b51047f7da12a29545d1">isSquare</a>( C ) &amp;&amp;  ! <a class="code" href="namespaceMx.html#ace487b3db9e5e3a24811b218b22405f5">isUnit</a>( C ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a450a6be26178971eabb5c7ed2f539670">isSymmetric</a>( C ) );</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00544">544</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00597">597</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -963,11 +1119,32 @@ template&lt;class E &gt; </div>
 <dl class="section user"><dt>Complejidad:</dt><dd>O( <code> A.cols() * B.cols() * A.cols() </code> )</dd></dl>
 <dl class="section remark"><dt>Comentarios</dt><dd><ul>
 <li>Esta es la implementación de Matrix&lt;E&gt; operator*( Matrix&lt;E&gt;&amp;, Matrix&lt;E&gt; )</li>
-<li>El compilador tiene problemas en compilar un función amiga (<em>"friend"</em>) definida con plantillas si esa función amiga no está definida (implementada) dentro de la declaración de la clase. Para solventar esta deficiencia existe este método que realiza el trabajo, aunque es poco cómodo de usar. </li>
+<li>El compilador tiene problemas en compilar un función amiga (<em>"friend"</em>) definida con plantillas si esa función amiga no está definida (implementada) dentro de la declaración de la clase. Para solventar esta deficiencia existe este método que realiza el trabajo, aunque es poco cómodo de usar.</li>
 </ul>
 </dd></dl>
+ <div class="fragment"><div class="line">{{    <span class="comment">//test::operator*</span></div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;A&quot;</span>, A);</div>
+<div class="line"><span class="comment">//  B.transpose();</span></div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;B&quot;</span>, B);</div>
+<div class="line">    C = B * A;</div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;C&quot;</span>, C);</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a899cf22606d33ecb38d4de45ac8f9e18">isNull</a>( C ) &amp;&amp; <a class="code" href="namespaceMx.html#a46b546f21ac4b51047f7da12a29545d1">isSquare</a>( C ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a680a3dd440946e6d816f73bf9c4971e2">isLowerTriangular</a>( C ) &amp;&amp; ! <a class="code" href="namespaceMx.html#ae614db086333b36140cad240819e04db">isUpperTriangular</a>( C ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#ace487b3db9e5e3a24811b218b22405f5">isUnit</a>( C ) &amp;&amp; ! <a class="code" href="namespaceMx.html#a1260a07fd913f6310f99c6f4e14d697f">isScalar</a>( C ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a450a6be26178971eabb5c7ed2f539670">isSymmetric</a>( C ) );</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;A&quot;</span>, A);</div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;B&quot;</span>, B);</div>
+<div class="line">    C = A * B;</div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;C&quot;</span>, C);</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a899cf22606d33ecb38d4de45ac8f9e18">isNull</a>( C ) &amp;&amp; <a class="code" href="namespaceMx.html#a46b546f21ac4b51047f7da12a29545d1">isSquare</a>( C ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a680a3dd440946e6d816f73bf9c4971e2">isLowerTriangular</a>( C ) &amp;&amp; ! <a class="code" href="namespaceMx.html#ae614db086333b36140cad240819e04db">isUpperTriangular</a>( C ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#ace487b3db9e5e3a24811b218b22405f5">isUnit</a>( C ) &amp;&amp; ! <a class="code" href="namespaceMx.html#a1260a07fd913f6310f99c6f4e14d697f">isScalar</a>( C ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a450a6be26178971eabb5c7ed2f539670">isSymmetric</a>( C ) );</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00580">580</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00638">638</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1011,7 +1188,7 @@ template&lt;class E &gt; </div>
 <li><code>M(i,j) = val; // M(i,j) es un "lvalue" (modificable)</code> </li>
 </ul>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00489">489</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00532">532</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1052,10 +1229,24 @@ template&lt;class E &gt; </div>
 <p>Retorna una referencia al elemento [i,j] de la matriz ( <code>const</code> ). </p>
 <ul>
 <li><code>M(i,j)</code> significa lo que en arreglos se denota con <code>M</code>[i][j].</li>
-<li><code>val = M(i,j); // M(i,j) es un "rvalue" (const)</code> </li>
+<li><p class="startli"><code>val = M(i,j); // M(i,j) es un "rvalue" (const)</code></p>
+ <div class="fragment"><div class="line">{{ <span class="comment">//test::operator()</span></div>
+<div class="line">    cout&lt;&lt;<span class="stringliteral">&quot;A (0,2)&quot;</span>&lt;&lt;A(0,2)&lt;&lt;endl;</div>
+<div class="line">    Matrix&lt;unsigned&gt; D = A+A;</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a899cf22606d33ecb38d4de45ac8f9e18">isNull</a>( D ) &amp;&amp; !<a class="code" href="namespaceMx.html#a46b546f21ac4b51047f7da12a29545d1">isSquare</a>( D ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a680a3dd440946e6d816f73bf9c4971e2">isLowerTriangular</a>( D ) &amp;&amp; ! <a class="code" href="namespaceMx.html#ae614db086333b36140cad240819e04db">isUpperTriangular</a>( D ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#ace487b3db9e5e3a24811b218b22405f5">isUnit</a>( D ) &amp;&amp; ! <a class="code" href="namespaceMx.html#a1260a07fd913f6310f99c6f4e14d697f">isScalar</a>( D ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a450a6be26178971eabb5c7ed2f539670">isSymmetric</a>( D ) );</div>
+<div class="line">    cout&lt;&lt;<span class="stringliteral">&quot;D(0,2)&quot;</span>&lt;&lt;D(0,2)&lt;&lt;endl;</div>
+<div class="line">    D(0,2)=23;</div>
+<div class="line">    cout&lt;&lt;<span class="stringliteral">&quot;D(0,2)=23 =&gt;&quot;</span>&lt;&lt;D(0,2)&lt;&lt;endl;</div>
+<div class="line">    cout&lt;&lt;endl;</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p>
+</li>
 </ul>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00477">477</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00520">520</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1286,7 @@ template&lt;class E&gt; </div>
 
 <p>Retorna <code>operator()(m,n)</code>. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00113">113</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00120">120</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1326,7 @@ template&lt;class E&gt; </div>
 
 <p>Retorna <code>operator()(m,n)</code> <code>"const"</code>. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00115">115</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00122">122</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1168,10 +1359,24 @@ template&lt;class E &gt; </div>
 <p>Le cambia las dimensiones a la matriz. </p>
 <ul>
 <li>En algunos casos los valores almacenados en la matriz no quedan todos iguales a <code><a class="el" href="classMx_1_1Matrix.html#a602003a3585f648899d105942cb1e258" title="Tipo del objeto almacenado, similar al nombre usado en STL. ">Matrix&lt;E&gt;::value_type()</a></code>.</li>
-<li>Si <code> (m * n == 0) </code> deja la matriz vacía. </li>
+<li>Si <code> (m * n == 0) </code> deja la matriz vacía.</li>
 </ul>
+ <div class="fragment"><div class="line">{{     <span class="comment">//test::resize()</span></div>
+<div class="line">    cout&lt;&lt;<span class="stringliteral">&quot;Matriz A (7x8)&quot;</span>;</div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;A&quot;</span>,A);</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line">    A.reSize(2,3);</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a899cf22606d33ecb38d4de45ac8f9e18">isNull</a>( A ) &amp;&amp; !<a class="code" href="namespaceMx.html#a46b546f21ac4b51047f7da12a29545d1">isSquare</a>( A ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a680a3dd440946e6d816f73bf9c4971e2">isLowerTriangular</a>( A ) &amp;&amp; ! <a class="code" href="namespaceMx.html#ae614db086333b36140cad240819e04db">isUpperTriangular</a>( A ) );</div>
+<div class="line">    <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>( ! <a class="code" href="namespaceMx.html#a450a6be26178971eabb5c7ed2f539670">isSymmetric</a>( A ) );</div>
+<div class="line">    cout&lt;&lt;<span class="stringliteral">&quot;Matriz A (2x3)&quot;</span>;</div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;A&quot;</span>,A);</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00406">406</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00437">437</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1212,10 +1417,19 @@ template&lt;class E &gt; </div>
 <p>Le ajusta las dimensiones a la matriz. </p>
 <ul>
 <li>Si ocurre que <code> (m*n) == <a class="el" href="classMx_1_1Matrix.html#a5de8cee1bb3eb25f536141ad54c6aab7" title="Cantidad de filas de la matriz. ">rows()</a>*cols() </code> hace lo mismo que haría <code>reSize(m,n)</code>.</li>
-<li>En caso contrario, no hace nada. </li>
+<li>En caso contrario, no hace nada.</li>
 </ul>
+ <div class="fragment"><div class="line">{{     <span class="comment">//test::reShape()</span></div>
+<div class="line">    A.reShape(2,3);</div>
+<div class="line">    <span class="keywordflow">if</span> (2*3==A.rows()*A.cols())</div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>(2*3==A.rows()*A.cols());</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">        <a class="code" href="uUnit_8h.html#a5688ad50b1b0d06a8dac537046a221e2">assertTrue</a>(!2*3==A.rows()*A.cols());</div>
+<div class="line">    <a class="code" href="test__Matrix_8cpp.html#a698d4b051fd810c295b249067e12405e">print</a>(<span class="stringliteral">&quot;A&quot;</span>,A);</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00465">465</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00501">501</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1244,7 +1458,7 @@ template&lt;class E&gt; </div>
 
 <p>Transpone la matriz. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00120">120</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00127">127</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1273,7 +1487,7 @@ template&lt;class T &gt; </div>
 
 <p>Datos de prueba para la clase. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00127">127</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00134">134</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1313,7 +1527,7 @@ template&lt;class E&gt; </div>
 
 <p>¿¿¿ (p == q) ??? </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00093">93</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00100">100</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1353,7 +1567,7 @@ template&lt;class E&gt; </div>
 
 <p>¿¿¿ (p != q) ??? </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00095">95</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00102">102</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1391,9 +1605,9 @@ template&lt;class E&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna <code>A+B</code>. </p>
+<p>Retorna A.add(B) </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00104">104</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00111">111</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1433,7 +1647,7 @@ template&lt;class E&gt; </div>
 
 <p>Retorna <code>A-B</code>. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00106">106</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00113">113</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1473,7 +1687,7 @@ template&lt;class E&gt; </div>
 
 <p>Retorna <code>A*B</code>. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00108">108</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00115">115</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1539,7 +1753,7 @@ template&lt;class T &gt; </div>
 <li>Invariante: <code>check_ok( m_val[k] )</code> </li>
 </ul>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00170">170</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00177">177</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1566,7 +1780,7 @@ template&lt;class E&gt; </div>
 
 <p>Vector de valores de la matriz. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00129">129</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00136">136</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1592,7 +1806,7 @@ template&lt;class E&gt; </div>
 
 <p>Cantidad de filas de la matriz. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00130">130</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00137">137</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1618,7 +1832,7 @@ template&lt;class E&gt; </div>
 
 <p>Cantidad de columnas de la matris. </p>
 
-<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00131">131</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
+<p>Definición en la línea <a class="el" href="Matrix_8h_source.html#l00138">138</a> del archivo <a class="el" href="Matrix_8h_source.html">Matrix.h</a>.</p>
 
 </div>
 </div>
@@ -1628,7 +1842,7 @@ template&lt;class E&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generado el Jueves, 18 de Septiembre de 2014 14:21:20 para Uso de Mx::Matrix: por &#160;<a href="http://www.doxygen.org/index.html">
+Generado el Jueves, 18 de Septiembre de 2014 23:02:16 para Uso de Mx::Matrix: por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

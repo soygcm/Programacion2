@@ -79,7 +79,14 @@ public:
 public:
     unsigned rows() const { return m_rows; } ///< Cantidad de filas de la matriz
     unsigned cols() const { return m_cols; } ///< Cantidad de columnas de la Matriz
-    unsigned size()  const { return m_rows * m_cols; } ///< Cantidad de valores almacenados en la matriz
+    /** Cantidad de valores almacenados en la matriz
+
+    \dontinclude test_Matrix.cpp
+    \skipline    test::size()
+    \until       }}
+
+    */
+    unsigned size()  const { return m_rows * m_cols; }
     unsigned count() const { return size(); } ///< Cantidad de valores almacenados en la matriz
     /// Cantidad máxima posible de valores diferentes que pueden ser almacenados en la matriz
     size_type capacity() const { return size(); }
@@ -102,7 +109,7 @@ protected: // disponibles para clases derivadas
     void multiply( const Matrix &, const Matrix & );
 public:
     friend Matrix operator + (const Matrix& A, const Matrix& B)
-    { Matrix Res = A; Res.add(B); return Res; } ///< Retorna \c A+B
+    { Matrix Res = A; Res.add(B); return Res; } ///< Retorna A.add(B)
     friend Matrix operator - (const Matrix& A, const Matrix& B)
     { Matrix Res = A; Res.substract(B); return Res; } ///< Retorna \c A-B
     friend Matrix operator * (const Matrix& A, const Matrix& B)
@@ -265,6 +272,13 @@ inline Matrix<E>::~Matrix() {
     }
 }
 
+/**
+
+    \dontinclude test_Matrix.cpp
+    \skipline    test::operator==
+    \until       }}
+*/
+
 template <class E>
 bool Matrix<E>::equals( const Matrix & o ) const {
     if (m_rows != o.m_rows || m_cols != o.m_cols) {
@@ -296,6 +310,10 @@ bool Matrix<E>::equals( const Matrix & o ) const {
 
     \par Complejidad:
          O( <code>  rows() * cols() </code> )
+
+    \dontinclude test_Matrix.cpp
+    \skipline    test::copy()
+    \until       }}
 
     \returns *this
 
@@ -346,6 +364,10 @@ Matrix<E>& Matrix<E>::copy( const Matrix<E> &o ) {
     \par Complejidad:
          O( <code>  rows() * cols() </code> )
 
+    \dontinclude test_Matrix.cpp
+    \skipline    test::swap_move()
+    \until       }}
+
     \returns \c *this
 
     \see http://www.di-mare.com/adolfo/binder/c04.htm#sc07
@@ -385,6 +407,10 @@ Matrix<E>& Matrix<E>::move( Matrix<E> &o ) {
       \par Complejidad:
          O( \c 1 )
 
+    \dontinclude test_Matrix.cpp
+    \skipline    test::swap_move()
+    \until       }}
+
     \returns *this
 
     \see http://www.di-mare.com/adolfo/binder/c04.htm#sc08
@@ -401,6 +427,11 @@ inline Matrix<E>& Matrix<E>::swap( Matrix<E> &o ) {
     - En algunos casos los valores almacenados en la matriz no quedan
       todos iguales a \c Matrix<E>::value_type().
     - Si <code> (m * n == 0) </code> deja la matriz vacía.
+
+    \dontinclude test_Matrix.cpp
+    \skipline    test::resize()
+    \until       }}
+
 */
 template <class E>
 void Matrix<E>::reSize(unsigned m, unsigned n) {
@@ -460,6 +491,11 @@ void Matrix<E>::reSize(unsigned m, unsigned n) {
     - Si ocurre que <code> (m*n) == rows()*cols() </code> hace
       lo mismo que haría \c reSize(m,n).
     - En caso contrario, no hace nada.
+
+    \dontinclude test_Matrix.cpp
+    \skipline    test::reShape()
+    \until       }}
+
 */
 template <class E>
 inline void Matrix<E>::reShape(unsigned m, unsigned n) {
@@ -470,9 +506,16 @@ inline void Matrix<E>::reShape(unsigned m, unsigned n) {
     }
 }
 
-/// Retorna una referencia al elemento [i,j] de la matriz ( \c const ).
-/// - \c M(i,j) significa lo que en arreglos se denota con \c M[i][j].
-/// - <code>val = M(i,j); // M(i,j) es un "rvalue" (const)</code>
+/** Retorna una referencia al elemento [i,j] de la matriz ( \c const ).
+ - \c M(i,j) significa lo que en arreglos se denota con \c M[i][j].
+ - <code>val = M(i,j); // M(i,j) es un "rvalue" (const)</code>
+
+    \dontinclude test_Matrix.cpp
+    \skipline    test::operator()
+    \until       }}
+
+ */
+
 template <class E>
 inline const E& Matrix<E>::operator() (unsigned i, unsigned j) const {
     assert( "Matrix<E>::operator()()" && (i < rows()) );
@@ -508,6 +551,11 @@ inline E& Matrix<E>::operator() (unsigned i, unsigned j) {
       definida con plantillas si esa función amiga no está definida (implementada)
       dentro de la declaración de la clase. Para solventar esta deficiencia existe
       este método que realiza el trabajo, aunque es poco cómodo de usar.
+
+    \dontinclude test_Matrix.cpp
+    \skipline    test::operator+
+    \until       }}
+
 */
 template <class E>
 void Matrix<E>::add( const Matrix<E> & O ) {
@@ -539,6 +587,11 @@ void Matrix<E>::add( const Matrix<E> & O ) {
       definida con plantillas si esa función amiga no está definida (implementada)
       dentro de la declaración de la clase. Para solventar esta deficiencia existe
       este método que realiza el trabajo, aunque es poco cómodo de usar.
+
+    \dontinclude test_Matrix.cpp
+    \skipline    test::operator-
+    \until       }}
+
 */
 template <class E>
 void Matrix<E>::substract( const Matrix<E> & O ) {
@@ -575,6 +628,11 @@ void Matrix<E>::substract( const Matrix<E> & O ) {
       definida con plantillas si esa función amiga no está definida (implementada)
       dentro de la declaración de la clase. Para solventar esta deficiencia existe
       este método que realiza el trabajo, aunque es poco cómodo de usar.
+
+    \dontinclude test_Matrix.cpp
+    \skipline    test::operator*
+    \until       }}
+
 */
 template <class E>
 void Matrix<E>::multiply( const Matrix<E> & A, const Matrix<E> & B ) {

@@ -15,7 +15,7 @@ var searchData=
   ['makelist_5fchar',['makeList_char',['../str2list_8h.html#a2cdec5d1c7de2c69841fd3511fa01d8d',1,'str2list.h']]],
   ['makelist_5fint',['makeList_int',['../str2list_8h.html#ab0e3f502b625fa8ff7307bb0caf8f5b1',1,'str2list.h']]],
   ['makelist_5flong',['makeList_long',['../str2list_8h.html#a70bf91fefd2cd0f48bd1cb5ff5095c8c',1,'str2list.h']]],
-  ['matrix',['Matrix',['../classMx_1_1Matrix.html#ad401078c581f257ab50a3da670c8c944',1,'Mx::Matrix::Matrix(unsigned m=1, unsigned n=1)'],['../classMx_1_1Matrix.html#ac9521704325b08e3c8d344266f23d01e',1,'Mx::Matrix::Matrix(const Matrix &amp;o)'],['../classMx_1_1Matrix.html#ab023e18fc8614379ef8d15ec769c8e29',1,'Mx::Matrix::Matrix(const value_type V)'],['../test__Matrix_8cpp.html#a0df714017bffa9985cca9a6ae1b4d7f6',1,'Matrix():&#160;test_Matrix.cpp']]],
+  ['matrix',['Matrix',['../classMx_1_1Matrix.html#ad401078c581f257ab50a3da670c8c944',1,'Mx::Matrix::Matrix(unsigned m=1, unsigned n=1)'],['../classMx_1_1Matrix.html#ac9521704325b08e3c8d344266f23d01e',1,'Mx::Matrix::Matrix(const Matrix &amp;o)'],['../classMx_1_1Matrix.html#ab023e18fc8614379ef8d15ec769c8e29',1,'Mx::Matrix::Matrix(const value_type V)']]],
   ['matrix',['Matrix',['../classMx_1_1Matrix.html',1,'Mx']]],
   ['matrix_2eh',['Matrix.h',['../Matrix_8h.html',1,'']]],
   ['matrix2list_5fwrap',['matrix2list_wrap',['../str2list_8h.html#afdae1537745ef1f930007376847c4b8e',1,'str2list.h']]],
