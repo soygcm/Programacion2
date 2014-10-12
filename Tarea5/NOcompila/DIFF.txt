@@ -77,25 +77,3 @@
 <     }
 < }
 < 
-11a12
-> #include <cstring>       // strcmp()
-24c25,26
-< 
----
->         // Lo ejecuta varias veces para constatar que la
->         // memoria dinámica fue liberada adecuadamente
-30c32
-<                 std::list< dejaHuecos >::const_iterator last = Lhuecos.back();
----
->                 dejaHuecos & last = Lhuecos.back();
-34,35c36
-<                 if ( 0 == strcmp ( last->get(), Lhuecos.back() ) ) { break; }
-<                 }
----
->                 if ( 0 == strcmp( last.get(), Lhuecos.back().get() ) ) { break; }
-39c40
-<             static char chanfle = { 'C','H','A','N','F','L','E',  \0 };
----
->             static char chanfle[] = { 'C','H','A','N','F','L','E', '\0'};
-46a48
-> 
