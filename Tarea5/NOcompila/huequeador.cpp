@@ -9,6 +9,7 @@
 
 #include <iostream>      // std::cout, etc.
 #include <list>          // std::list<>
+#include <cstring>       // strcmp()
 #include "dejaHuecos.h"  // clase mala, rompe programas
 
 int main(int argc, char **argv) {
@@ -21,22 +22,22 @@ int main(int argc, char **argv) {
     int cont[4]; // contadores para ejecutar varias veces lo mismo
     #define DIM(v) (sizeof(v)/sizeof(*v)) ///< Dimensión de 'v[]'.
     for ( unsigned k=0; k<DIM(cont); ++k ) {
-
+         // Lo ejecuta varias veces para constatar que la
+         // memoria dinámica fue liberada adecuadamente
         try {
             int n=0;
             std::list< dejaHuecos > Lhuecos;
             for (;;) {
                 ++n;
-                std::list< dejaHuecos >::const_iterator last = Lhuecos.back();
+                dejaHuecos &last = Lhuecos.back();
                 Lhuecos.push_back( dejaHuecos(n) );
 
                 // se sale cuando se le acaba la memoria
-                if ( 0 == strcmp ( last->get(), Lhuecos.back() ) ) { break; }
-                }
+                if ( 0 == strcmp( last.get(), Lhuecos.back().get() ) ) { break; }
             }
         }
         catch ( const char * CHANFLE ) {
-            static char chanfle = { 'C','H','A','N','F','L','E',  \0 };
+            static char chanfle[] = { 'C','H','A','N','F','L','E', '\0'};
             if ( 0 != strcmp( CHANFLE , chanfle ) ) {
                 std::cout << "  Exepción loca [" << CHANFLE << "[\n";
                 std::cout << "  Debiera ser [ "  << chanfle << "[\n";

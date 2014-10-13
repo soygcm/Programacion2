@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1413150488 source:/Users/gabriel/Proyectos/UCR/IV-Semestre/Progra2/Programacion2/Tarea5/NOcompila/huequeador.cpp
+	<iostream>
+	<list>
+	<cstring>
+	"dejaHuecos.h"
+
+1413150963 /Users/gabriel/Proyectos/UCR/IV-Semestre/Progra2/Programacion2/Tarea5/NOcompila/dejaHuecos.h
+	<ctime>
+	<cstdlib>
+

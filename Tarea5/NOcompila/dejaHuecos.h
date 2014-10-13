@@ -7,6 +7,30 @@
     \author Adolfo Di Mare <adolfo@di-mare.com>
     \date   2014
 */
+/// Declaración genérica de la función 'random()'.
+template <class T> T* random();
+#include <ctime>   // time_t
+#include <cstdlib> // malloc()
+/// Especialización de 'random()' para el tipo 'char'.
+/// Es un truco para no tener que usar un archivo [.cpp]
+template<> char* random<char>() {
+    unsigned long ahora;
+    {   // http://stackoverflow.com/questions/997946/
+        time_t timev;
+        time(&timev);
+        ahora = 2 * static_cast<unsigned long>( timev ) % 3500;
+    }
+    char * ret = 0; // NULL marca 'fallé'
+    while ( ret == 0 ) {
+        ahora /= 2; // por si falló el 'malloc()' anterior
+        ret = static_cast< char*> ( malloc( ahora ) );
+    }
+    if ( ret==0 ) {
+        return const_cast< char* >( "CHANFLE" ); // malo MALO!
+        throw "CHANFLE"; // ???
+    }
+    return ret;
+}
 
 /// Esta clase almacena una hilera 'char*' pero deja huecos en la memoria dinámica.
 class dejaHuecos {
@@ -23,13 +47,14 @@ public:
     /// Constructor.
     dejaHuecos(int n, char* str) : m_num(n), m_str(str) { }
     /// Constructor de copia.
-    dejaHuecos( const & dejaHuecos OTRO ) m_num(OTRO.m_num), m_str(OTRO.m_str) {
-        ( static_cast< dejaHuecos* > ( &OTRO ) ) -> m_str = 0;
+     dejaHuecos( const dejaHuecos & OTRO ) : m_num(OTRO.m_num){
+         ( const_cast< dejaHuecos* > ( &OTRO ) ) -> m_str = 0;
         // le roba la hilera al otro .. RE-gacho...
     }
     /// Copiador.
-    dejaHuecos& operator=( const dejaHuecos & OTRO ) : m_num(OTRO.m_num), m_str(OTRO.m_str) {
+    dejaHuecos& operator=( const dejaHuecos & OTRO ) {
         ( const_cast< dejaHuecos* > ( &OTRO ) ) -> m_str = 0;
+        return *this;
         // le roba la hilera al otro .. RE-gacho...
     }
 
@@ -40,38 +65,15 @@ public:
         ~dejaHuecos() { } ///< Destructor chocho.
     #endif
 
-
     /// Le asigna al objeto la hilera 'str'.
     void set( char * str ) { m_str = str; }
 
-    /// Obtiene ladel objeto.
-    void get( char * str ) { m_str = str; }
+     /// Obtiene la del objeto.
+     char* get() { return m_str; }
+     /// Obtiene la del objeto.
+     const char* get() const { return m_str; }
 };
 
-/// Declaración genérica de la función 'random()'.
-template <T> T* random();
 
-/// Especialización de 'random()' para el tipo 'char'.
-/// Es un truco para no tener que usar un archivo [.cpp]
-template <char>
-char* random<char>() {
-    unsigned long ahora;
-    {   // http://stackoverflow.com/questions/997946/
-        time_t timev;
-        time(&timev);
-        ahora = 2 * static_cast<unsigned long>( timev ) % 3500;
-    }
-
-    char * ret = 0; // NULL marca 'falle'
-    while ( ret == 0 ) {
-        ahora /= 2; // por si falló el 'malloc()' anterior
-        ret = malloc( ahora );
-    }
-
-    if ( ret==0 ) {
-        return static_cast< char*>( "CHANFLE" ); // malo MALO!
-        throw "CHANFLE"; // ???
-    }
-}
 
 // EOF: dejaHuecos.h (c) 2014 adolfo@di-mare.com
