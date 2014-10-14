@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Deja huecos en la memoria dinámica: B31520, B31676: Fichero Fuente dejaHuecos.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Deja huecos en la memoria dinámica: B31520, B31676
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dejaHuecos.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dejaHuecos_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// dejaHuecos.h (c) 2014 adolfo@di-mare.com</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/** \file  dejaHuecos.h</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    \brief Clase que sirve para mostrar cómo lograr que el destructor de std::list&lt;&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">           no pueda recuperar toda la memoria dinámica.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    \author Adolfo Di Mare &lt;adolfo@di-mare.com&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    \date   2014</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*/</span><span class="comment"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// Declaración genérica de la función &#39;random()&#39;.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span><span class="preprocessor">#include &lt;cstdlib&gt;</span> <span class="comment">// malloc()</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/// Esta clase almacena una hilera &#39;char*&#39; pero deja huecos en la memoria dinámica.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classdejaHuecos.html">   14</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="classdejaHuecos.html">dejaHuecos</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#a40f78ef61090f68c78d1e6ace54bb965">   15</a></span>&#160;    <span class="keywordtype">int</span>    <a class="code" href="classdejaHuecos.html#a40f78ef61090f68c78d1e6ace54bb965">m_num</a>;  <span class="comment">///&lt; Número para identificar a este valor</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">   16</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">char</span> * <a class="code" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">m_str</a>;  <span class="comment">///&lt; Hilera cuya memoria nunca se destruye</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    /// Constructor por defecto.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#a79531956792b6d0747e10b7b3079b9ed">   20</a></span>&#160;<span class="comment"></span>    <a class="code" href="classdejaHuecos.html#a79531956792b6d0747e10b7b3079b9ed">dejaHuecos</a>() : <a class="code" href="classdejaHuecos.html#a40f78ef61090f68c78d1e6ace54bb965">m_num</a>(-666), <a class="code" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">m_str</a>(0) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classdejaHuecos.html#a70ba18538c6a886d2f564a9423d3dad7">set</a>( <a class="code" href="classdejaHuecos.html#a8dbe63b3b4ad7beb0812281fdc3c0e2e">obtenerMemoria</a>() );</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }<span class="comment"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    /// Constructor &#39;int&#39;.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#af5cbb0fb03d81b880b88f020a3b64dbe">   24</a></span>&#160;<span class="comment"></span>    <a class="code" href="classdejaHuecos.html#af5cbb0fb03d81b880b88f020a3b64dbe">dejaHuecos</a>(<span class="keywordtype">int</span> n) : <a class="code" href="classdejaHuecos.html#a40f78ef61090f68c78d1e6ace54bb965">m_num</a>(n) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classdejaHuecos.html#a70ba18538c6a886d2f564a9423d3dad7">set</a>( <a class="code" href="classdejaHuecos.html#a8dbe63b3b4ad7beb0812281fdc3c0e2e">obtenerMemoria</a>() );</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }<span class="comment"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    /// Constructor.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#ac2d3feb727de2cb018aa2b43693d5a96">   28</a></span>&#160;<span class="comment"></span>    <a class="code" href="classdejaHuecos.html#ac2d3feb727de2cb018aa2b43693d5a96">dejaHuecos</a>(<span class="keywordtype">int</span> n, <span class="keywordtype">char</span>* str) : <a class="code" href="classdejaHuecos.html#a40f78ef61090f68c78d1e6ace54bb965">m_num</a>(n), <a class="code" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">m_str</a>(str) { }<span class="comment"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    /// Constructor de copia.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#a10cc3bfc68f5cfba6083068c515142f2">   30</a></span>&#160;<span class="comment"></span>     <a class="code" href="classdejaHuecos.html#a10cc3bfc68f5cfba6083068c515142f2">dejaHuecos</a>( <span class="keyword">const</span> <a class="code" href="classdejaHuecos.html">dejaHuecos</a> &amp; OTRO ) : <a class="code" href="classdejaHuecos.html#a40f78ef61090f68c78d1e6ace54bb965">m_num</a>(OTRO.<a class="code" href="classdejaHuecos.html#a40f78ef61090f68c78d1e6ace54bb965">m_num</a>){</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;         ( <span class="keyword">const_cast&lt;</span> <a class="code" href="classdejaHuecos.html">dejaHuecos</a>* <span class="keyword">&gt;</span> ( &amp;OTRO ) ) -&gt; <a class="code" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">m_str</a> = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// le roba la hilera al otro .. RE-gacho...</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }<span class="comment"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    /// Copiador.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#ac5d87b106e9c72a46a6f11f1df6576a7">   35</a></span>&#160;<span class="comment"></span>    <a class="code" href="classdejaHuecos.html">dejaHuecos</a>&amp; <a class="code" href="classdejaHuecos.html#ac5d87b106e9c72a46a6f11f1df6576a7">operator=</a>( <span class="keyword">const</span> <a class="code" href="classdejaHuecos.html">dejaHuecos</a> &amp; OTRO ) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        ( <span class="keyword">const_cast&lt;</span> <a class="code" href="classdejaHuecos.html">dejaHuecos</a>* <span class="keyword">&gt;</span> ( &amp;OTRO ) ) -&gt; <a class="code" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">m_str</a> = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// le roba la hilera al otro .. RE-gacho...</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    /// Truco para usar 2 proyectos para correr el mismo programa fuente.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span><span class="preprocessor">    #ifdef SIN_HUECOS</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classdejaHuecos.html#a9e3036f70f1c27d4aad136941070695d">~dejaHuecos</a>() {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">m_str</a> != 0) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                free(<a class="code" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">m_str</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        } <span class="comment">///&lt; Destructor arreglado.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span><span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#a9e3036f70f1c27d4aad136941070695d">   49</a></span>&#160;      <a class="code" href="classdejaHuecos.html#a9e3036f70f1c27d4aad136941070695d">~dejaHuecos</a>() { } <span class="comment">///&lt; Destructor chocho.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span><span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">    /// Le asigna al objeto la hilera &#39;str&#39;.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#a70ba18538c6a886d2f564a9423d3dad7">   53</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classdejaHuecos.html#a70ba18538c6a886d2f564a9423d3dad7">set</a>( <span class="keywordtype">char</span> * str ) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::cout &lt;&lt; <a class="code" href="classdejaHuecos.html#a40f78ef61090f68c78d1e6ace54bb965">m_num</a> &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; (<span class="keywordtype">void</span> *) str &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">m_str</a> = str;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">     /// Obtiene la del objeto.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#a7d2c4eae4c2fe1c3dbe21d6e392d45e5">   59</a></span>&#160;<span class="comment"></span>     <span class="keywordtype">char</span>* <span class="keyword">get</span>() { <span class="keywordflow">return</span> <a class="code" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">m_str</a>; }<span class="comment"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     /// Obtiene la del objeto.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#ab07dd569767d01a09f876d4bc864c511">   61</a></span>&#160;<span class="comment"></span>     <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">get</span>() <span class="keyword">const</span> { <span class="keywordflow">return</span> <a class="code" href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">m_str</a>; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="classdejaHuecos.html#a8dbe63b3b4ad7beb0812281fdc3c0e2e">obtenerMemoria</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/// Especialización de &#39;random()&#39; para el tipo &#39;char&#39;.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/// Es un truco para no tener que usar un archivo [.cpp]</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classdejaHuecos.html#a8dbe63b3b4ad7beb0812281fdc3c0e2e">   68</a></span>&#160;<span class="comment"></span><span class="keywordtype">char</span> *<a class="code" href="classdejaHuecos.html#a8dbe63b3b4ad7beb0812281fdc3c0e2e">dejaHuecos::obtenerMemoria</a>() {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">long</span> numerote = 1000000000000;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">char</span> * ret = 0; <span class="comment">// NULL marca &#39;fallé&#39;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    ret = (<span class="keywordtype">char</span> *) malloc( numerote ) ;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> ( ret == 0 ) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">throw</span> <span class="stringliteral">&quot;CHANFLE&quot;</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// EOF: dejaHuecos.h (c) 2014 adolfo@di-mare.com</span></div>
+<div class="ttc" id="classdejaHuecos_html_a9e3036f70f1c27d4aad136941070695d"><div class="ttname"><a href="classdejaHuecos.html#a9e3036f70f1c27d4aad136941070695d">dejaHuecos::~dejaHuecos</a></div><div class="ttdeci">~dejaHuecos()</div><div class="ttdoc">Truco para usar 2 proyectos para correr el mismo programa fuente. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00049">dejaHuecos.h:49</a></div></div>
+<div class="ttc" id="classdejaHuecos_html_a10cc3bfc68f5cfba6083068c515142f2"><div class="ttname"><a href="classdejaHuecos.html#a10cc3bfc68f5cfba6083068c515142f2">dejaHuecos::dejaHuecos</a></div><div class="ttdeci">dejaHuecos(const dejaHuecos &amp;OTRO)</div><div class="ttdoc">Constructor de copia. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00030">dejaHuecos.h:30</a></div></div>
+<div class="ttc" id="classdejaHuecos_html_ac2d3feb727de2cb018aa2b43693d5a96"><div class="ttname"><a href="classdejaHuecos.html#ac2d3feb727de2cb018aa2b43693d5a96">dejaHuecos::dejaHuecos</a></div><div class="ttdeci">dejaHuecos(int n, char *str)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00028">dejaHuecos.h:28</a></div></div>
+<div class="ttc" id="classdejaHuecos_html_a70ba18538c6a886d2f564a9423d3dad7"><div class="ttname"><a href="classdejaHuecos.html#a70ba18538c6a886d2f564a9423d3dad7">dejaHuecos::set</a></div><div class="ttdeci">void set(char *str)</div><div class="ttdoc">Le asigna al objeto la hilera &#39;str&#39;. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00053">dejaHuecos.h:53</a></div></div>
+<div class="ttc" id="classdejaHuecos_html_af5cbb0fb03d81b880b88f020a3b64dbe"><div class="ttname"><a href="classdejaHuecos.html#af5cbb0fb03d81b880b88f020a3b64dbe">dejaHuecos::dejaHuecos</a></div><div class="ttdeci">dejaHuecos(int n)</div><div class="ttdoc">Constructor &#39;int&#39;. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00024">dejaHuecos.h:24</a></div></div>
+<div class="ttc" id="classdejaHuecos_html_a79531956792b6d0747e10b7b3079b9ed"><div class="ttname"><a href="classdejaHuecos.html#a79531956792b6d0747e10b7b3079b9ed">dejaHuecos::dejaHuecos</a></div><div class="ttdeci">dejaHuecos()</div><div class="ttdoc">Constructor por defecto. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00020">dejaHuecos.h:20</a></div></div>
+<div class="ttc" id="classdejaHuecos_html_a8dbe63b3b4ad7beb0812281fdc3c0e2e"><div class="ttname"><a href="classdejaHuecos.html#a8dbe63b3b4ad7beb0812281fdc3c0e2e">dejaHuecos::obtenerMemoria</a></div><div class="ttdeci">char * obtenerMemoria()</div><div class="ttdoc">Especialización de &#39;random()&#39; para el tipo &#39;char&#39;. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00068">dejaHuecos.h:68</a></div></div>
+<div class="ttc" id="classdejaHuecos_html"><div class="ttname"><a href="classdejaHuecos.html">dejaHuecos</a></div><div class="ttdoc">Declaración genérica de la función &#39;random()&#39;. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00014">dejaHuecos.h:14</a></div></div>
+<div class="ttc" id="classdejaHuecos_html_a779c3bbab06aa16035e1aceb6abf4067"><div class="ttname"><a href="classdejaHuecos.html#a779c3bbab06aa16035e1aceb6abf4067">dejaHuecos::m_str</a></div><div class="ttdeci">char * m_str</div><div class="ttdoc">Hilera cuya memoria nunca se destruye. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00016">dejaHuecos.h:16</a></div></div>
+<div class="ttc" id="classdejaHuecos_html_ac5d87b106e9c72a46a6f11f1df6576a7"><div class="ttname"><a href="classdejaHuecos.html#ac5d87b106e9c72a46a6f11f1df6576a7">dejaHuecos::operator=</a></div><div class="ttdeci">dejaHuecos &amp; operator=(const dejaHuecos &amp;OTRO)</div><div class="ttdoc">Copiador. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00035">dejaHuecos.h:35</a></div></div>
+<div class="ttc" id="classdejaHuecos_html_a40f78ef61090f68c78d1e6ace54bb965"><div class="ttname"><a href="classdejaHuecos.html#a40f78ef61090f68c78d1e6ace54bb965">dejaHuecos::m_num</a></div><div class="ttdeci">int m_num</div><div class="ttdoc">Número para identificar a este valor. </div><div class="ttdef"><b>Definition:</b> <a href="dejaHuecos_8h_source.html#l00015">dejaHuecos.h:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 13 de Octubre de 2014 21:25:53 para Deja huecos en la memoria dinámica: B31520, B31676 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>
