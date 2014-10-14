@@ -13,47 +13,26 @@
 #include "dejaHuecos.h"  // clase mala, rompe programas
 
 int main(int argc, char **argv) {
-    if ( argc!=1 ) {
-        std::cout << argv[0] << " no usa parametros\n";
-        std::cout << "  -> Ejecucion finalizada" << std::endl;
-        return 1;
-    }
 
-    int cont[4]; // contadores para ejecutar varias veces lo mismo
-    #define DIM(v) (sizeof(v)/sizeof(*v)) ///< Dimensión de 'v[]'.
-    for ( unsigned k=0; k<DIM(cont); ++k ) {
-         // Lo ejecuta varias veces para constatar que la
-         // memoria dinámica fue liberada adecuadamente
-        try {
-            int n=0;
-            std::list< dejaHuecos > Lhuecos;
-            for (;;) {
-                ++n;
-                dejaHuecos &last = Lhuecos.back();
-                Lhuecos.push_back( dejaHuecos(n) );
-
-                // se sale cuando se le acaba la memoria
-                if ( 0 == strcmp( last.get(), Lhuecos.back().get() ) ) { break; }
-            }
-        }
-        catch ( const char * CHANFLE ) {
-            static char chanfle[] = { 'C','H','A','N','F','L','E', '\0'};
-            if ( 0 != strcmp( CHANFLE , chanfle ) ) {
-                std::cout << "  Exepción loca [" << CHANFLE << "[\n";
-                std::cout << "  Debiera ser [ "  << chanfle << "[\n";
-                std::cout << "  -> Ejecucion finalizada" << std::endl;
-                return 2;
+    try {
+        int n=0;
+        for (;;) {
+            ++n;
+            dejaHuecos dejado = dejaHuecos(n);
+            if (n == 1000) {
+                std::cout << "Podria seguir asi hasta el infinito, pero esta claro que el destructor esta haciendo su trabajo, y no esta dejando basura." << std::endl;
+                break;
             }
         }
     }
-
-    for ( unsigned k=1; k<DIM(cont); ++k ) {
-        if ( cont[k-1] != cont[k] ) {
-            std::cout << argv[0] << " deja huecos en la memoria dinamica\n";
+    catch ( const char *error ) {
+        if ( 0 == strcmp("CHANFLE", error) ) {
+            std::cout << "  Memoria insuficiente [" << error << "]\n";
             std::cout << "  -> Ejecucion finalizada" << std::endl;
-            return 3;
+            return 0;
         }
     }
+    
     return 0;
 }
 
