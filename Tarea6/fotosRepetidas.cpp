@@ -1,4 +1,4 @@
-// fotosRepetidas.h (c) 2014 
+// fotosRepetidas.h (c) 2014
 
 /** \file  fotosRepetidas.cpp
     \brief Programa que compara dos carpetas de fotos, para determinar si estan repetidas
@@ -15,7 +15,7 @@
 using namespace std;
 
 /**
-    Guarda todas las fotos (archivos que terminan con .jpg) que estan en una carpeta \c parent 
+    Guarda todas las fotos (archivos que terminan con .jpg) que estan en una carpeta \c parent
     y en un subdirectorio \c subDirName. En una lista \c list<string>
 */
 void getPhotos(const char *parent, const char *subDirName, list<string> &list){
@@ -62,7 +62,7 @@ void getPhotos(const char *parent, const char *subDirName, list<string> &list){
 
 /**
     Toma un nombre de imagen ejemplo: "DS599003_3329 hola.jpg"
-    y deja solamente la parte "DS599003_3329" borrando desde el espacio 
+    y deja solamente la parte "DS599003_3329" borrando desde el espacio
     para adelante.
     Tambien toma un nombre de imagen ejemplo: "DS599003_3329.jpg"
     y deja solamente la parte "DS599003_3329" borrando desde el punto
@@ -102,7 +102,7 @@ bool iequals(const string &a, const string &b)
     - Con solo los que estan en la segunda lista
     - Con los nombres de archivos que estan en ambos
 */
-void fotosRepetidas(list<string> &listAlbum, list<string> &listCamera){
+void fotosRepetidas(list<string> &listAlbum, list<string> &listCamera, char *albumDirectory,char *cameraDirectory){
 
     list<string> listOnlyCamera, listOnlyAlbum, listBoth;
 
@@ -146,21 +146,19 @@ void fotosRepetidas(list<string> &listAlbum, list<string> &listCamera){
 
     }
 
-
-
-    cout << "**** Fotos solo en la camara ****" << endl;
+    cout << "**** Fotos solo en: " << cameraDirectory << endl;
 	for( i = listOnlyCamera.begin(); i != listOnlyCamera.end(); ++i)
-		cout << *i << endl;
+		cout << "\t" << *i << endl;
 	cout << endl;
 
-    cout << "**** Fotos solo en el album ****" << endl;
+    cout << "**** Fotos solo en: " << albumDirectory << endl;
 	for( i = listOnlyAlbum.begin(); i != listOnlyAlbum.end(); ++i)
-		cout << *i << endl;
+		cout << "\t" << *i << endl;
 	cout << endl;
 
-    cout << "**** Fotos en ambos ****" << endl;
+    cout << "**** Fotos en ambos directorios ****" << endl;
     for( i = listBoth.begin(); i != listBoth.end(); ++i)
-		cout << *i << endl;
+		cout << "\t" << *i << endl;
 	cout << endl;
 
 }
@@ -173,13 +171,21 @@ int main(int argc, char **argv) {
 
     list<string> albumPhotos, cameraPhotos;
 
-    char albumDirectory[] = "/Users/gabriel/Proyectos/UCR/IV-Semestre/Progra2/Programacion2/Tarea6/Carpetas-Prueba/muchos/ALBUM";
-    char cameraDirectory[] = "/Users/gabriel/Proyectos/UCR/IV-Semestre/Progra2/Programacion2/Tarea6/Carpetas-Prueba/muchos/DCIM";
+    char albumDirectory[1024];
+    char cameraDirectory[1024];
+
+    cout << "Directorio de la memoria flash: ";
+    cin >> cameraDirectory;
+    cout << endl;
+
+    cout << "Directorio de la computadora: ";
+    cin >> albumDirectory;
+    cout << endl;
 
     getPhotos(albumDirectory, "", albumPhotos);
     getPhotos(cameraDirectory, "", cameraPhotos);
 
-    fotosRepetidas(albumPhotos, cameraPhotos);
+    fotosRepetidas(albumPhotos, cameraPhotos, albumDirectory, cameraDirectory);
 
     return 0;
 }

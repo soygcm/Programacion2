@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1414084095 source:/Users/gabriel/Proyectos/UCR/IV-Semestre/Progra2/Programacion2/Tarea6/fotosRepetidas.cpp
+1414107717 source:/Users/gabriel/Proyectos/UCR/IV-Semestre/Progra2/Programacion2/Tarea6/fotosRepetidas.cpp
 	<iostream>
 	<list>
+	<dirent.h>
+	<string>
 
