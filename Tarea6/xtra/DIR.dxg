@@ -1,0 +1,44 @@
+PROJECT_NAME          = "Lectura de archivos del directorio actual:"
+OUTPUT_LANGUAGE       = Spanish
+OUTPUT_DIRECTORY      = .
+GENERATE_LATEX        = NO
+GENERATE_MAN          = NO
+GENERATE_RTF          = NO
+CASE_SENSE_NAMES      = YES
+INPUT_ENCODING        = ISO-8859-1
+INPUT                 = DIR.cpp
+RECURSIVE             = NO
+QUIET                 = YES
+JAVADOC_AUTOBRIEF     = YES
+EXTRACT_ALL           = YES
+EXTRACT_PRIVATE       = YES
+EXTRACT_STATIC        = YES
+EXTRACT_LOCAL_CLASSES = YES
+INLINE_INHERITED_MEMB = YES
+SOURCE_BROWSER        = YES
+INLINE_SOURCES        = NO
+STRIP_CODE_COMMENTS   = NO
+REFERENCED_BY_RELATION= NO
+REFERENCES_RELATION   = NO
+FULL_PATH_NAMES       = NO
+
+EXPAND_ONLY_PREDEF    = YES
+EXPAND_AS_DEFINED     = YES
+PREDEFINED            = _MSC_VER=1 __BORLANDC__=1
+
+SORT_MEMBER_DOCS      = NO
+SORT_BRIEF_DOCS       = NO
+CLASS_DIAGRAMS        = YES
+
+#--- TODOS ESTOS SON MENOS COMUNES ---
+# DISTRIBUTE_GROUP_DOC = YES
+# ENABLE_PREPROCESSING = YES
+# EXAMPLE_PATH         = example_test.cpp
+# FILE_PATTERNS        = diagrams_*.h
+# GENERATE_TAGFILE     = example.tag
+# HAVE_DOT             = YES
+# PERL_PATH            = perl
+# TAGFILES             = example.tag=../../example/html
+
+# Manual ==> http://www.doxygen.org/manual.html
+

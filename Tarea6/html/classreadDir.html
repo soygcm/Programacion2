@@ -1,0 +1,904 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>readDir y fotoRepetidas: Referencia de la Clase readDir</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">readDir y fotoRepetidas
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-static-methods">Métodos públicos estáticos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="classreadDir-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase readDir</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Módulo portable para leer los nombres de los archivos de un directorio.  
+ <a href="classreadDir.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="readDir_8h_source.html">readDir.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ad680b9e551964e7d232e1e0bf78bb360"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#ad680b9e551964e7d232e1e0bf78bb360">readDir</a> (const char *pszMask=0)</td></tr>
+<tr class="memdesc:ad680b9e551964e7d232e1e0bf78bb360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor que lee el directorio <code>"dir"</code>.  <a href="#ad680b9e551964e7d232e1e0bf78bb360">Más...</a><br /></td></tr>
+<tr class="separator:ad680b9e551964e7d232e1e0bf78bb360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c3c95081b0d83ee00a22ab66fba055"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#aa9c3c95081b0d83ee00a22ab66fba055">readDir</a> (const std::string &amp;dir)</td></tr>
+<tr class="memdesc:aa9c3c95081b0d83ee00a22ab66fba055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor que lee el directorio <code>"dir"</code>.  <a href="#aa9c3c95081b0d83ee00a22ab66fba055">Más...</a><br /></td></tr>
+<tr class="separator:aa9c3c95081b0d83ee00a22ab66fba055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08186a4d5a1c4545e677290709aea380"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a08186a4d5a1c4545e677290709aea380">~readDir</a> ()</td></tr>
+<tr class="memdesc:a08186a4d5a1c4545e677290709aea380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a08186a4d5a1c4545e677290709aea380">Más...</a><br /></td></tr>
+<tr class="separator:a08186a4d5a1c4545e677290709aea380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e6d36a8e37bc38cb069d3806509dc6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a75e6d36a8e37bc38cb069d3806509dc6">hasNext</a> () const </td></tr>
+<tr class="memdesc:a75e6d36a8e37bc38cb069d3806509dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna <code>"true"</code> cuando hay más archivos por procesar.  <a href="#a75e6d36a8e37bc38cb069d3806509dc6">Más...</a><br /></td></tr>
+<tr class="separator:a75e6d36a8e37bc38cb069d3806509dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c63546eb87e75ec814a35c027475a7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classreadDir.html">readDir</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a63c63546eb87e75ec814a35c027475a7">next</a> ()</td></tr>
+<tr class="memdesc:a63c63546eb87e75ec814a35c027475a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Avanza al siguiente nombre de archivo.  <a href="#a63c63546eb87e75ec814a35c027475a7">Más...</a><br /></td></tr>
+<tr class="separator:a63c63546eb87e75ec814a35c027475a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77cfb6aeafeb641b13826a1ff0af59b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a77cfb6aeafeb641b13826a1ff0af59b9">setMask</a> (const char *dir)</td></tr>
+<tr class="memdesc:a77cfb6aeafeb641b13826a1ff0af59b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establece como máscara de búsqueda <code>dir</code>.  <a href="#a77cfb6aeafeb641b13826a1ff0af59b9">Más...</a><br /></td></tr>
+<tr class="separator:a77cfb6aeafeb641b13826a1ff0af59b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6559338c05d5846413db871db8271b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#aec6559338c05d5846413db871db8271b">setMaskWithChop</a> (const char *dir)</td></tr>
+<tr class="memdesc:aec6559338c05d5846413db871db8271b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establece como máscara de búsqueda <code>dir</code>.  <a href="#aec6559338c05d5846413db871db8271b">Más...</a><br /></td></tr>
+<tr class="separator:aec6559338c05d5846413db871db8271b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730f7f89bbadcc1c1e9357bb147ed6a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a730f7f89bbadcc1c1e9357bb147ed6a1">setMask</a> (const std::string &amp;dir)</td></tr>
+<tr class="memdesc:a730f7f89bbadcc1c1e9357bb147ed6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establece como máscara de búsqueda <code>dir</code>.  <a href="#a730f7f89bbadcc1c1e9357bb147ed6a1">Más...</a><br /></td></tr>
+<tr class="separator:a730f7f89bbadcc1c1e9357bb147ed6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5169fdab676aba9498909136b5893fe"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#ab5169fdab676aba9498909136b5893fe">getMask</a> () const </td></tr>
+<tr class="memdesc:ab5169fdab676aba9498909136b5893fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna la máscara establecida por <code><a class="el" href="classreadDir.html#a77cfb6aeafeb641b13826a1ff0af59b9" title="Establece como máscara de búsqueda dir. ">setMask()</a></code>;.  <a href="#ab5169fdab676aba9498909136b5893fe">Más...</a><br /></td></tr>
+<tr class="separator:ab5169fdab676aba9498909136b5893fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89d366b6fdf129d1778343c6f40ed13"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#af89d366b6fdf129d1778343c6f40ed13">size</a> () const </td></tr>
+<tr class="memdesc:af89d366b6fdf129d1778343c6f40ed13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tamaño del archivo.  <a href="#af89d366b6fdf129d1778343c6f40ed13">Más...</a><br /></td></tr>
+<tr class="separator:af89d366b6fdf129d1778343c6f40ed13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29996df6fa4d7d1ccb9c5baec75f3fcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a29996df6fa4d7d1ccb9c5baec75f3fcc">isNormal</a> () const </td></tr>
+<tr class="memdesc:a29996df6fa4d7d1ccb9c5baec75f3fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"true"</code> si el archivo es "Normal".  <a href="#a29996df6fa4d7d1ccb9c5baec75f3fcc">Más...</a><br /></td></tr>
+<tr class="separator:a29996df6fa4d7d1ccb9c5baec75f3fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba790e17569d16d2d78f568d6ee3f76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a4ba790e17569d16d2d78f568d6ee3f76">isReadOnly</a> () const </td></tr>
+<tr class="memdesc:a4ba790e17569d16d2d78f568d6ee3f76"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"true"</code> si el archivo es "Read Only".  <a href="#a4ba790e17569d16d2d78f568d6ee3f76">Más...</a><br /></td></tr>
+<tr class="separator:a4ba790e17569d16d2d78f568d6ee3f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545113ceda8d96a37bd58c2ca3f2ce34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a545113ceda8d96a37bd58c2ca3f2ce34">isHidden</a> () const </td></tr>
+<tr class="memdesc:a545113ceda8d96a37bd58c2ca3f2ce34"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"true"</code> si el archivo es "Hidden".  <a href="#a545113ceda8d96a37bd58c2ca3f2ce34">Más...</a><br /></td></tr>
+<tr class="separator:a545113ceda8d96a37bd58c2ca3f2ce34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69386a9ffb14133e959648ea12bf9344"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a69386a9ffb14133e959648ea12bf9344">isSystem</a> () const </td></tr>
+<tr class="memdesc:a69386a9ffb14133e959648ea12bf9344"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"true"</code> si el archivo es "System".  <a href="#a69386a9ffb14133e959648ea12bf9344">Más...</a><br /></td></tr>
+<tr class="separator:a69386a9ffb14133e959648ea12bf9344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4640e58f9c8f24819078339e42dd0b41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a4640e58f9c8f24819078339e42dd0b41">isLabel</a> () const </td></tr>
+<tr class="memdesc:a4640e58f9c8f24819078339e42dd0b41"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"true"</code> si el archivo es "Label".  <a href="#a4640e58f9c8f24819078339e42dd0b41">Más...</a><br /></td></tr>
+<tr class="separator:a4640e58f9c8f24819078339e42dd0b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4e1b81e2dd620f571fea94c8aa31e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#aeb4e1b81e2dd620f571fea94c8aa31e6">isSubDir</a> () const </td></tr>
+<tr class="memdesc:aeb4e1b81e2dd620f571fea94c8aa31e6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"true"</code> si el archivo es un sub-directorio.  <a href="#aeb4e1b81e2dd620f571fea94c8aa31e6">Más...</a><br /></td></tr>
+<tr class="separator:aeb4e1b81e2dd620f571fea94c8aa31e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e8c979171e08c080f36e03faedb15f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a89e8c979171e08c080f36e03faedb15f">isArchive</a> () const </td></tr>
+<tr class="memdesc:a89e8c979171e08c080f36e03faedb15f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"true"</code> si el archivo es "Archive".  <a href="#a89e8c979171e08c080f36e03faedb15f">Más...</a><br /></td></tr>
+<tr class="separator:a89e8c979171e08c080f36e03faedb15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794960850930f3ad6344e7dbc26cc13c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a794960850930f3ad6344e7dbc26cc13c">getName</a> () const </td></tr>
+<tr class="memdesc:a794960850930f3ad6344e7dbc26cc13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre del archivo.  <a href="#a794960850930f3ad6344e7dbc26cc13c">Más...</a><br /></td></tr>
+<tr class="separator:a794960850930f3ad6344e7dbc26cc13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1ae90bcae9c73cfa04936e9d5df6e6"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a7a1ae90bcae9c73cfa04936e9d5df6e6">getTimeWrite</a> () const </td></tr>
+<tr class="memdesc:a7a1ae90bcae9c73cfa04936e9d5df6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Momento de la última escritura al archivo.  <a href="#a7a1ae90bcae9c73cfa04936e9d5df6e6">Más...</a><br /></td></tr>
+<tr class="separator:a7a1ae90bcae9c73cfa04936e9d5df6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Métodos públicos estáticos</h2></td></tr>
+<tr class="memitem:a67804c7f849606c13368ac111f39ed49"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a67804c7f849606c13368ac111f39ed49">getMaxPath</a> ()</td></tr>
+<tr class="memdesc:a67804c7f849606c13368ac111f39ed49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tamaño máximo del nombre retornado por <code><a class="el" href="classreadDir.html#a794960850930f3ad6344e7dbc26cc13c" title="Nombre del archivo. ">getName()</a></code>.  <a href="#a67804c7f849606c13368ac111f39ed49">Más...</a><br /></td></tr>
+<tr class="separator:a67804c7f849606c13368ac111f39ed49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a1ae0e6475d43806078524b474edbbb39"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a1ae0e6475d43806078524b474edbbb39">m_pszMask</a></td></tr>
+<tr class="memdesc:a1ae0e6475d43806078524b474edbbb39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Máscara de búsqueda: "*.*".  <a href="#a1ae0e6475d43806078524b474edbbb39">Más...</a><br /></td></tr>
+<tr class="separator:a1ae0e6475d43806078524b474edbbb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73fc9f6a4aff452386c4309be043f31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#ac73fc9f6a4aff452386c4309be043f31">m_bDestroyPtr</a></td></tr>
+<tr class="memdesc:ac73fc9f6a4aff452386c4309be043f31"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"true"</code> cuando es necesario retornar la memoria de <code>m_pszMask</code>.  <a href="#ac73fc9f6a4aff452386c4309be043f31">Más...</a><br /></td></tr>
+<tr class="separator:ac73fc9f6a4aff452386c4309be043f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012a06139ecb00d2013fbce8f6257931"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a012a06139ecb00d2013fbce8f6257931">m_bHasNext</a></td></tr>
+<tr class="memdesc:a012a06139ecb00d2013fbce8f6257931"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>"true"</code> cuando todavía no se han agotado los archivos del directorio.  <a href="#a012a06139ecb00d2013fbce8f6257931">Más...</a><br /></td></tr>
+<tr class="separator:a012a06139ecb00d2013fbce8f6257931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33c1d9303401f8406a8c66e3ed456ad"><td class="memItemLeft" align="right" valign="top">_finddata_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#ac33c1d9303401f8406a8c66e3ed456ad">m_FILE_BLOCK</a></td></tr>
+<tr class="memdesc:ac33c1d9303401f8406a8c66e3ed456ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contiene los datos del archivo en proceso.  <a href="#ac33c1d9303401f8406a8c66e3ed456ad">Más...</a><br /></td></tr>
+<tr class="separator:ac33c1d9303401f8406a8c66e3ed456ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535278fac4a23c95411df31177ffe7b9"><td class="memItemLeft" align="right" valign="top">_finddata_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a535278fac4a23c95411df31177ffe7b9">m_FILE_BLOCK_NEXT</a></td></tr>
+<tr class="memdesc:a535278fac4a23c95411df31177ffe7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datos del siguiente archivo.  <a href="#a535278fac4a23c95411df31177ffe7b9">Más...</a><br /></td></tr>
+<tr class="separator:a535278fac4a23c95411df31177ffe7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25cc59cb189e41dc23ba3fde0a9c7a87"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreadDir.html#a25cc59cb189e41dc23ba3fde0a9c7a87">m_handle</a></td></tr>
+<tr class="memdesc:a25cc59cb189e41dc23ba3fde0a9c7a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indice numérico para llamados subsecuentes.  <a href="#a25cc59cb189e41dc23ba3fde0a9c7a87">Más...</a><br /></td></tr>
+<tr class="separator:a25cc59cb189e41dc23ba3fde0a9c7a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Módulo portable para leer los nombres de los archivos de un directorio. </p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000001">Prueba:</a></b></dt><dd></dd></dl>
+ <div class="fragment"><div class="line"><span class="keywordtype">void</span> ejemplo() {{ <span class="comment">// test::ejemplo()</span></div>
+<div class="line">    <span class="keyword">using namespace </span>std;</div>
+<div class="line">    <a class="code" href="classreadDir.html">readDir</a> hFile(<span class="stringliteral">&quot;../&quot;</span>);</div>
+<div class="line">    hFile.setMask( <span class="stringliteral">&quot;../*.*&quot;</span> ); <span class="comment">// listado del directorio padre</span></div>
+<div class="line">    <span class="keywordflow">while</span> ( hFile.hasNext() ) {</div>
+<div class="line">        hFile.next(); <span class="comment">// siguiente nombre de archivo</span></div>
+<div class="line">        cout &lt;&lt; ( hFile.isReadOnly() ? <span class="charliteral">&#39;r&#39;</span> : <span class="charliteral">&#39;.&#39;</span> );</div>
+<div class="line">        cout &lt;&lt; ( hFile.isArchive()  ? <span class="charliteral">&#39;a&#39;</span> : <span class="charliteral">&#39;.&#39;</span> );</div>
+<div class="line">        cout &lt;&lt; ( hFile.isSystem()   ? <span class="charliteral">&#39;s&#39;</span> : <span class="charliteral">&#39;.&#39;</span> );</div>
+<div class="line">        cout &lt;&lt; ( hFile.isSubDir()   ? <span class="charliteral">&#39;d&#39;</span> : <span class="charliteral">&#39;.&#39;</span> );</div>
+<div class="line">        cout &lt;&lt; ( hFile.isHidden()   ? <span class="charliteral">&#39;h&#39;</span> : <span class="charliteral">&#39;.&#39;</span> ) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">        {</div>
+<div class="line">            time_t t = hFile.getTimeWrite();</div>
+<div class="line">            <span class="keyword">struct </span>tm ts = *( gmtime( &amp; t ) ); <span class="comment">// saca una copia ¡rápido!</span></div>
+<div class="line">            <span class="keywordtype">char</span>  str[25];</div>
+<div class="line"></div>
+<div class="line">            strftime( str, <span class="keyword">sizeof</span>(str), <span class="stringliteral">&quot;%Y&quot;</span>, &amp; ts );</div>
+<div class="line">            cout &lt;&lt; str &lt;&lt; <span class="charliteral">&#39;-&#39;</span>; <span class="comment">// %Y ==&gt; Year</span></div>
+<div class="line">            strftime( str, <span class="keyword">sizeof</span>(str), <span class="stringliteral">&quot;%m&quot;</span>, &amp; ts );</div>
+<div class="line">            cout &lt;&lt; str &lt;&lt; <span class="charliteral">&#39;-&#39;</span>; <span class="comment">// %m ==&gt; Month as a decimal number (01-12)</span></div>
+<div class="line">            strftime( str, <span class="keyword">sizeof</span>(str), <span class="stringliteral">&quot;%d&quot;</span>, &amp; ts );</div>
+<div class="line">            cout &lt;&lt; str &lt;&lt; <span class="charliteral">&#39; &#39;</span>; <span class="comment">// %d ==&gt; Day of the month (01-31)</span></div>
+<div class="line"></div>
+<div class="line">            strftime( str, <span class="keyword">sizeof</span>(str), <span class="stringliteral">&quot;%H&quot;</span>, &amp; ts );</div>
+<div class="line">            cout &lt;&lt; str &lt;&lt; <span class="charliteral">&#39;:&#39;</span>; <span class="comment">// %H ==&gt; Hour in 24h format (00-23)</span></div>
+<div class="line">            strftime( str, <span class="keyword">sizeof</span>(str), <span class="stringliteral">&quot;%M&quot;</span>, &amp; ts );</div>
+<div class="line">            cout &lt;&lt; str &lt;&lt; <span class="charliteral">&#39;:&#39;</span>; <span class="comment">// %M ==&gt; Minute (00-59)</span></div>
+<div class="line">            strftime( str, <span class="keyword">sizeof</span>(str), <span class="stringliteral">&quot;%S&quot;</span>, &amp; ts );</div>
+<div class="line">            cout &lt;&lt; str &lt;&lt; <span class="charliteral">&#39; &#39;</span>; <span class="comment">// %S ==&gt; Second (00-61)</span></div>
+<div class="line">        }</div>
+<div class="line">        cout &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; setw(10) &lt;&lt; hFile.size();</div>
+<div class="line"></div>
+<div class="line">        cout &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; setw(00) &lt;&lt; hFile.getName() &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">}}</div>
+</div><!-- fragment --> </p><dl class="section see"><dt>Ver también</dt><dd>ejemplo() </dd></dl>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00044">44</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a class="anchor" id="ad680b9e551964e7d232e1e0bf78bb360"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readDir::readDir </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszMask</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor que lee el directorio <code>"dir"</code>. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00110">110</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9c3c95081b0d83ee00a22ab66fba055"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readDir::readDir </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor que lee el directorio <code>"dir"</code>. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00116">116</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a08186a4d5a1c4545e677290709aea380"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readDir::~readDir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00121">121</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a class="anchor" id="a75e6d36a8e37bc38cb069d3806509dc6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readDir::hasNext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna <code>"true"</code> cuando hay más archivos por procesar. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00089">89</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63c63546eb87e75ec814a35c027475a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classreadDir.html">readDir</a> &amp; readDir::next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Avanza al siguiente nombre de archivo. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><code><a class="el" href="classreadDir.html#a77cfb6aeafeb641b13826a1ff0af59b9" title="Establece como máscara de búsqueda dir. ">setMask()</a></code> debe haber sido invocado previamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00095">95</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77cfb6aeafeb641b13826a1ff0af59b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readDir::setMask </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Establece como máscara de búsqueda <code>dir</code>. </p>
+<ul>
+<li>También establece el valor <code><a class="el" href="classreadDir.html#a75e6d36a8e37bc38cb069d3806509dc6" title="Retorna &quot;true&quot; cuando hay más archivos por procesar. ">hasNext()</a></code>. </li>
+</ul>
+
+<p>Definición en la línea <a class="el" href="readDir_8cpp_source.html#l00016">16</a> del archivo <a class="el" href="readDir_8cpp_source.html">readDir.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec6559338c05d5846413db871db8271b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readDir::setMaskWithChop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Establece como máscara de búsqueda <code>dir</code>. </p>
+<ul>
+<li>Si al final <code>dir</code> tiene 1 o más caracteres <code>'\'</code> los elimina.</li>
+<li>Si al final <code>dir</code> tiene 1 o más caracteres <code>'/'</code> los elimina.</li>
+<li>Los caracteres <code>'\'</code> y <code>'/'</code> al final producen funcionamiento erróneo.</li>
+<li>También establece el valor <code><a class="el" href="classreadDir.html#a75e6d36a8e37bc38cb069d3806509dc6" title="Retorna &quot;true&quot; cuando hay más archivos por procesar. ">hasNext()</a></code>. </li>
+</ul>
+
+<p>Definición en la línea <a class="el" href="readDir_8cpp_source.html#l00080">80</a> del archivo <a class="el" href="readDir_8cpp_source.html">readDir.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a730f7f89bbadcc1c1e9357bb147ed6a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readDir::setMask </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Establece como máscara de búsqueda <code>dir</code>. </p>
+<ul>
+<li>También establece el valor <code><a class="el" href="classreadDir.html#a75e6d36a8e37bc38cb069d3806509dc6" title="Retorna &quot;true&quot; cuando hay más archivos por procesar. ">hasNext()</a></code>. </li>
+</ul>
+
+<p>Definición en la línea <a class="el" href="readDir_8cpp_source.html#l00148">148</a> del archivo <a class="el" href="readDir_8cpp_source.html">readDir.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5169fdab676aba9498909136b5893fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* readDir::getMask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna la máscara establecida por <code><a class="el" href="classreadDir.html#a77cfb6aeafeb641b13826a1ff0af59b9" title="Establece como máscara de búsqueda dir. ">setMask()</a></code>;. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00058">58</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af89d366b6fdf129d1778343c6f40ed13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long readDir::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tamaño del archivo. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00130">130</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a29996df6fa4d7d1ccb9c5baec75f3fcc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readDir::isNormal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>"true"</code> si el archivo es "Normal". </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00139">139</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ba790e17569d16d2d78f568d6ee3f76"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readDir::isReadOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>"true"</code> si el archivo es "Read Only". </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00148">148</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a545113ceda8d96a37bd58c2ca3f2ce34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readDir::isHidden </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>"true"</code> si el archivo es "Hidden". </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00157">157</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a69386a9ffb14133e959648ea12bf9344"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readDir::isSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>"true"</code> si el archivo es "System". </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00166">166</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4640e58f9c8f24819078339e42dd0b41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readDir::isLabel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>"true"</code> si el archivo es "Label". </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00175">175</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb4e1b81e2dd620f571fea94c8aa31e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readDir::isSubDir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>"true"</code> si el archivo es un sub-directorio. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00188">188</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a89e8c979171e08c080f36e03faedb15f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readDir::isArchive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>"true"</code> si el archivo es "Archive". </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00197">197</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a794960850930f3ad6344e7dbc26cc13c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * readDir::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nombre del archivo. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8cpp_source.html#l00203">203</a> del archivo <a class="el" href="readDir_8cpp_source.html">readDir.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67804c7f849606c13368ac111f39ed49"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readDir::getMaxPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tamaño máximo del nombre retornado por <code><a class="el" href="classreadDir.html#a794960850930f3ad6344e7dbc26cc13c" title="Nombre del archivo. ">getName()</a></code>. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8cpp_source.html#l00212">212</a> del archivo <a class="el" href="readDir_8cpp_source.html">readDir.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a1ae90bcae9c73cfa04936e9d5df6e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t readDir::getTimeWrite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Momento de la última escritura al archivo. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8cpp_source.html#l00164">164</a> del archivo <a class="el" href="readDir_8cpp_source.html">readDir.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los datos miembro</h2>
+<a class="anchor" id="a1ae0e6475d43806078524b474edbbb39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* readDir::m_pszMask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Máscara de búsqueda: "*.*". </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00073">73</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac73fc9f6a4aff452386c4309be043f31"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readDir::m_bDestroyPtr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>"true"</code> cuando es necesario retornar la memoria de <code>m_pszMask</code>. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00074">74</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a012a06139ecb00d2013fbce8f6257931"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readDir::m_bHasNext</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>"true"</code> cuando todavía no se han agotado los archivos del directorio. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00075">75</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac33c1d9303401f8406a8c66e3ed456ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_finddata_t readDir::m_FILE_BLOCK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Contiene los datos del archivo en proceso. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00078">78</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a535278fac4a23c95411df31177ffe7b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_finddata_t readDir::m_FILE_BLOCK_NEXT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Datos del siguiente archivo. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00079">79</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a25cc59cb189e41dc23ba3fde0a9c7a87"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">intptr_t readDir::m_handle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indice numérico para llamados subsecuentes. </p>
+
+<p>Definición en la línea <a class="el" href="readDir_8h_source.html#l00080">80</a> del archivo <a class="el" href="readDir_8h_source.html">readDir.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li><a class="el" href="readDir_8h_source.html">readDir.h</a></li>
+<li><a class="el" href="readDir_8cpp_source.html">readDir.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Jueves, 23 de Octubre de 2014 17:25:07 para readDir y fotoRepetidas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>
