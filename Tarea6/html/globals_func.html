@@ -68,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
     <ul class="tablist">
       <li><a href="globals.html"><span>Todo</span></a></li>
       <li class="current"><a href="globals_func.html"><span>Funciones</span></a></li>
+      <li><a href="globals_type.html"><span>'typedefs'</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -76,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,20 +90,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 &#160;<ul>
 <li>fotosRepetidas()
 : <a class="el" href="fotosRepetidas_8cpp.html#a048a79745b891e7453a53f5086ad913c">fotosRepetidas.cpp</a>
+, <a class="el" href="fotosRepetidasMap_8cpp.html#ac647e44cf46470021f014d745938c59b">fotosRepetidasMap.cpp</a>
 </li>
 <li>getPhotos()
 : <a class="el" href="fotosRepetidas_8cpp.html#a59435d6c7fa5845709a17ed553e05013">fotosRepetidas.cpp</a>
+, <a class="el" href="fotosRepetidasMap_8cpp.html#a1df0f54ce3aae76ab0c0f4b3cff5f4af">fotosRepetidasMap.cpp</a>
 </li>
 <li>iequals()
 : <a class="el" href="fotosRepetidas_8cpp.html#ab506f7918681d9a60401e080ba6c66d7">fotosRepetidas.cpp</a>
+, <a class="el" href="fotosRepetidasMap_8cpp.html#ab506f7918681d9a60401e080ba6c66d7">fotosRepetidasMap.cpp</a>
 </li>
 <li>isdir()
-: <a class="el" href="readDir_8h.html#abd62c1aec9429b9058bdde053cd30ea6">readDir.h</a>
-, <a class="el" href="readDir_8cpp.html#abd62c1aec9429b9058bdde053cd30ea6">readDir.cpp</a>
+: <a class="el" href="readDir_8cpp.html#abd62c1aec9429b9058bdde053cd30ea6">readDir.cpp</a>
+, <a class="el" href="readDir_8h.html#abd62c1aec9429b9058bdde053cd30ea6">readDir.h</a>
 </li>
 <li>isfile()
-: <a class="el" href="readDir_8h.html#aca694040760df8aa8ca1df744fa4016a">readDir.h</a>
-, <a class="el" href="readDir_8cpp.html#aca694040760df8aa8ca1df744fa4016a">readDir.cpp</a>
+: <a class="el" href="readDir_8cpp.html#aca694040760df8aa8ca1df744fa4016a">readDir.cpp</a>
+, <a class="el" href="readDir_8h.html#aca694040760df8aa8ca1df744fa4016a">readDir.h</a>
 </li>
 <li>lastExt()
 : <a class="el" href="readDir_8h.html#aaeb6ba34c425b361c8308babe0a7a832">readDir.h</a>
@@ -110,9 +114,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 </li>
 <li>main()
 : <a class="el" href="fotosRepetidas_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">fotosRepetidas.cpp</a>
+, <a class="el" href="fotosRepetidasMap_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">fotosRepetidasMap.cpp</a>
 </li>
 <li>onlyImportant()
 : <a class="el" href="fotosRepetidas_8cpp.html#a7fcb414999943cba283d728bb2e1ee0b">fotosRepetidas.cpp</a>
+, <a class="el" href="fotosRepetidasMap_8cpp.html#a7fcb414999943cba283d728bb2e1ee0b">fotosRepetidasMap.cpp</a>
 </li>
 <li>pathExt()
 : <a class="el" href="readDir_8h.html#a684cb315c317c51219392c7f0a66199d">readDir.h</a>
@@ -122,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generado el Jueves, 23 de Octubre de 2014 17:57:45 para readDir y fotoRepetidas por &#160;<a href="http://www.doxygen.org/index.html">
+Generado el Lunes, 27 de Octubre de 2014 20:39:58 para readDir y fotoRepetidas por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

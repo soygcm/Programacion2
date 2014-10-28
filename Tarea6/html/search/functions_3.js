@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['iequals',['iequals',['../fotosRepetidas_8cpp.html#ab506f7918681d9a60401e080ba6c66d7',1,'fotosRepetidas.cpp']]],
+  ['iequals',['iequals',['../fotosRepetidas_8cpp.html#ab506f7918681d9a60401e080ba6c66d7',1,'iequals(const string &amp;a, const string &amp;b):&#160;fotosRepetidas.cpp'],['../fotosRepetidasMap_8cpp.html#ab506f7918681d9a60401e080ba6c66d7',1,'iequals(const string &amp;a, const string &amp;b):&#160;fotosRepetidasMap.cpp']]],
   ['isarchive',['isArchive',['../classreadDir.html#a89e8c979171e08c080f36e03faedb15f',1,'readDir']]],
   ['isdir',['isdir',['../readDir_8h.html#abd62c1aec9429b9058bdde053cd30ea6',1,'isdir(const char *argname):&#160;readDir.cpp'],['../readDir_8cpp.html#abd62c1aec9429b9058bdde053cd30ea6',1,'isdir(const char *argname):&#160;readDir.cpp']]],
   ['isfile',['isfile',['../readDir_8h.html#aca694040760df8aa8ca1df744fa4016a',1,'isfile(const char *argname):&#160;readDir.cpp'],['../readDir_8cpp.html#aca694040760df8aa8ca1df744fa4016a',1,'isfile(const char *argname):&#160;readDir.cpp']]],

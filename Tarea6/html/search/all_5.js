@@ -6,5 +6,5 @@ var searchData=
   ['m_5ffile_5fblock_5fnext',['m_FILE_BLOCK_NEXT',['../classreadDir.html#a535278fac4a23c95411df31177ffe7b9',1,'readDir']]],
   ['m_5fhandle',['m_handle',['../classreadDir.html#a25cc59cb189e41dc23ba3fde0a9c7a87',1,'readDir']]],
   ['m_5fpszmask',['m_pszMask',['../classreadDir.html#a1ae0e6475d43806078524b474edbbb39',1,'readDir']]],
-  ['main',['main',['../fotosRepetidas_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'fotosRepetidas.cpp']]]
+  ['main',['main',['../fotosRepetidas_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;fotosRepetidas.cpp'],['../fotosRepetidasMap_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;fotosRepetidasMap.cpp']]]
 ];

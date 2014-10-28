@@ -12,7 +12,8 @@ var indexSectionsWithContent =
   2: "fr",
   3: "fghilmnoprs~",
   4: "m",
-  5: "l"
+  5: "p",
+  6: "l"
 };
 
 var indexSectionNames =
@@ -22,7 +23,8 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "pages"
+  5: "typedefs",
+  6: "pages"
 };
 
 function convertToId(search)

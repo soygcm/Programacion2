@@ -3,10 +3,8 @@
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=utf-8">
 <meta name=Generator content="Microsoft Word 14 (filtered)">
-
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
 <style>
 <!--
  /* Font Definitions */
@@ -30,11 +28,11 @@
 	{font-family:"Lucida Grande";
 	panose-1:2 11 6 0 4 5 2 2 2 4;}
 @font-face
-	{font-family:"Menlo Regular";
-	panose-1:2 11 6 9 3 8 4 2 2 4;}
-@font-face
 	{font-family:Consolas;
 	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Menlo Regular";
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
  /* Style Definitions */
 p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin-top:0cm;
@@ -392,7 +390,10 @@ ul
 <h1 align=center style='text-align:center'><span lang=ES style='font-size:48.0pt;
 color:#1F497D;letter-spacing:1.5pt'>Listado de </span><span lang=ES><a
 href="http://soygcm.github.io/Programacion2/Tarea6/html/fotosRepetidas_8cpp_source.html"><span
-style='font-size:48.0pt;letter-spacing:1.5pt'>fotos repetidas</span></a></span></h1>
+style='font-size:48.0pt;letter-spacing:1.5pt'>fotos repetidas</span></a></span><span
+class=MsoHyperlink><span lang=ES style='font-size:48.0pt;letter-spacing:1.5pt'>
+</span></span><span class=TtuloCar><span lang=ES style='font-size:48.0pt'>con List
+y Map</span></span></h1>
 
 <p class=MsoNormal><span lang=ES>&nbsp;</span></p>
 
@@ -455,7 +456,8 @@ la cual no existe en el sistema operativo Mac OS</span></p>
 <p class=MsoNormal><span lang=ES>Así que el primer problema, es buscar como
 leer una carpeta usando otra alternativa.</span></p>
 
-<p class=MsoNormal><span lang=ES>La alternativa encontrada es <a href="http://pubs.opengroup.org/onlinepubs/7908799/xsh/dirent.h.html">&lt;dirent.h&gt;</a></span></p>
+<p class=MsoNormal><span lang=ES>La alternativa encontrada es <a
+href="http://pubs.opengroup.org/onlinepubs/7908799/xsh/dirent.h.html">&lt;dirent.h&gt;</a></span></p>
 
 <p class=MsoNormal><span lang=ES>Que por medio de estos dos métodos, se puede
 acceder un directorio y luego a cada uno de sus elementos.</span></p>
@@ -493,13 +495,38 @@ en el ciclo externo.</span></p>
 <p class=MsoNormal><span lang=ES>Además en el primer ciclo hay que identificar
 los archivos que están en ambas listas.</span></p>
 
+<h2><span lang=ES>Comparación de carpetas usando Mapas</span></h2>
+
+<p class=MsoNormal><span lang=ES>Tanto como para guardar, como para comparar
+las carpetas también se uso Mapas, para ello es necesario recordar, que se debe
+definir un tipo par:</span></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=ES
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=ES style='font-family:Consolas'>typedef pair&lt;T, T&gt;
+name;</span></p>
+
+<p class=MsoNormal><span lang=ES>El cual sirve, para insertar un par de valores
+en el mapa. Por otro lado la iteración es similar a la lista. Con la diferencia
+que cada iterador tiene dos punteros uno llamado first y otro second, que
+apuntan a el primer valor del par y al segundo correspondientemente. </span></p>
+
 <p class=MsoNormal><span lang=ES>Todo esto puede usted verlo aquí en la
 documentación </span></p>
+
+<p class=MsoNormal><span lang=ES>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=ES>&nbsp;</span></p>
 
 <p class=MsoNormal align=center style='text-align:center'><span lang=ES><a
 href="http://soygcm.github.io/Programacion2/Tarea6/html/"><b>Documentación</b></a></span></p>
 
-  </div>
+<p class=MsoNormal align=center style='text-align:center'><span
+class=MsoHyperlink><b><span lang=ES><a
+href="http://soygcm.github.io/Programacion2/Tarea6/html/fotosRepetidasMap_8cpp_source.html">Aquí
+también esta con Mapas</a></span></b></span></p>
+
+</div>
 </div>
 
 <img style="margin: 20px auto; display: block;" src="http://fc00.deviantart.net/fs37/f/2008/288/d/6/Portrait__Retrato_by_soygcm.jpg" alt="" width="80">

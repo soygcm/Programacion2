@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>readDir y fotoRepetidas: Fichero Fuente fotosRepetidasMap.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">readDir y fotoRepetidas
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">fotosRepetidasMap.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fotosRepetidasMap_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// fotosRepetidas.h (c) 2014</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/** \file  fotosRepetidas.cpp</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    \brief Programa que compara dos carpetas de fotos, para determinar si estan repetidas</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    \author Gabriel Castañaza &lt;gcmelmejor@gmail.com&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    \date   2014</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span>      <span class="comment">// std::cout, etc.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span>          <span class="comment">// std::map&lt;&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;dirent.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="fotosRepetidasMap_8cpp.html#a2504bd500612e5eb3b605ff84da7c81d">   17</a></span>&#160;<span class="keyword">typedef</span> pair&lt;string, string&gt; <a class="code" href="fotosRepetidasMap_8cpp.html#a2504bd500612e5eb3b605ff84da7c81d">photo</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> Toma un nombre de imagen ejemplo: &quot;DS599003_3329 hola.jpg&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> y deja solamente la parte &quot;DS599003_3329&quot; borrando desde el espacio</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> para adelante.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> Tambien toma un nombre de imagen ejemplo: &quot;DS599003_3329.jpg&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> y deja solamente la parte &quot;DS599003_3329&quot; borrando desde el punto</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> para adelante.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="fotosRepetidasMap_8cpp.html#a7fcb414999943cba283d728bb2e1ee0b">   28</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="fotosRepetidasMap_8cpp.html#a7fcb414999943cba283d728bb2e1ee0b">onlyImportant</a>(<span class="keywordtype">string</span> &amp;fileName){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">string</span> fname = fileName;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> firstSpace = fname.find_first_of(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> firstDot = fname.find_first_of(<span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    fname = fname.substr(0, firstSpace);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    fname = fname.substr(0, firstDot);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> fname;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">    Guarda todas las fotos (archivos que terminan con .jpg) que estan en una carpeta \c parent</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    y en un subdirectorio \c subDirName. En una lista \c list&lt;string&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="fotosRepetidasMap_8cpp.html#a1df0f54ce3aae76ab0c0f4b3cff5f4af">   46</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="fotosRepetidasMap_8cpp.html#a1df0f54ce3aae76ab0c0f4b3cff5f4af">getPhotos</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *parent, <span class="keyword">const</span> <span class="keywordtype">char</span> *subDirName, map&lt;string, string&gt; &amp;album){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//    semana.insert( venta_dia(&quot;lunes&quot;, 300.65) );</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//    semana.insert( venta_dia(&quot;martes&quot;, 456.12) );</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//    semana.insert( venta_dia(&quot;miercoles&quot;, 234.56) );</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//    double total = 0;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    DIR *dir;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">char</span> parentEdit[1024];</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    strcpy(parentEdit, parent);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span> *newParent = strcat(parentEdit, subDirName);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    dir = opendir ( strcat(newParent, <span class="stringliteral">&quot;/&quot;</span>) );</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (dir != NULL) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">struct </span>dirent *ent;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        ent = readdir (dir);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">while</span> (ent != NULL) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//            printf (&quot;%s \n&quot;, ent-&gt;d_name);</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">if</span> (ent-&gt;d_type == DT_REG){     <span class="comment">// if entry is a regular file</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordtype">string</span> extension = <span class="stringliteral">&quot;jpg&quot;</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordtype">string</span> fname = ent-&gt;d_name; <span class="comment">// filename</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="comment">// if filename&#39;s last characters are extension</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">if</span> (fname.find(extension, (fname.length() - extension.length())) != string::npos){</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    album.insert( <a class="code" href="fotosRepetidasMap_8cpp.html#a2504bd500612e5eb3b605ff84da7c81d">photo</a>( <a class="code" href="fotosRepetidasMap_8cpp.html#a7fcb414999943cba283d728bb2e1ee0b">onlyImportant</a>(fname), fname )  );      <span class="comment">// add filename to results vector</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">if</span> (ent-&gt;d_type == DT_DIR) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordtype">bool</span> punto = strcmp(ent-&gt;d_name, <span class="stringliteral">&quot;.&quot;</span>) == 0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordtype">bool</span> puntoPUnto = strcmp(ent-&gt;d_name, <span class="stringliteral">&quot;..&quot;</span>) == 0;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">if</span> ( !punto &amp;&amp; !puntoPUnto ) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    <a class="code" href="fotosRepetidasMap_8cpp.html#a1df0f54ce3aae76ab0c0f4b3cff5f4af">getPhotos</a>(newParent, ent-&gt;d_name, album);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            ent = readdir (dir);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        closedir (dir);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">    compara dos \c &lt;string&gt; ignorando mayusculas y minusculas.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="fotosRepetidasMap_8cpp.html#ab506f7918681d9a60401e080ba6c66d7">   96</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="fotosRepetidasMap_8cpp.html#ab506f7918681d9a60401e080ba6c66d7">iequals</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;a, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;b)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> sz = a.size();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (b.size() != sz)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; sz; ++i)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> (tolower(a[i]) != tolower(b[i]))</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">    a partir de dos listas de nombres de archivos, imprime tres listas:</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">    - Con solo los que estan en la primera lista</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">    - Con solo los que estan en la segunda lista</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">    - Con los nombres de archivos que estan en ambos</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="fotosRepetidasMap_8cpp.html#ac647e44cf46470021f014d745938c59b">  113</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="fotosRepetidasMap_8cpp.html#ac647e44cf46470021f014d745938c59b">fotosRepetidas</a>(map&lt;string, string&gt; &amp;listAlbum, map&lt;string, string&gt; &amp;listCamera, <span class="keywordtype">char</span> *albumDirectory,<span class="keywordtype">char</span> *cameraDirectory){</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    map&lt;string, string&gt; listOnlyCamera, listOnlyAlbum, listBoth;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    map&lt;string, string&gt;::iterator i;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">for</span>( i = listAlbum.begin(); i != listAlbum.end(); ++i){</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">bool</span> siEsta = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        map&lt;string, string&gt;::iterator j;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">for</span>( j = listCamera.begin(); j != listCamera.end(); ++j){</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="fotosRepetidasMap_8cpp.html#ab506f7918681d9a60401e080ba6c66d7">iequals</a>( i-&gt;first, j-&gt;first ) ) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                listBoth.insert( <a class="code" href="fotosRepetidasMap_8cpp.html#a2504bd500612e5eb3b605ff84da7c81d">photo</a>( i-&gt;second, <span class="stringliteral">&quot;&quot;</span> )  );</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                siEsta = siEsta || <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">if</span> (!siEsta) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            listOnlyAlbum.insert( <a class="code" href="fotosRepetidasMap_8cpp.html#a2504bd500612e5eb3b605ff84da7c81d">photo</a>( i-&gt;second, <span class="stringliteral">&quot;&quot;</span> )  );</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">for</span>( i = listCamera.begin(); i != listCamera.end(); ++i){</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordtype">bool</span> siEsta = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        map&lt;string, string&gt;::iterator j;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">for</span>( j = listAlbum.begin(); j != listAlbum.end(); ++j){</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="fotosRepetidasMap_8cpp.html#ab506f7918681d9a60401e080ba6c66d7">iequals</a>( i-&gt;first, j-&gt;first ) ) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                siEsta = siEsta || <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">if</span> (!siEsta) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            listOnlyCamera.insert( <a class="code" href="fotosRepetidasMap_8cpp.html#a2504bd500612e5eb3b605ff84da7c81d">photo</a>( i-&gt;second, <span class="stringliteral">&quot;&quot;</span> )  );</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;**** Fotos solo en: &quot;</span> &lt;&lt; cameraDirectory &lt;&lt; endl;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">for</span>( i = listOnlyCamera.begin(); i != listOnlyCamera.end(); ++i)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; i-&gt;first &lt;&lt; endl;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;**** Fotos solo en: &quot;</span> &lt;&lt; albumDirectory &lt;&lt; endl;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">for</span>( i = listOnlyAlbum.begin(); i != listOnlyAlbum.end(); ++i)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; i-&gt;first &lt;&lt; endl;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;**** Fotos en ambos directorios ****&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">for</span>( i = listBoth.begin(); i != listBoth.end(); ++i)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; i-&gt;first &lt;&lt; endl;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">    Compara dos carpetas para mostrar que archivos estan solo en la primera,</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">    solo en la segunda o en ambas carpetas.</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="fotosRepetidasMap_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">  178</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="fotosRepetidasMap_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    map&lt;string, string&gt; albumPhotos, cameraPhotos;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">//    map&lt;string, string&gt;::iterator p = semana.begin();</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">//    while (p != semana.end() )</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">//    {</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">//        cout &lt;&lt; setw(10) &lt;&lt; p-&gt;first &lt;&lt; setw(12) &lt;&lt; p-&gt;second &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">//        total += p-&gt;second;</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">//        p ++;</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">//    }</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">char</span> albumDirectory[1024];</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">char</span> cameraDirectory[1024];</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Directorio de la memoria flash: &quot;</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    cin &gt;&gt; cameraDirectory;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Directorio de la computadora: &quot;</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    cin &gt;&gt; albumDirectory;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="fotosRepetidasMap_8cpp.html#a1df0f54ce3aae76ab0c0f4b3cff5f4af">getPhotos</a>(albumDirectory, <span class="stringliteral">&quot;&quot;</span>, albumPhotos);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="fotosRepetidasMap_8cpp.html#a1df0f54ce3aae76ab0c0f4b3cff5f4af">getPhotos</a>(cameraDirectory, <span class="stringliteral">&quot;&quot;</span>, cameraPhotos);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="fotosRepetidasMap_8cpp.html#ac647e44cf46470021f014d745938c59b">fotosRepetidas</a>(albumPhotos, cameraPhotos, albumDirectory, cameraDirectory);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">// EOF: huequeador.h (c) 2014 adolfo@di-mare.com</span></div>
+<div class="ttc" id="fotosRepetidasMap_8cpp_html_a2504bd500612e5eb3b605ff84da7c81d"><div class="ttname"><a href="fotosRepetidasMap_8cpp.html#a2504bd500612e5eb3b605ff84da7c81d">photo</a></div><div class="ttdeci">pair&lt; string, string &gt; photo</div><div class="ttdef"><b>Definition:</b> <a href="fotosRepetidasMap_8cpp_source.html#l00017">fotosRepetidasMap.cpp:17</a></div></div>
+<div class="ttc" id="fotosRepetidasMap_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="fotosRepetidasMap_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdoc">Compara dos carpetas para mostrar que archivos estan solo en la primera, solo en la segunda o en amba...</div><div class="ttdef"><b>Definition:</b> <a href="fotosRepetidasMap_8cpp_source.html#l00178">fotosRepetidasMap.cpp:178</a></div></div>
+<div class="ttc" id="fotosRepetidasMap_8cpp_html_a7fcb414999943cba283d728bb2e1ee0b"><div class="ttname"><a href="fotosRepetidasMap_8cpp.html#a7fcb414999943cba283d728bb2e1ee0b">onlyImportant</a></div><div class="ttdeci">string onlyImportant(string &amp;fileName)</div><div class="ttdoc">Toma un nombre de imagen ejemplo: "DS599003_3329 hola.jpg" y deja solamente la parte "DS599003_3329" ...</div><div class="ttdef"><b>Definition:</b> <a href="fotosRepetidasMap_8cpp_source.html#l00028">fotosRepetidasMap.cpp:28</a></div></div>
+<div class="ttc" id="fotosRepetidasMap_8cpp_html_ac647e44cf46470021f014d745938c59b"><div class="ttname"><a href="fotosRepetidasMap_8cpp.html#ac647e44cf46470021f014d745938c59b">fotosRepetidas</a></div><div class="ttdeci">void fotosRepetidas(map&lt; string, string &gt; &amp;listAlbum, map&lt; string, string &gt; &amp;listCamera, char *albumDirectory, char *cameraDirectory)</div><div class="ttdoc">a partir de dos listas de nombres de archivos, imprime tres listas: </div><div class="ttdef"><b>Definition:</b> <a href="fotosRepetidasMap_8cpp_source.html#l00113">fotosRepetidasMap.cpp:113</a></div></div>
+<div class="ttc" id="fotosRepetidasMap_8cpp_html_a1df0f54ce3aae76ab0c0f4b3cff5f4af"><div class="ttname"><a href="fotosRepetidasMap_8cpp.html#a1df0f54ce3aae76ab0c0f4b3cff5f4af">getPhotos</a></div><div class="ttdeci">void getPhotos(const char *parent, const char *subDirName, map&lt; string, string &gt; &amp;album)</div><div class="ttdoc">Guarda todas las fotos (archivos que terminan con .jpg) que estan en una carpeta parent y en un subdi...</div><div class="ttdef"><b>Definition:</b> <a href="fotosRepetidasMap_8cpp_source.html#l00046">fotosRepetidasMap.cpp:46</a></div></div>
+<div class="ttc" id="fotosRepetidasMap_8cpp_html_ab506f7918681d9a60401e080ba6c66d7"><div class="ttname"><a href="fotosRepetidasMap_8cpp.html#ab506f7918681d9a60401e080ba6c66d7">iequals</a></div><div class="ttdeci">bool iequals(const string &amp;a, const string &amp;b)</div><div class="ttdoc">compara dos  <string> ignorando mayusculas y minusculas. </div><div class="ttdef"><b>Definition:</b> <a href="fotosRepetidasMap_8cpp_source.html#l00096">fotosRepetidasMap.cpp:96</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 27 de Octubre de 2014 20:39:58 para readDir y fotoRepetidas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>
