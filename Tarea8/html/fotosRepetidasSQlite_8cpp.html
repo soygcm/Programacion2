@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>fotoRepetidas SQlite: Referencia del Archivo fotosRepetidasSQlite.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">fotoRepetidas SQlite
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funciones</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo fotosRepetidasSQlite.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;dirent.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;CppSQLite3.h&quot;</code><br />
+</div>
+<p><a href="fotosRepetidasSQlite_8cpp_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a52cdcb63e148aaf821c52411426e55e0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a52cdcb63e148aaf821c52411426e55e0"><td class="memTemplItemLeft" align="right" valign="top">std::stringstream&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fotosRepetidasSQlite_8cpp.html#a52cdcb63e148aaf821c52411426e55e0">logging_expansion</a> (T const *value)</td></tr>
+<tr class="separator:a52cdcb63e148aaf821c52411426e55e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcb414999943cba283d728bb2e1ee0b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fotosRepetidasSQlite_8cpp.html#a7fcb414999943cba283d728bb2e1ee0b">onlyImportant</a> (string &amp;fileName)</td></tr>
+<tr class="memdesc:a7fcb414999943cba283d728bb2e1ee0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toma un nombre de imagen ejemplo: "DS599003_3329 hola.jpg" y deja solamente la parte "DS599003_3329" borrando desde el espacio para adelante.  <a href="#a7fcb414999943cba283d728bb2e1ee0b">Más...</a><br /></td></tr>
+<tr class="separator:a7fcb414999943cba283d728bb2e1ee0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f6089982987045dd5f8431814410ff4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fotosRepetidasSQlite_8cpp.html#a2f6089982987045dd5f8431814410ff4">getPhotos</a> (const char *parent, const char *subDirName, CppSQLite3DB &amp;DB, const char *table)</td></tr>
+<tr class="memdesc:a2f6089982987045dd5f8431814410ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guarda todas las fotos (archivos que terminan con .jpg) que estan en una carpeta <code>parent</code> y en un subdirectorio <code>subDirName</code>.  <a href="#a2f6089982987045dd5f8431814410ff4">Más...</a><br /></td></tr>
+<tr class="separator:a2f6089982987045dd5f8431814410ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab506f7918681d9a60401e080ba6c66d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fotosRepetidasSQlite_8cpp.html#ab506f7918681d9a60401e080ba6c66d7">iequals</a> (const string &amp;a, const string &amp;b)</td></tr>
+<tr class="memdesc:ab506f7918681d9a60401e080ba6c66d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">compara dos <code></code> &lt;string&gt; ignorando mayusculas y minusculas.  <a href="#ab506f7918681d9a60401e080ba6c66d7">Más...</a><br /></td></tr>
+<tr class="separator:ab506f7918681d9a60401e080ba6c66d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffb57a7e76b916713169d389f8e9f71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fotosRepetidasSQlite_8cpp.html#a0ffb57a7e76b916713169d389f8e9f71">fotosRepetidas</a> (CppSQLite3DB &amp;DB, char *albumDirectory, char *cameraDirectory)</td></tr>
+<tr class="memdesc:a0ffb57a7e76b916713169d389f8e9f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">a partir de dos listas de nombres de archivos, imprime tres listas:  <a href="#a0ffb57a7e76b916713169d389f8e9f71">Más...</a><br /></td></tr>
+<tr class="separator:a0ffb57a7e76b916713169d389f8e9f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af32e351441e1f6d5d48ea690a13424"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fotosRepetidasSQlite_8cpp.html#a5af32e351441e1f6d5d48ea690a13424">createTables</a> (CppSQLite3DB &amp;DB)</td></tr>
+<tr class="separator:a5af32e351441e1f6d5d48ea690a13424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fotosRepetidasSQlite_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compara dos carpetas para mostrar que archivos estan solo en la primera, solo en la segunda o en ambas carpetas.  <a href="#a3c04138a5bfe5d72780bb7e82a18e627">Más...</a><br /></td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="a52cdcb63e148aaf821c52411426e55e0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::stringstream logging_expansion </td>
+          <td>(</td>
+          <td class="paramtype">T const *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7fcb414999943cba283d728bb2e1ee0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string onlyImportant </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Toma un nombre de imagen ejemplo: "DS599003_3329 hola.jpg" y deja solamente la parte "DS599003_3329" borrando desde el espacio para adelante. </p>
+<p>Tambien toma un nombre de imagen ejemplo: "DS599003_3329.jpg" y deja solamente la parte "DS599003_3329" borrando desde el punto para adelante. </p>
+
+<p>Definición en la línea <a class="el" href="fotosRepetidasSQlite_8cpp_source.html#l00026">26</a> del archivo <a class="el" href="fotosRepetidasSQlite_8cpp_source.html">fotosRepetidasSQlite.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f6089982987045dd5f8431814410ff4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getPhotos </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>subDirName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CppSQLite3DB &amp;&#160;</td>
+          <td class="paramname"><em>DB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>table</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Guarda todas las fotos (archivos que terminan con .jpg) que estan en una carpeta <code>parent</code> y en un subdirectorio <code>subDirName</code>. </p>
+<p>En una lista <code>list&lt;string&gt;</code> </p>
+
+<p>Definición en la línea <a class="el" href="fotosRepetidasSQlite_8cpp_source.html#l00044">44</a> del archivo <a class="el" href="fotosRepetidasSQlite_8cpp_source.html">fotosRepetidasSQlite.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab506f7918681d9a60401e080ba6c66d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool iequals </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compara dos <code></code> &lt;string&gt; ignorando mayusculas y minusculas. </p>
+
+<p>Definición en la línea <a class="el" href="fotosRepetidasSQlite_8cpp_source.html#l00095">95</a> del archivo <a class="el" href="fotosRepetidasSQlite_8cpp_source.html">fotosRepetidasSQlite.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ffb57a7e76b916713169d389f8e9f71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fotosRepetidas </td>
+          <td>(</td>
+          <td class="paramtype">CppSQLite3DB &amp;&#160;</td>
+          <td class="paramname"><em>DB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>albumDirectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cameraDirectory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a partir de dos listas de nombres de archivos, imprime tres listas: </p>
+<ul>
+<li>Con solo los que estan en la primera lista</li>
+<li>Con solo los que estan en la segunda lista</li>
+<li>Con los nombres de archivos que estan en ambos </li>
+</ul>
+
+<p>Definición en la línea <a class="el" href="fotosRepetidasSQlite_8cpp_source.html#l00112">112</a> del archivo <a class="el" href="fotosRepetidasSQlite_8cpp_source.html">fotosRepetidasSQlite.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5af32e351441e1f6d5d48ea690a13424"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void createTables </td>
+          <td>(</td>
+          <td class="paramtype">CppSQLite3DB &amp;&#160;</td>
+          <td class="paramname"><em>DB</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="fotosRepetidasSQlite_8cpp_source.html#l00150">150</a> del archivo <a class="el" href="fotosRepetidasSQlite_8cpp_source.html">fotosRepetidasSQlite.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compara dos carpetas para mostrar que archivos estan solo en la primera, solo en la segunda o en ambas carpetas. </p>
+<p>Archivo que contiene la base de datos completa. </p>
+
+<p>Definición en la línea <a class="el" href="fotosRepetidasSQlite_8cpp_source.html#l00170">170</a> del archivo <a class="el" href="fotosRepetidasSQlite_8cpp_source.html">fotosRepetidasSQlite.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Jueves, 13 de Noviembre de 2014 21:34:06 para fotoRepetidas SQlite por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

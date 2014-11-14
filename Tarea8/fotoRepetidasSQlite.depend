@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1098848740 source:/Users/gabriel/Proyectos/UCR/IV-Semestre/Progra2/Programacion2/Tarea8/CppSQLite3.cpp
+	"CppSQLite3.h"
+	<cstdlib>
+
+1415900562 /Users/gabriel/Proyectos/UCR/IV-Semestre/Progra2/Programacion2/Tarea8/CppSQLite3.h
+	"sqlite3.h"
+	<cstdio>
+	<cstring>
+
+1415935338 source:/Users/gabriel/Proyectos/UCR/IV-Semestre/Progra2/Programacion2/Tarea8/fotosRepetidasSQlite.cpp
+	<iostream>
+	<dirent.h>
+	<string>
+	"CppSQLite3.h"
+

@@ -1,0 +1,223 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C083FA2319F9504600CB44F4 /* fotosRepetidasSQlite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C083FA2019F9504600CB44F4 /* fotosRepetidasSQlite.cpp */; };
+		C0EB4BB21A15157B00B9423B /* CppSQLite3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0EB4BB01A15157B00B9423B /* CppSQLite3.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C083FA1119F9501C00CB44F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C083FA1F19F9503700CB44F4 /* FotosRepetidas */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FotosRepetidas; sourceTree = BUILT_PRODUCTS_DIR; };
+		C083FA2019F9504600CB44F4 /* fotosRepetidasSQlite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fotosRepetidasSQlite.cpp; sourceTree = "<group>"; };
+		C0EB4BB01A15157B00B9423B /* CppSQLite3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CppSQLite3.cpp; sourceTree = "<group>"; };
+		C0EB4BB11A15157B00B9423B /* CppSQLite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppSQLite3.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C083FA1019F9501C00CB44F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C083FA0A19F9501C00CB44F4 = {
+			isa = PBXGroup;
+			children = (
+				C083FA1F19F9503700CB44F4 /* FotosRepetidas */,
+				C083FA2019F9504600CB44F4 /* fotosRepetidasSQlite.cpp */,
+				C0EB4BB01A15157B00B9423B /* CppSQLite3.cpp */,
+				C0EB4BB11A15157B00B9423B /* CppSQLite3.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C083FA1219F9501C00CB44F4 /* FotosRepetidas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C083FA1C19F9501C00CB44F4 /* Build configuration list for PBXNativeTarget "FotosRepetidas" */;
+			buildPhases = (
+				C083FA0F19F9501C00CB44F4 /* Sources */,
+				C083FA1019F9501C00CB44F4 /* Frameworks */,
+				C083FA1119F9501C00CB44F4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FotosRepetidas;
+			productName = FotosRepetidas;
+			productReference = C083FA1F19F9503700CB44F4 /* FotosRepetidas */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C083FA0B19F9501C00CB44F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = me;
+			};
+			buildConfigurationList = C083FA0E19F9501C00CB44F4 /* Build configuration list for PBXProject "FotosRepetidasSQlite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C083FA0A19F9501C00CB44F4;
+			productRefGroup = C083FA0A19F9501C00CB44F4;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C083FA1219F9501C00CB44F4 /* FotosRepetidas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C083FA0F19F9501C00CB44F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C083FA2319F9504600CB44F4 /* fotosRepetidasSQlite.cpp in Sources */,
+				C0EB4BB21A15157B00B9423B /* CppSQLite3.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C083FA1A19F9501C00CB44F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lsqlite3";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C083FA1B19F9501C00CB44F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "-lsqlite3";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C083FA1D19F9501C00CB44F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C083FA1E19F9501C00CB44F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C083FA0E19F9501C00CB44F4 /* Build configuration list for PBXProject "FotosRepetidasSQlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C083FA1A19F9501C00CB44F4 /* Debug */,
+				C083FA1B19F9501C00CB44F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C083FA1C19F9501C00CB44F4 /* Build configuration list for PBXNativeTarget "FotosRepetidas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C083FA1D19F9501C00CB44F4 /* Debug */,
+				C083FA1E19F9501C00CB44F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C083FA0B19F9501C00CB44F4 /* Project object */;
+}
